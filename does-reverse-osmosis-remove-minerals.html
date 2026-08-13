@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does Reverse Osmosis Remove Minerals? What That Actually Means</title>
+<meta name="description" content="Yes — and here is what that means in practice, what remineralization filters put back, and how to decide without the marketing noise.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/does-reverse-osmosis-remove-minerals">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="Does Reverse Osmosis Remove Minerals? What That Actually Means">
+<meta property="og:description" content="Yes — and here is what that means in practice, what remineralization filters put back, and how to decide without the marketing noise.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-minerals.webp">
+<meta property="og:url" content="https://best-reverse-osmosis-systems.com/does-reverse-osmosis-remove-minerals">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#mechanism">The mechanism</a><a href="#scale">Does it matter</a><a href="#taste">Taste</a><a href="#putback">Put it back</a><a href="#cost">Cost</a><a href="#tds">TDS meters</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Guides</a> &rsaquo; <span>Does RO remove minerals?</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Water quality</span>
+    <h1 class="serif">Does reverse osmosis remove minerals? What that actually means</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>August 13, 2026</b></span><span>12 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices &mdash; we don't run a testing lab.</p>
+  </div>
+  <img class="hero-img" src="/images/hero-minerals.webp" alt="Water pouring into a clear drinking glass on a pale stone countertop, with small mineral pebbles scattered around the base" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+
+  <section id="intro" style="padding-bottom:0">
+    <div class="prose">
+      <p>Ask this question in two different places and you get two confident, opposite answers. In one corner, reverse osmosis produces dead water that leaches minerals out of your body. In the other, the minerals in tap water are nutritionally irrelevant and nobody should spend a second on them. Both camps usually have something to sell.</p>
+      <p>The factual part is short and undisputed: yes, RO removes most of the dissolved minerals from your water along with the dissolved contaminants, because the membrane cannot tell them apart. Everything worth discussing happens after that sentence &mdash; whether it matters, why the water tastes different, what a remineralization stage puts back, and what it costs to run.</p>
+      <p>One thing plainly, up front: everything here that touches on health is general consumer information, not medical advice. We don't know your water, your diet or your history, and if you have a specific medical reason to care about mineral intake &mdash; a kidney condition, a prescribed diet, an infant on formula &mdash; that's a conversation with your doctor, not with a buying guide.</p>
+    </div>
+  </section>
+
+  <section id="mechanism">
+    <div class="prose">
+      <h2 class="h2">How the membrane decides what stays and what goes</h2>
+      <p>An RO membrane is a semi-permeable film with pores in the neighborhood of 0.0001 micron &mdash; both iSpring and Bluevua publish that figure. Household pressure pushes water against it. Water molecules pass. Almost everything dissolved in the water does not, because it is either too large for the pore or carries an electrical charge the membrane rejects. The rejected fraction goes down the drain, which is why every RO system has a drain line and a pure-to-drain ratio in its specification.</p>
+      <p>Here is the part that answers the question. &ldquo;Dissolved solids&rdquo; is not a category of bad things; it is a category of things dissolved in water. Calcium, magnesium, sodium, potassium, bicarbonate and sulfate are dissolved solids. So are lead, arsenic, fluoride, nitrate and chromium. A membrane that rejects one rejects the other, and manufacturers are candid about it if you read past the headline. Waterdrop's own description of the G3P600 lists what it reduces in one breath &mdash; TDS, chromium, PFAS, radium, fluoride, arsenic salt, iron, calcium, chloride, chlorine &mdash; with calcium sitting between iron and chloride. That isn't sloppy copywriting; it's the mechanism described accurately. The property that removes lead and PFAS is the property that removes calcium and magnesium.</p>
+      <p>So, unambiguously: there is no membrane that keeps the good ones and rejects the bad ones. Selectivity by size and charge does not map onto selectivity by virtue. Every system marketed as mineral RO or alkaline RO strips the water first and adds minerals back afterwards, in a separate stage downstream of the membrane. That turns a confusing category into a plain hardware question: do you want the extra stage, and what does it cost? Everything below comes from a manufacturer's specification or is arithmetic we show our work for; we have not measured these systems ourselves.</p>
+    </div>
+  </section>
+
+  <section id="scale">
+    <div class="prose">
+      <h2 class="h2">What that does &mdash; and doesn't &mdash; actually mean</h2>
+      <p>Drinking water is a minor contributor to mineral intake for most people eating an ordinary diet. Calcium comes overwhelmingly from dairy, greens, legumes and fortified foods; magnesium from nuts, seeds, whole grains and greens. Water contributes something, and more than nothing in hard-water regions, but it is small next to a plate of food. Scale is exactly what both sides of this argument leave out.</p>
+      <p>We're deliberately not handing you a percentage, because the honest answer depends on two things only you know: how mineralized your supply is, and what you eat. A household on a soft municipal supply loses little to the membrane, because there was little there. A household on a hard well loses a lot &mdash; and that same hardness has been scaling the kettle and spotting the glasses. Any guide quoting one confident number for how much calcium RO costs you per day has invented it.</p>
+      <p>Two things follow. The framing that survives scrutiny is taste and preference first, nutrition second: almost nobody adds a mineral stage because of a blood test, they add it because the water tastes like nothing. And don't let anyone, us included, sell you certainty in either direction. It is not established that mineral-free drinking water harms a well-fed adult, nor that mineral content in water is meaningless for everyone. What is established is that the stage costs about thirty dollars and is reversible.</p>
+    </div>
+  </section>
+
+  <section id="taste">
+    <div class="prose">
+      <h2 class="h2">Why RO water tastes flat, and why that's the real reason people add minerals</h2>
+      <p>This is the complaint that genuinely shows up after an install, and it isn't imaginary.</p>
+      <p>What you taste in water is mostly what's dissolved in it. Bicarbonate gives water body; calcium and magnesium add a mineral edge; sulfate reads as crisp, or in quantity slightly bitter. Take a supply running at 250 ppm of dissolved solids and drop it into the low double digits &mdash; iSpring publishes 93% to 98% TDS reduction for the RCC7AK-BN, and up to 97% for its 75 GPD membranes under NSF/ANSI 58 test conditions &mdash; and you haven't only removed the chlorine and the metals. You've removed most of the flavor. Low TDS carries less taste, and that is the whole explanation.</p>
+      <p>People describe the result as flat, empty, or like drinking nothing. That last one is sometimes a compliment: coming off a heavily chlorinated supply, or a well with a sulfur note, <em>like nothing</em> is exactly the upgrade you paid for. Coming off a decent, moderately hard supply you were quietly fond of, it's a loss &mdash; and you notice it in tea, in coffee, and in a glass of cold water at two in the morning. This, not nutrition, is why most mineral cartridges get bought.</p>
+      <p>One caveat before you judge: fresh carbon sheds fines and a taste of its own for the first few gallons, so do the flush your manual asks for and give it two days first. The step is covered in our <a href="/how-to-install-an-under-sink-reverse-osmosis-system">under-sink installation walkthrough</a>.</p>
+      <p class="quote">The theme that repeats across owner reviews of remineralization cartridges: the water was obviously cleaner and obviously less interesting, and the people who added a mineral stage decided within the first month or never bothered at all.</p>
+    </div>
+  </section>
+
+  <section id="alkaline">
+    <div class="prose">
+      <h2 class="h2">pH, alkaline water, and where the specification sheet stops</h2>
+      <p>RO water tends to be slightly acidic, and iSpring says so in its own documentation rather than leaving you to discover it: a standard 5-stage RO system produces slightly acidic water with a pH of 7.0 or below. The bicarbonate that buffers your tap water is a dissolved solid, so the membrane takes it out; dissolved carbon dioxide, being a gas, passes straight through and forms a little carbonic acid with nothing left to neutralize it.</p>
+      <p>An alkaline cartridge is mechanically unglamorous, which is a point in its favor. It's a small housing packed with mineral media &mdash; calcite, mineral stone or ceramic granules. Purified water runs through the bed on its way to the faucet and dissolves a small, self-limiting quantity of it; mineral content goes up and pH follows. Waterdrop, iSpring, APEC and Frizzlife each describe theirs as restoring calcium and magnesium, with sodium, potassium or zinc depending on the media. Two consequences: the bed dissolves, so it is consumed, which is why these cartridges carry a service life in months and gallons rather than years. And the effect is bounded &mdash; you're dissolving a trace of mineral into water, not reconstituting a mountain spring.</p>
+      <p>Which brings us to the part we won't repeat as fact. Waterdrop's listing for the MNR35 states that drinking its mineral water will, in the long run, help avoid chronic diseases, slow the aging process and improve digestion and immunity. That's manufacturer copy, we have no way to verify it, and we're not going to launder it into an editorial claim. What is checkable is the boring half: the cartridge exists, costs $29.99, is rated for 9 to 12 months or 1,100 gallons, and fits 1/4-inch and 3/8-inch quick-connect tubing. Buy it for taste and a measurable pH shift; anything past that is marketing, not specification.</p>
+    </div>
+  </section>
+
+  <section id="putback">
+    <div class="prose">
+      <h2 class="h2">The three ways to put minerals back</h2>
+      <p>There are exactly three routes, and which one is right depends mostly on whether you already own a system.</p>
+      <h3 class="serif" style="font-size:1.25rem;font-weight:600;margin:1.8rem 0 .5rem">Route one: bolt a cartridge onto the system you already have</h3>
+      <p>The cheapest and least committal option. An inline remineralization cartridge sits in the tubing between your system's last stage and the faucet, and it doesn't care what brand is upstream of it.</p>
+    </div>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>Retrofit</small></div>
+        <div>
+          <h3>Waterdrop MNR35 remineralization filter</h3>
+          <div class="who">For a system you already own</div>
+          <div class="rl2"><b>9&ndash;12 months or 1,100 gallons</b> &middot; fits 1/4-inch &amp; 3/8-inch quick-connect &middot; inline &middot; adds calcium, magnesium, sodium, potassium</div>
+          <p class="body">This is the hardware that makes the whole mineral debate low-stakes. Because it's built for 1/4-inch and 3/8-inch quick-connect tubing &mdash; what essentially every under-sink RO system sold in the US uses &mdash; it retrofits to almost anything, with no brand matching and no adapter hunt. Waterdrop rates it for 9 to 12 months or 1,100 gallons, whichever comes first, and suggests changing at nine. Two caveats: the manufacturer says not to connect it to a hot-water line, and an inline stage adds two push-fit joints under your sink. Check both with a dry paper towel an hour after fitting, and again next morning.</p>
+          <p class="body" style="margin-top:.8rem">If you know you're keeping the system for years, the two-pack &mdash; <a href="https://www.amazon.com/dp/B0CX1QGB65?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank" style="color:var(--aqua-deep);font-weight:700">Waterdrop MNR35-2</a>, $55.99 &mdash; is the same filter in a longer supply.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B08DXYL81C.webp" alt="Waterdrop MNR35 inline remineralization filter cartridge for reverse osmosis systems" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$29.99</div><span class="tag">Inline cartridge</span><a class="buy" href="https://www.amazon.com/dp/B08DXYL81C?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price &rarr;</a></div>
+      </article>
+
+    </div>
+    <div class="prose" style="margin-top:26px">
+      <h3 class="serif" style="font-size:1.25rem;font-weight:600;margin:1.8rem 0 .5rem">Route two: buy a system that already includes the stage</h3>
+      <p>One note on certification before you compare these three, because the labels are not interchangeable and the industry blurs them constantly. <strong>NSF/ANSI 58</strong> certifies that a system reduces contaminants and dissolved solids as claimed. <strong>NSF/ANSI 372</strong> certifies only that the materials are lead-free. <strong>WQA</strong> is a different certifying body &mdash; a real one, but not the same claim as NSF/ANSI 58.</p>
+    </div>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">02<small>Certified</small></div>
+        <div>
+          <h3>iSpring RCC7AK-BN</h3>
+          <div class="who">The strongest certification claim with a mineral stage in the box</div>
+          <div class="rl2"><b>NSF/ANSI 58, whole system</b> &middot; <b>75 GPD</b> &middot; 6 stages &middot; natural mineral AK stage &middot; tank</div>
+          <p class="body">iSpring certifies the RCC7AK as a complete system to NSF/ANSI 58 rather than certifying a component or the materials, which is the distinction worth paying for. Published reductions are 93% to 98% for TDS and 96% to 99% for PFAS, and the sixth stage is the natural mineral AK cartridge that returns calcium and magnesium after the membrane. The first housing is transparent, so you can watch the sediment load build, and the faucet uses a top-mounted fastener, so you tighten it from the countertop instead of on your back. The trade-off is footprint: three housings plus a pressure tank wants most of a cabinet.</p>
+          <p class="quote">The theme that repeats across owner reviews: the install takes an afternoon, and the standard-size cartridges keep it cheap to live with afterwards.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B005LJ8EXU.webp" alt="iSpring RCC7AK-BN 6-stage alkaline reverse osmosis system with mineral stage" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$198.76</div><span class="tag">6-stage &middot; alkaline</span><a class="buy" href="https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price &rarr;</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>Serviceable</small></div>
+        <div>
+          <h3>APEC Water ROES-PH75</h3>
+          <div class="who">Standard parts and a calcium stage</div>
+          <div class="rl2"><b>WQA certified</b> &middot; <b>75 GPD</b> &middot; 6 stages &middot; calcium remineralization &middot; 40&ndash;85 psi feed &middot; max 2,000 ppm TDS</div>
+          <p class="body">APEC's Essence line is the one recommended by people who service these things rather than sell them: heavy housings, long-life cartridges, everything in standard 10-inch sizes so you're never hostage to one brand's part numbers. The sixth stage uses premium-grade calcium for pH enhancement &mdash; a narrower and more honest claim than most of this category makes. Be precise about the label: this is WQA-certified, not NSF/ANSI 58. Two specifications to check against your house first: it wants feed pressure between 40 and 85 psi, and it's rated for incoming water up to 2,000 ppm TDS, which matters on a hard well.</p>
+          <p class="quote">The theme that repeats across owner reviews: it is quiet, it keeps working, and replacement parts are still easy to find years after purchase.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00NWZ1RCK.webp" alt="APEC Water ROES-PH75 6-stage alkaline reverse osmosis system with calcium remineralization" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$239.99</div><span class="tag">6-stage &middot; alkaline</span><a class="buy" href="https://www.amazon.com/dp/B00NWZ1RCK?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price &rarr;</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">04<small>No tank</small></div>
+        <div>
+          <h3>Frizzlife M800</h3>
+          <div class="who">Minerals back, with no storage tank and no outlet</div>
+          <div class="rl2"><b>NSF/ANSI 58 &amp; 372</b> &middot; <b>up to 900 GPD</b> &middot; 4:1 pure-to-drain &middot; non-electric &middot; adds calcium, magnesium, zinc</div>
+          <p class="body">Almost every tankless system needs a pump and therefore a plug. The M800 runs on existing line pressure instead, which makes it the answer for a cabinet with no power, and it posts the best efficiency here at 4:1 pure-to-drain. Its eight stages include a mineral addition of calcium, magnesium and zinc after the membrane, and the faucet shows live TDS and filter life &mdash; useful if you want to watch that stage work. Measure first: at 14.5 by 5.1 by 19.7 inches it's a tall box, and being non-electric it wants decent incoming pressure to reach rated flow. We weigh the format choice in our <a href="/tankless-vs-tank-reverse-osmosis" style="color:var(--aqua-deep);font-weight:700">tankless versus tank comparison</a>.</p>
+          <p class="quote">The theme that repeats across owner reviews: no cord, no tank and no noise, and the water-waste ratio is the specification that decided it for them.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0GL7SFR73.webp" alt="Frizzlife M800 non-electric tankless reverse osmosis system with alkaline mineral stage" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$299.99</div><span class="tag">Non-electric</span><a class="buy" href="https://www.amazon.com/dp/B0GL7SFR73?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price &rarr;</a></div>
+      </article>
+
+    </div>
+    <div class="prose" style="margin-top:26px">
+      <h3 class="serif" style="font-size:1.25rem;font-weight:600;margin:1.8rem 0 .5rem">Route three: it may already be in the box you rebuy every year</h3>
+      <p>If you own a six-stage system with standard 10-inch housings, the alkaline cartridge isn't an upgrade decision at all &mdash; it's one of the parts in the annual replacement set.</p>
+    </div>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">05<small>Consumable</small></div>
+        <div>
+          <h3>iSpring F9K, 1-year replacement set</h3>
+          <div class="who">If you own a 6-stage system, you're already buying this</div>
+          <div class="rl2"><b>9 cartridges</b> &middot; a full year &middot; 2 alkaline stages included &middot; standard 10 x 2.5 inch &middot; <b>no RO membrane</b></div>
+          <p class="body">Nine individually wrapped cartridges: two sediment, two granular activated carbon, two carbon block, one post-carbon and two alkaline remineralization filters. That's a year of maintenance for a six-stage system, and the mineral stage is two of the nine parts. Read the last line of the specification before ordering: the RO membrane is not in this box. Membranes last two to three years and are bought separately &mdash; normally the right way around, but it catches people out. If you'd rather have it included, iSpring's F6K75 six-month pack at $87.69 carries a 75 GPD membrane alongside the alkaline filter.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00BOASJ1M.webp" alt="iSpring F9K one-year reverse osmosis replacement filter set with alkaline remineralization cartridges" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$69.24</div><span class="tag">1-year set</span><a class="buy" href="https://www.amazon.com/dp/B00BOASJ1M?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price &rarr;</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="kicker"><span class="eyebrow">At a glance</span></div>
+    <h2 class="h2">The mineral-stage options, side by side</h2>
+    <p class="sub">Five ways to get calcium and magnesium back into RO water, from a $30 retrofit to a complete system. Prices move on Amazon &mdash; confirm the live price before buying.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Option</th><th>Route</th><th>Mineral stage</th><th>Rated life or output</th><th>Price</th><th></th></tr></thead>
+      <tbody>
+        <tr class="win"><td class="name"><span class="thumb"><img src="/images/amazon-B08DXYL81C.webp" alt="" width="46" height="46" loading="lazy" decoding="async"></span><span>Waterdrop MNR35</span></td><td>Retrofit any system</td><td>Ca, Mg, Na, K</td><td>9&ndash;12 months / 1,100 gal</td><td class="price">$29.99</td><td><a class="tget" href="https://www.amazon.com/dp/B08DXYL81C?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name"><span class="thumb"><img src="/images/amazon-B005LJ8EXU.webp" alt="" width="46" height="46" loading="lazy" decoding="async"></span><span>iSpring RCC7AK-BN</span></td><td>Complete system</td><td>Natural mineral AK stage</td><td>75 GPD &middot; NSF/ANSI 58</td><td class="price">$198.76</td><td><a class="tget" href="https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name"><span class="thumb"><img src="/images/amazon-B00NWZ1RCK.webp" alt="" width="46" height="46" loading="lazy" decoding="async"></span><span>APEC ROES-PH75</span></td><td>Complete system</td><td>Calcium remineralization</td><td>75 GPD &middot; WQA certified</td><td class="price">$239.99</td><td><a class="tget" href="https://www.amazon.com/dp/B00NWZ1RCK?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name"><span class="thumb"><img src="/images/amazon-B0GL7SFR73.webp" alt="" width="46" height="46" loading="lazy" decoding="async"></span><span>Frizzlife M800</span></td><td>Complete system</td><td>Ca, Mg, Zn</td><td>up to 900 GPD &middot; NSF/ANSI 58 &amp; 372</td><td class="price">$299.99</td><td><a class="tget" href="https://www.amazon.com/dp/B0GL7SFR73?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+        <tr><td class="name"><span class="thumb"><img src="/images/amazon-B00BOASJ1M.webp" alt="" width="46" height="46" loading="lazy" decoding="async"></span><span>iSpring F9K set</span></td><td>Yearly consumable</td><td>2 alkaline cartridges of 9</td><td>1 year &middot; no membrane</td><td class="price">$69.24</td><td><a class="tget" href="https://www.amazon.com/dp/B00BOASJ1M?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Price</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="cost">
+    <div class="prose">
+      <h2 class="h2">What a mineral stage costs to keep running</h2>
+      <p><strong>As a standalone cartridge.</strong> The MNR35 is $29.99, rated 9 to 12 months or 1,100 gallons, whichever comes first. On Waterdrop's recommended nine-month schedule that's $29.99 divided by 0.75 of a year, or $39.99 annually; stretched to twelve months it's $29.99. Call it $30 to $40 a year, or about $0.027 per gallon at the rated life. A household drawing two gallons a day uses 730 gallons a year, well inside the 1,100-gallon rating, so the calendar limit is the one you'll hit; a heavier household at four gallons a day hits the gallon rating at around nine months instead. Either way, budget one cartridge a year.</p>
+      <p><strong>Inside a system.</strong> Here the mineral stage nearly disappears as a line item. The iSpring F9K year-set is $69.24 for nine cartridges, two of which are the alkaline stage &mdash; you were buying the sediment, carbon and post-carbon filters regardless, so the mineral capability rides along inside a bill you already had. APEC works differently, and it pays to know before you budget: its FILTER-SET-ES pre-filter set is $25.46 for six months and contains one sediment filter and two carbon blocks, with the calcium cartridge bought separately.</p>
+      <p><strong>Where it sits in the yearly bill.</strong> Small. RO running costs are dominated by pre-filters two or three times a year and, every two to three years, the membrane. A mineral stage moves your annual number by tens of dollars, not hundreds, and it should not decide which system you buy. We break the full picture down model by model in our <a href="/reverse-osmosis-filter-replacement-cost">filter replacement cost guide</a>, and set the yearly bill against bottled water and pitcher filters in <a href="/are-reverse-osmosis-systems-worth-it">are reverse osmosis systems worth it</a>.</p>
+    </div>
+  </section>
+
+  <section id="who">
+    <div class="prose">
+      <h2 class="h2">Who should skip a mineral stage, and who really shouldn't</h2>
+      <p>Skip it if you want low dissolved solids on purpose. Reef and planted-aquarium keepers are the clearest case: the point of RO or RO/DI water in that hobby is a blank slate, remineralized afterwards to a controlled recipe the keeper chooses and measures. An uncontrolled mineral bed upstream of that is counterproductive &mdash; you're adding an unknown you then have to correct for.</p>
+      <p>Espresso is more nuanced than the internet suggests. Machine owners run RO water to keep scale out of a boiler, a real and expensive problem. But zero isn't the target either: water with essentially nothing dissolved in it extracts poorly and is unkind to metal components, which is why people who care about this blend RO water with a measured mineral concentrate to hit a recipe. An inline cartridge you can't dose or verify is the wrong instrument for that. The same logic covers a steam oven or a garment steamer fed from the RO faucet, and anyone whose original complaint was hardness &mdash; adding minerals back moves in the direction you paid to move away from.</p>
+      <p>Now the people who should. The largest group by a distance: households who installed a system, drank the water, and quietly missed the taste of their own tap. That's not a nutritional complaint and it doesn't need to dress up as one &mdash; it's a thirty-dollar fix for something you notice several times a day. Close behind are people who were buying bottled mineral water for the taste and expected RO to replace it; without a mineral stage it doesn't. Then a group nobody talks about: people who install RO and then drink less water, because they don't enjoy it any more. If that's happening in your kitchen, the mineral stage isn't a nicety &mdash; it's what makes the system you already paid for get used.</p>
+      <p>If you can't decide, the sequencing is easy: install without, live with the water for a month, add the cartridge afterwards if you miss it. It's a $29.99 experiment, not a fork in the road. It's also why we wouldn't pay a large premium for a system on the strength of its mineral stage alone &mdash; cabinet space, drain ratio and the yearly cartridge bill shape ownership far more, and our <a href="/">main guide to the best reverse osmosis systems</a> weighs those across six models.</p>
+    </div>
+  </section>
+
+  <section id="tds">
+    <div class="prose">
+      <h2 class="h2">How to judge this for yourself: the TDS meter, and its limits</h2>
+      <p>A TDS pen is a cheap conductivity meter, and it's the one measurement in this article you can make yourself. Take three readings: your cold tap, the RO faucet, and &mdash; if you've fitted a mineral stage &mdash; the RO faucet again with that cartridge in line. The drop from the first to the second is the membrane working; a fall from a few hundred ppm to the low double digits is the normal picture. The rise to the third is your mineral cartridge dosing, and it should be a modest, consistent climb rather than a return toward tap levels. Some systems save you the errand: the Waterdrop G3P600 and Frizzlife M800 both display live TDS on the faucet.</p>
+      <p>Now the part most people get wrong, and it matters more than the readings. TDS is one aggregate number derived from electrical conductivity. It tells you <em>how much</em> dissolved material is present and nothing about <em>which</em>. Three hundred ppm of calcium bicarbonate from a limestone aquifer and three hundred ppm that happens to include sodium, nitrate and a little arsenic read identically on the pen. A low number is not a certificate of safety; a high number is not evidence of danger. The meter is also blind to whole categories of things people buy RO for: PFAS are measured at parts per trillion, far below what a conductivity meter can resolve, and bacteria and cysts are not dissolved solids at all. That's why we lean on NSF/ANSI 58 rather than a pen reading &mdash; the certification means an independent body verified a specific reduction claim, whereas the pen means a needle moved.</p>
+      <p>Where the meter genuinely earns its place is trend, not truth. Log the RO reading every couple of months against a stable tap reading. When it starts creeping upward, the membrane is aging &mdash; a real maintenance signal no calendar reminder can give you.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Questions people actually ask</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Does reverse osmosis remove all the minerals from water?</summary><p>Not all, but most. Manufacturers publish a reduction percentage rather than total removal: iSpring rates the RCC7AK-BN at 93% to 98% TDS reduction, and its 75 GPD membranes at up to 97% under NSF/ANSI 58 test conditions. A supply arriving at 250 ppm therefore typically leaves the faucet somewhere in the single digits to the low twenties rather than at zero. What remains is a trace of whatever was in the water to begin with.</p></details>
+      <details><summary>Is reverse osmosis water bad for you?</summary><p>That is not a question a buying guide should answer as if it were a health authority, and we won't. What we can offer is the practical framing: drinking water is a minor contributor to mineral intake compared with food for most people on an ordinary diet, the flat taste is the complaint owners actually report after an install, and a remineralization stage costs about $30 if you want the minerals and the flavor back. Anything specific to your own health belongs with your doctor rather than with us.</p></details>
+      <details><summary>Can I add a remineralization filter to any RO system?</summary><p>In practice, yes for almost any under-sink system. The Waterdrop MNR35 is built for 1/4-inch and 3/8-inch quick-connect tubing, which is what nearly every under-sink RO system sold in the US uses, and it fits inline between the final stage and the faucet regardless of brand. The exceptions are sealed countertop units, where you cannot reach the internal plumbing, and hot-water lines, which Waterdrop explicitly says not to connect it to.</p></details>
+      <details><summary>Will a mineral filter raise my TDS reading, and is that a problem?</summary><p>Yes it will, and no it is not. The cartridge works by dissolving mineral into the water, so the meter climbs &mdash; that rise is the cartridge doing its job, and a stable rise is how you confirm it is still dosing. What matters is knowing which reading you are taking. A measurement at the faucet downstream of the mineral stage reflects purified water plus added mineral, not membrane performance. To judge the membrane itself you need a reading taken before the mineral stage.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, the parts that cost money</h2>
+    <div class="keep">
+      <a href="/reverse-osmosis-filter-replacement-cost"><span class="kt">What RO filters really cost per year</span><span class="kd">The cartridge schedule and the honest yearly bill for six popular systems, alkaline stages included.</span></a>
+      <a href="/are-reverse-osmosis-systems-worth-it"><span class="kt">Are RO systems worth it?</span><span class="kd">The payback math against bottled water, a filter pitcher, and doing nothing at all.</span></a>
+      <a href="/countertop-vs-under-sink-reverse-osmosis"><span class="kt">Countertop vs under-sink</span><span class="kd">One needs a drill, a drain saddle and a landlord's blessing. The other plugs in.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Does Reverse Osmosis Remove Minerals? What That Actually Means","description":"Yes — and here is what that means in practice, what remineralization filters put back, and how to decide without the marketing noise.","image":"https://best-reverse-osmosis-systems.com/images/hero-minerals.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-08-13","dateModified":"2026-08-13","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/does-reverse-osmosis-remove-minerals"},"inLanguage":"en-US"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does reverse osmosis remove all the minerals from water?","acceptedAnswer":{"@type":"Answer","text":"Not all, but most. Manufacturers publish a reduction percentage rather than total removal: iSpring rates the RCC7AK-BN at 93% to 98% TDS reduction, and its 75 GPD membranes at up to 97% under NSF/ANSI 58 test conditions. A supply arriving at 250 ppm therefore typically leaves the faucet somewhere in the single digits to the low twenties rather than at zero. What remains is a trace of whatever was in the water to begin with."}},{"@type":"Question","name":"Is reverse osmosis water bad for you?","acceptedAnswer":{"@type":"Answer","text":"That is not a question a buying guide should answer as if it were a health authority, and we won’t. What we can offer is the practical framing: drinking water is a minor contributor to mineral intake compared with food for most people on an ordinary diet, the flat taste is the complaint owners actually report after an install, and a remineralization stage costs about $30 if you want the minerals and the flavor back. Anything specific to your own health belongs with your doctor rather than with us."}},{"@type":"Question","name":"Can I add a remineralization filter to any RO system?","acceptedAnswer":{"@type":"Answer","text":"In practice, yes for almost any under-sink system. The Waterdrop MNR35 is built for 1/4-inch and 3/8-inch quick-connect tubing, which is what nearly every under-sink RO system sold in the US uses, and it fits inline between the final stage and the faucet regardless of brand. The exceptions are sealed countertop units, where you cannot reach the internal plumbing, and hot-water lines, which Waterdrop explicitly says not to connect it to."}},{"@type":"Question","name":"Will a mineral filter raise my TDS reading, and is that a problem?","acceptedAnswer":{"@type":"Answer","text":"Yes it will, and no it is not. The cartridge works by dissolving mineral into the water, so the meter climbs — that rise is the cartridge doing its job, and a stable rise is how you confirm it is still dosing. What matters is knowing which reading you are taking. A measurement at the faucet downstream of the mineral stage reflects purified water plus added mineral, not membrane performance. To judge the membrane itself you need a reading taken before the mineral stage."}}]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "site": {
+    "name": "Best Reverse Osmosis Systems",
+    "domain": "best-reverse-osmosis-systems.com",
+    "base_url": "https://best-reverse-osmosis-systems.com",
+    "affiliate_tag": "bestreverseosmosis-20",
+    "author": "Ilane Tall",
+    "template": "premium-editorial-v1",
+    "static_pages": [
+      { "path": "", "priority": "1.0" },
+      { "path": "guides", "priority": "0.6" },
+      { "path": "about", "priority": "0.3" },
+      { "path": "contact", "priority": "0.3" },
+      { "path": "privacy", "priority": "0.3" }
+    ],
+    "network_card": {
+      "href": "https://best-shower-heads.com/",
+      "category": "From our network",
+      "title": "The same minerals, one room away",
+      "description": "What reverse osmosis strips out of your drinking water is exactly what scales up a shower head. Our sibling site compares the filtered ones."
+    }
+  },
+  "articles": [
+    {
+      "slug": "reverse-osmosis-filter-replacement-cost",
+      "title": "What Reverse Osmosis Filters Actually Cost Per Year",
+      "description": "The cartridge schedule, the real yearly bill for six popular systems, and why standard 10-inch housings can cost a third of what proprietary filters do.",
+      "category": "Running costs",
+      "hero": "hero-filter-cost",
+      "minutes": 14,
+      "date": "2026-08-13",
+      "featured": true
+    },
+    {
+      "slug": "tankless-vs-tank-reverse-osmosis",
+      "title": "Tankless vs Tank Reverse Osmosis: Which Belongs Under Your Sink?",
+      "description": "Flow rate, cabinet space, drain ratio, stagnation and running cost — the honest trade-offs between a modern tankless unit and a classic tank system.",
+      "category": "Comparison",
+      "hero": "hero-tankless-vs-tank",
+      "minutes": 13,
+      "date": "2026-08-13",
+      "featured": true
+    },
+    {
+      "slug": "countertop-vs-under-sink-reverse-osmosis",
+      "title": "Countertop vs Under-Sink Reverse Osmosis: The Renter's Decision",
+      "description": "One needs a drill, a drain saddle and a landlord's blessing. The other plugs in. What you give up by staying on the counter — and when that's the right call.",
+      "category": "Comparison",
+      "hero": "hero-countertop",
+      "minutes": 12,
+      "date": "2026-08-13",
+      "featured": true
+    },
+    {
+      "slug": "how-to-install-an-under-sink-reverse-osmosis-system",
+      "title": "How to Install an Under-Sink Reverse Osmosis System",
+      "description": "Feed valve, drain saddle, faucet hole and the leak check — the full sequence, the tools that actually matter, and the four mistakes that cause drips.",
+      "category": "How-to",
+      "hero": "hero-install",
+      "minutes": 15,
+      "date": "2026-08-13",
+      "featured": true
+    },
+    {
+      "slug": "does-reverse-osmosis-remove-minerals",
+      "title": "Does Reverse Osmosis Remove Minerals? What That Actually Means",
+      "description": "Yes — and here is what the science says about whether it matters, what remineralization filters put back, and how to decide without the marketing noise.",
+      "category": "Water quality",
+      "hero": "hero-minerals",
+      "minutes": 12,
+      "date": "2026-08-13",
+      "featured": true
+    },
+    {
+      "slug": "are-reverse-osmosis-systems-worth-it",
+      "title": "Are Reverse Osmosis Systems Worth It? The Cost Math, Honestly",
+      "description": "Against bottled water, a filter pitcher and doing nothing — the payback period, the water you send to the drain, and the households that shouldn't bother.",
+      "category": "Honest take",
+      "hero": "hero-worth-it",
+      "minutes": 13,
+      "date": "2026-08-13",
+      "featured": true
+    }
+  ]
+}
