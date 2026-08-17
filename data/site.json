@@ -7,11 +7,26 @@
     "author": "Ilane Tall",
     "template": "premium-editorial-v1",
     "static_pages": [
-      { "path": "", "priority": "1.0" },
-      { "path": "guides", "priority": "0.6" },
-      { "path": "about", "priority": "0.3" },
-      { "path": "contact", "priority": "0.3" },
-      { "path": "privacy", "priority": "0.3" }
+      {
+        "path": "",
+        "priority": "1.0"
+      },
+      {
+        "path": "guides",
+        "priority": "0.6"
+      },
+      {
+        "path": "about",
+        "priority": "0.3"
+      },
+      {
+        "path": "contact",
+        "priority": "0.3"
+      },
+      {
+        "path": "privacy",
+        "priority": "0.3"
+      }
     ],
     "network_card": {
       "href": "https://best-shower-heads.com/",
@@ -79,6 +94,16 @@
       "hero": "hero-worth-it",
       "minutes": 13,
       "date": "2026-08-13",
+      "featured": true
+    },
+    {
+      "slug": "best-countertop-reverse-osmosis-systems",
+      "title": "The Best Countertop Reverse Osmosis Systems (No Plumbing Required)",
+      "description": "Six plug-in purifiers for kitchens where drilling isn't an option — what they cost, how much counter they eat, and which are honest about capacity.",
+      "category": "Roundup",
+      "hero": "hero-best-countertop-reverse-osmosis-systems",
+      "minutes": 15,
+      "date": "2026-08-17",
       "featured": true
     }
   ]
