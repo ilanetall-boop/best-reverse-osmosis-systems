@@ -105,6 +105,16 @@
       "minutes": 15,
       "date": "2026-08-17",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-for-well-water",
+      "title": "Reverse Osmosis for Well Water: What It Fixes and What It Won't",
+      "description": "Sediment, iron, hardness and bacteria wreck ordinary RO systems. The pre-filtration order that keeps a membrane alive on a private well — and the UV question.",
+      "category": "Water quality",
+      "hero": "hero-reverse-osmosis-for-well-water",
+      "minutes": 17,
+      "date": "2026-08-18",
+      "featured": true
     }
   ]
 }

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reverse Osmosis for Well Water: What It Fixes and What It Won't</title>
+<meta name="description" content="Sediment, iron, hardness and bacteria wreck ordinary RO systems. The pre-filtration order that keeps a membrane alive on a private well — and the UV question.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/reverse-osmosis-for-well-water">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="Reverse Osmosis for Well Water: What It Fixes and What It Won't">
+<meta property="og:description" content="Sediment, iron, hardness and bacteria wreck ordinary RO systems. The pre-filtration order that keeps a membrane alive on a private well — and the UV question.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-for-well-water.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#why">Why wells differ</a><a href="#test">Test first</a><a href="#prefilters">Pre-filters</a><a href="#uv">UV</a><a href="#hardness">Hardness</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>RO for well water</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Water quality</span>
+    <h1 class="serif">Reverse osmosis for well water: what it fixes and what it won't</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>August 18, 2026</b></span><span>15 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-reverse-osmosis-for-well-water.webp" alt="Under-sink reverse osmosis pre-filter housings and a well water sample jar on a counter" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+
+  <section id="quick">
+    <div class="prose">
+      <p><strong>The short version:</strong> a reverse osmosis membrane is not built to be a well's first line of defense. Sediment, iron, manganese and hardness will clog or scale it long before it ever reduces the dissolved solids it's rated for, and RO does nothing about bacteria unless you add a barrier for that specifically. The fix isn't a different RO system — it's the right pre-filtration stack ahead of an ordinary one, sized to what your well water report actually says is in the water. Skip that stack and you'll be replacing a $180 system's most expensive part every few months instead of every two to three years.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="prose">
+      <h2 class="h2">Why a well is a different problem than a city tap</h2>
+      <p>Municipal water is treated before it reaches your house: coagulated, filtered, chlorinated, tested daily, and reported to the EPA under the Safe Drinking Water Act. A private well gets none of that. Whatever is in the aquifer under your property comes straight to your faucet, and testing and treating it is legally your problem — nobody else does it for you. That's why the same RO system that runs quietly for years on a municipal supply can fail in months on a well: the system wasn't wrong, the plumbing ahead of it was missing.</p>
+      <p>Five things show up on wells that rarely show up, or show up at far lower concentration, on treated city water:</p>
+      <ul>
+        <li><strong>Sediment.</strong> Sand, silt and fine clay, worse right after drilling, after heavy rain, or when an aging pump starts drawing from lower in the well.</li>
+        <li><strong>Iron.</strong> Rust-colored staining on fixtures and laundry, and a metallic taste. Dissolved (ferrous) iron is clear at the tap and turns orange as it oxidizes; particulate (ferric) iron is already rust-colored in the glass.</li>
+        <li><strong>Manganese.</strong> Iron's quieter cousin — black-brown staining instead of orange, and it fouls filter media the same way.</li>
+        <li><strong>Hardness.</strong> Dissolved calcium and magnesium, often well above what a municipal utility delivers, because well water hasn't been through any softening process.</li>
+        <li><strong>Biology.</strong> Coliform bacteria, and in some regions E. coli, from surface water intrusion, a cracked well cap, or a casing that doesn't seal properly — a health issue an RO membrane is not designed to be your only defense against.</li>
+      </ul>
+      <p>None of these are exotic — they're the default condition of groundwater almost everywhere, and exactly what a poorly protected RO membrane survives worst.</p>
+    </div>
+  </section>
+
+  <section id="test">
+    <div class="prose">
+      <h2 class="h2">Test before you buy — what the report should tell you, and what RO does with each line</h2>
+      <p>Buying an RO system for well water without a current test is buying blind. A basic report — from a county extension office or certified lab, not a strip read by eye — should cover at minimum: total coliform bacteria (and E. coli if coliform is present), iron, manganese, hardness, pH, TDS, and sediment/turbidity. Near agricultural land, add nitrate; near old orchards or a gas station, ask about pesticides or petroleum indicators. Test annually — conditions change with the seasons and the aquifer upstream, which a move-in test can't tell you about years later.</p>
+      <p>Here's what a standard RO membrane does with each of those lines, because the report only helps if you know which numbers it changes and which it can't touch on its own:</p>
+      <ul>
+        <li><strong>TDS and most dissolved minerals</strong> — the membrane's job description. A well-protected membrane routinely rejects 90–99% of dissolved solids.</li>
+        <li><strong>Hardness (calcium/magnesium)</strong> — reduced along with everything else dissolved, but at high hardness scale forms on the membrane's feed side faster than it can reject it, shortening membrane life. A pre-treatment decision, not a membrane spec — see the hardness section below.</li>
+        <li><strong>Iron and manganese</strong> — rejected along with the rest of the TDS load, but only after they've already scaled and clogged the sediment and carbon stages ahead of it. Not a job for the membrane; a job for pre-filtration sized specifically for iron, addressed below.</li>
+        <li><strong>Sediment/turbidity</strong> — the membrane doesn't filter this out so much as get physically fouled by it. Entirely a pre-filter's job.</li>
+        <li><strong>Bacteria</strong> — an intact membrane is a physical barrier fine enough to reject most bacteria, but it's not a certified disinfection device, seals can bypass a small fraction of flow, and it's not something to bet a health-relevant contaminant on without a dedicated barrier. The UV question, below.</li>
+        <li><strong>Nitrate</strong> — reduced, though less completely than most dissolved contaminants; near or above the EPA's 10 mg/L limit, ask a professional about a nitrate-specific approach rather than assuming RO alone solves it.</li>
+      </ul>
+      <p>The pattern: RO is very good at the last step and does almost nothing about the first three on its own. Everything upstream of the membrane exists so the membrane only ever has to do the job it's rated for.</p>
+    </div>
+  </section>
+
+  <section id="prefilters">
+    <div class="prose">
+      <h2 class="h2">The pre-filter stack that protects the membrane — and why skipping it is expensive</h2>
+      <p>Every RO system uses the same category of pre-filtration ahead of the membrane: sediment first, then carbon to strip chlorine and organics that would otherwise attack the membrane surface. On municipal water that's usually enough. On a well, that generic two-stage stack is a starting point, not the finish line — the order matters as much as the stages, since each one exists to protect the one after it.</p>
+      <p><strong>1. Sediment, sized to your water, not the default.</strong> A standard 5-micron sediment cartridge is the default in most under-sink kits, including the pre-filter stages in the <a href="/reverse-osmosis-filter-replacement-cost">standard 10"×2.5" housings</a> most tank systems use. On sandy or silty well water, that default clogs fast — sometimes weeks rather than months — starving everything downstream of pressure. A coarser pre-pre-filter (20–50 micron) ahead of it extends both filters' lives, and it's the cheapest change you can make: something like the <strong>APEC Water FILTER-SET-ES</strong> replacement pre-filter set ($25.46, 6-month set) is the category of part most well-water setups end up changing on a shorter interval than the box suggests.</p>
+      <p><strong>2. Iron and manganese, addressed before they ever reach carbon or membrane.</strong> Most RO guides skip this because they're written for city water, where it doesn't apply. At low concentrations, a dedicated iron-reduction pre-filter stage — separate from generic sediment or carbon — keeps rust-colored fouling off the carbon block and membrane. At higher levels (your lab report gives a number in mg/L, not just a color), a standalone whole-house iron filter or oxidation system ahead of the RO installation is the right call — asking under-sink pre-filters to absorb a whole-house iron load means changing cartridges every few weeks instead of months.</p>
+      <p><strong>3. Carbon, protecting the membrane from chlorine and organics.</strong> If you chlorinate your well — shock-chlorination after a bacteria hit, or continuous injection — the carbon stage ahead of the membrane is not optional: free chlorine will oxidize and degrade a standard thin-film composite membrane.</p>
+      <p><strong>4. More stages, on a system built with well water in mind.</strong> This is where stage count stops being a marketing number: more sediment and carbon capacity absorbs a well's higher fouling load between changes. The <strong>Express Water RO5DX</strong> ($179.99, 5 Stage, 50 GPD) is a workable baseline for mild sediment and chlorine and nothing else notable. Where the report shows more — higher hardness, some iron, a want for remineralization — the <strong>Express Water ROALK5D</strong> ($183.19, 10 Stage, Alkaline, 50 GPD) doubles the stage count for close to the same price, a more realistic starting point for most private wells.</p>
+      <p>What skipping this stack costs: a fouled sediment or carbon cartridge is a $10–25 part changed early. A scaled or iron-fouled <em>membrane</em> — meant to last two to three years — replaced at six months instead is the expensive mistake, avoidable with pre-filtration matched to what your water contains.</p>
+    </div>
+  </section>
+
+  <section id="uv">
+    <div class="prose">
+      <h2 class="h2">UV: what it does, what it doesn't, and where it belongs</h2>
+      <p>Ultraviolet disinfection is a physical process, not a filter: water passes a UV-C lamp, and the dose of light disrupts the DNA of bacteria, viruses and other microorganisms so they can't reproduce. It removes nothing from the water — no sediment, no iron, no dissolved solids — and it works only on water that's already clear. Cloudy or sediment-laden water can shield organisms from the dose and let some survive, which is why UV is specified as the last stage in a treatment train, not the first.</p>
+      <p>That placement rule is the one thing worth remembering: <strong>UV belongs after the membrane, immediately before the water reaches the faucet</strong> — not before it, and not standing in for a sediment or carbon stage. By the time water reaches a post-membrane UV stage it's already clear, free of the particulate that would otherwise shield pathogens from the light. Two systems in this lineup are built this way: the <strong>iSpring RCC7AK-UVBN</strong> ($280.48, 7-Stage, NSF Certified, Alkaline Remineralization and UV Filter) and the <strong>iSpring RO5004F-AK</strong> ($319.99, UV Alkaline, 500 GPD Tankless, SGS Tested for PFAS and TDS) both place UV after the membrane and remineralization stage, as the final polish before the faucet.</p>
+      <p>When does a well household actually need it? If the test report shows total coliform present, UV is not a nice-to-have — it's the direct answer, alongside fixing whatever let the contamination in (a well cap, casing or grouting issue, which UV doesn't fix and a well contractor should). If the report stays clean on annual re-testing, UV is a reasonable extra layer of assurance rather than a strict requirement — many well owners run it anyway since groundwater conditions can change between tests. What it's not a substitute for: a recurring positive coliform result is a well-integrity problem, and no point-of-use treatment fixes a well that's letting surface water in.</p>
+    </div>
+  </section>
+
+  <section id="hardness">
+    <div class="prose">
+      <h2 class="h2">Hard water and the membrane's real enemy: scaling</h2>
+      <p>Hardness — dissolved calcium and magnesium — is not toxic and RO reduces it along with everything else dissolved in the water. The problem it causes isn't in the glass, it's on the membrane surface: as water is forced through under pressure, minerals in the fraction that doesn't pass through concentrate on the feed side and past a certain point precipitate out as scale directly on the membrane. Scale doesn't wash off; it's a deposit fused to the surface that reduces flow and rejection permanently, and replacement — not cleaning — is usually the fix.</p>
+      <p>Whether a softener needs to come before the RO system depends on how hard your water actually is — the report number matters more than a general rule. Municipal RO guides rarely mention softening, because city water is usually moderate; well water often isn't. As a rough guide: at low to moderate hardness, a well-specified RO system runs fine without a softener ahead of it. At higher hardness — the kind leaving visible scale on faucets and water heater elements within a year — a softener ahead of the RO system is usually the more economical fix, and it dramatically extends membrane life. The softener doesn't replace the RO system; it protects it, the same role sediment and carbon pre-filters play, aimed at a different contaminant.</p>
+      <p>One caution: a softener replaces calcium and magnesium with sodium through ion exchange. Irrelevant to the RO system — sodium doesn't scale a membrane — but worth knowing if anyone in the household is on a sodium-restricted diet.</p>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="prose">
+      <h2 class="h2">Filter schedule on a well versus city water — expect to change more often</h2>
+      <p>Every filter-life number printed on a box — "six months," "12 months or 550 gallons" — is a manufacturer's estimate built around an assumed feed water quality, and that assumed water is treated municipal supply, not a well. Our companion piece on <a href="/reverse-osmosis-filter-replacement-cost">what reverse osmosis filters actually cost per year</a> goes through those intervals in detail; the short version for well water is to treat every one of those numbers as a ceiling, not a schedule, and expect to hit it sooner.</p>
+      <p>Two well-specific reasons the interval shrinks. First, sediment and iron load the first stages faster than a treated municipal supply — a cartridge rated for a year on city water can be visibly loaded in a fraction of that time on a well with real sand or silt in it. Second, seasonal variation is real on wells in a way it isn't on a municipal system: spring runoff, heavy rain, a dropping water table, or a neighbor's well being drilled nearby can all change what's coming up the pipe week to week.</p>
+      <p>The practical response: use a transparent first-stage housing where you can, so you see sediment loading by eye instead of guessing; if your system has a TDS meter or filter-life display, trust the throughput number over the calendar date; and set your own change interval from what you observe in the first year of ownership, because the number on the box was never calculated for your water.</p>
+    </div>
+  </section>
+
+  <section id="whole-house">
+    <div class="prose">
+      <h2 class="h2">When RO is the wrong tool — and whole-house treatment is the right one</h2>
+      <p>An under-sink or countertop RO system treats water at one tap. That's the correct scope for drinking and cooking water, and the cheapest way to get high-quality water where you consume it. It's the wrong scope for problems that affect the whole house rather than the one glass you drink from.</p>
+      <p>Three situations where the fix belongs upstream of any RO purchase:</p>
+      <ul>
+        <li><strong>Iron or manganese staining across every fixture.</strong> If every sink, tub and toilet shows rust or black staining, that's a whole-house problem an under-sink RO system can't solve. A whole-house iron filter or oxidation system ahead of the water heater is the actual fix; an RO unit under the kitchen sink then protects a much easier job.</li>
+        <li><strong>Hardness scaling appliances throughout the house.</strong> Same logic: scale on shower heads, a water heater losing efficiency, spotting on dishes — a whole-house softener's job, not something one under-sink membrane solves a glass at a time.</li>
+        <li><strong>A confirmed, recurring bacteria problem in the well itself.</strong> If coliform keeps coming back, the priority is a well inspection — casing, cap, grouting, proximity to a septic system or livestock — not a bigger filter. Point-of-use UV or RO is a reasonable interim safeguard, but treating the symptom at one faucet while the well is compromised is a health risk.</li>
+      </ul>
+      <p>The households that get the best result scope it correctly from the start: whole-house treatment handles problems that affect every tap, and a properly pre-filtered under-sink RO system handles the last stretch — drinking and cooking water to a standard the rest of the house doesn't need. One under-sink membrane trying to do both jobs is how you end up replacing it every few months and blaming the system instead of the plumbing ahead of it.</p>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">The parts that matter here</span></div>
+    <h2 class="h2">What we'd actually put on a well</h2>
+    <p class="sub">Not a ranked "best" list — each of these answers a different line on a well water report.</p>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>Pre-filter</small></div>
+        <div>
+          <h3>APEC Water FILTER-SET-ES</h3>
+          <div class="who">The cheap insurance that protects everything downstream</div>
+          <div class="rl2"><b>$25.46</b> · 6 Month Set · standard 10"×2.5" housings</div>
+          <p class="body">A replacement pre-filter set for standard housings — sediment and carbon ahead of the membrane. On a well with real sediment or chlorine, budget to change this on a shorter cycle than the printed six months; watching it discolor is the earliest, cheapest signal water quality has shifted.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00I11HUGW.webp" alt="APEC Water FILTER-SET-ES replacement reverse osmosis pre-filter set" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$25.46</div><span class="tag">6-month set</span><a class="buy" href="https://www.amazon.com/dp/B00I11HUGW?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">02<small>Baseline system</small></div>
+        <div>
+          <h3>Express Water RO5DX</h3>
+          <div class="who">A workable starting point on a mild well</div>
+          <div class="rl2"><b>$179.99</b> · 5 Stage · 50 GPD · under-sink tank system</div>
+          <p class="body">If the report comes back clean beyond ordinary sediment and some chlorine from shock-treatment, a standard 5-stage system is a reasonable starting point rather than over-buying. Standard 10" housings mean cheap, widely available cartridges as seasonal load changes.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00J2DGTD8.webp" alt="Express Water RO5DX 5-stage under sink reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$179.99</div><span class="tag">5 Stage</span><a class="buy" href="https://www.amazon.com/dp/B00J2DGTD8?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>More stages</small></div>
+        <div>
+          <h3>Express Water ROALK5D</h3>
+          <div class="who">More pre- and post-membrane capacity for a busier report</div>
+          <div class="rl2"><b>$183.19</b> · 10 Stage, Alkaline · 50 GPD</div>
+          <p class="body">Doubling the RO5DX's stage count for close to the same price gives more sediment and carbon capacity ahead of the membrane, plus alkaline remineralization after it — a more realistic fit for moderate hardness or iron alongside ordinary sediment, without stepping up to whole-house equipment.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00MU20LN2.webp" alt="Express Water ROALK5D 10-stage under sink reverse osmosis system with alkaline remineralization" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$183.19</div><span class="tag">10 Stage · Alkaline</span><a class="buy" href="https://www.amazon.com/dp/B00MU20LN2?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">04<small>Bacteria on the report</small></div>
+        <div>
+          <h3>iSpring RCC7AK-UVBN</h3>
+          <div class="who">UV placed after the membrane, where it belongs</div>
+          <div class="rl2"><b>$280.48</b> · 7-Stage · NSF Certified · Alkaline Remineralization · UV Filter</div>
+          <p class="body">Once a coliform result — or ongoing caution about one — puts UV on the requirements list, this system places the disinfection stage correctly: after sediment, carbon and the membrane have already cleared the water, not before. The top-mounted faucet design is a stated feature; check the current listing for exact fit.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B006T3HYQ0.webp" alt="iSpring RCC7AK-UVBN 7-stage NSF certified reverse osmosis system with UV filter and alkaline remineralization" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$280.48</div><span class="tag">7-Stage · UV</span><a class="buy" href="https://www.amazon.com/dp/B006T3HYQ0?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">05<small>Higher output</small></div>
+        <div>
+          <h3>iSpring RO5004F-AK</h3>
+          <div class="who">Tankless output with UV and PFAS/TDS testing behind it</div>
+          <div class="rl2"><b>$319.99</b> · UV Alkaline · 500 GPD Tankless · SGS Tested PFAS/TDS · 2:1 pure-to-drain</div>
+          <p class="body">For a household that wants tankless flow rather than a storage bladder, with UV disinfection and remineralization built in after the membrane. SGS third-party testing for PFAS and TDS reduction is a genuine data point worth having, since well-water source contamination is more variable than a monitored municipal supply.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0GS3YBKS4.webp" alt="iSpring RO5004F-AK UV alkaline tankless reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$319.99</div><span class="tag">500 GPD Tankless</span><a class="buy" href="https://www.amazon.com/dp/B0GS3YBKS4?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="cols">
+      <div class="panel">
+        <span class="eyebrow">How we picked</span>
+        <h3 class="serif">Matched to report lines, not a generic ranking</h3>
+        <p>We didn't rank these against each other, because a well-water RO purchase isn't a single "best" decision — it's a set of answers to specific lines on a water test. We chose products whose published stage count, certification and, where present, UV placement map onto the failure modes wells have that city-water systems don't: sediment, iron and manganese, hardness, and bacteria. Every price and spec above comes from the listing; where a spec wasn't published, we didn't invent one.</p>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">How we compared</span>
+        <h3 class="serif">Research, not a lab</h3>
+        <p>We're honest about this: <strong style="color:var(--ink)">we don't physically test these systems and we don't run a testing lab.</strong> We compare published specifications, stage counts, certifications and pricing, anchoring every claim in general water-treatment principles rather than paraphrased review sentiment — we have no verified rating data for these products, and inventing sentiment is the same offense as inventing a score.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Questions well owners ask about RO</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Can I put a standard RO system on well water without changes?</summary><p>You can, but budget to change the pre-filters far more often than the box suggests, and expect a shorter membrane life with meaningful sediment, iron or hardness in the water. A standard system is rated around treated municipal supply. On a well, the pre-filtration stack ahead of the membrane — sized to your actual test results — is what determines whether the membrane lasts two to three years or six months.</p></details>
+      <details><summary>Do I need a water softener before an RO system on well water?</summary><p>Depends on your hardness number. At low to moderate hardness, a well-specified RO system typically runs fine on its own. At higher hardness — the kind leaving visible scale on fixtures within a year — a softener ahead of the RO system is usually the more economical fix: more durable for continuous mineral removal than asking a membrane to absorb that load indefinitely. It protects the membrane; it doesn't replace the RO system.</p></details>
+      <details><summary>Does reverse osmosis remove bacteria from well water?</summary><p>An intact membrane rejects most bacteria physically, but it isn't a certified disinfection device on its own — seals can allow some bypass, and it's not something to rely on alone against a health-relevant contaminant. If a report shows total coliform present, a dedicated UV stage placed after the membrane, plus fixing whatever let contamination into the well, is the direct answer — not the membrane by itself.</p></details>
+      <details><summary>Where does a UV filter go in the system?</summary><p>After the membrane, as close to the faucet as possible — never before sediment and carbon. UV disinfection depends on clear water; cloudy water can shield organisms from the dose. Systems built for this, like the iSpring RCC7AK-UVBN and RO5004F-AK, place UV as the last stage before the faucet by design.</p></details>
+      <details><summary>How much more often will I change filters on well water than city water?</summary><p>There's no universal multiple — it depends on your well's sediment, iron and seasonal variation. Treat every printed filter-life interval as a ceiling rather than a schedule, use a transparent first-stage housing where possible to watch sediment loading by eye, and set your own interval from what you observe in the system's first year rather than the number on the box.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if you're setting one up</h2>
+    <div class="keep">
+      <a href="/how-to-install-an-under-sink-reverse-osmosis-system"><span class="kt">How to install one</span><span class="kd">The feed valve, the drain saddle and the faucet hole, in the order that avoids a second trip to the hardware store.</span></a>
+      <a href="/reverse-osmosis-filter-replacement-cost"><span class="kt">What filters actually cost</span><span class="kd">The cartridge schedule and the real yearly bill — before you factor in a well's shorter intervals.</span></a>
+      <a href="/does-reverse-osmosis-remove-minerals"><span class="kt">Does RO remove minerals?</span><span class="kd">What the membrane takes out along with hardness, and whether remineralization after it matters.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Reverse Osmosis for Well Water: What It Fixes and What It Won't","description":"Sediment, iron, hardness and bacteria wreck ordinary RO systems. The pre-filtration order that keeps a membrane alive on a private well — and the UV question.","image":"https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-for-well-water.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-08-18","dateModified":"2026-08-18","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/reverse-osmosis-for-well-water"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Can I put a standard RO system on well water without changes?","acceptedAnswer":{"@type":"Answer","text":"You can, but budget to change the pre-filters far more often than the box suggests, and expect a shorter membrane life if there's meaningful sediment, iron or hardness in the water. A standard system is built and rated around treated municipal supply. On a well, the pre-filtration stack ahead of the membrane, sized to your actual test results, is what determines whether the membrane lasts two to three years or six months."}},
+ {"@type":"Question","name":"Do I need a water softener before an RO system on well water?","acceptedAnswer":{"@type":"Answer","text":"Depends on your hardness number. At low to moderate hardness, a well-specified RO system typically runs fine on its own. At higher hardness, the kind leaving visible scale on fixtures within a year, a softener ahead of the RO system is usually the more economical fix, because it's a more durable technology for continuous mineral removal than asking a membrane to absorb that load indefinitely. The softener protects the membrane; it doesn't replace the RO system."}},
+ {"@type":"Question","name":"Does reverse osmosis remove bacteria from well water?","acceptedAnswer":{"@type":"Answer","text":"An intact membrane rejects most bacteria physically, but it isn't a certified disinfection device on its own, and it's not something to rely on alone against a health-relevant contaminant. If a well water report shows total coliform present, a dedicated UV disinfection stage placed after the membrane, plus fixing whatever let contamination into the well in the first place, is the direct answer, not the RO membrane by itself."}},
+ {"@type":"Question","name":"Where does a UV filter go in the system?","acceptedAnswer":{"@type":"Answer","text":"After the membrane, as close to the faucet as possible, never before the sediment and carbon stages. UV disinfection depends on clear water; cloudy or sediment-laden water can shield organisms from the UV dose. Systems built for this, like the iSpring RCC7AK-UVBN and RO5004F-AK, place UV as the last stage before the faucet by design."}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>
