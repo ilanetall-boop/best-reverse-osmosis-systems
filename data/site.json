@@ -115,6 +115,16 @@
       "minutes": 17,
       "date": "2026-08-18",
       "featured": true
+    },
+    {
+      "slug": "how-to-sanitize-and-maintain-a-reverse-osmosis-system",
+      "title": "How to Sanitize an RO System (and Change Filters Without Wrecking It)",
+      "description": "The step most owners skip: sanitising at cartridge changes. The full routine, the mistakes that contaminate a clean system, and what to do about a stagnant tank.",
+      "category": "How-to",
+      "hero": "hero-how-to-sanitize-and-maintain-a-reverse-osmosis-system",
+      "minutes": 15,
+      "date": "2026-08-19",
+      "featured": true
     }
   ]
 }
