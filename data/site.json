@@ -125,6 +125,16 @@
       "minutes": 15,
       "date": "2026-08-19",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-water-pressure-and-flow-rate",
+      "title": "Why Your RO Faucet Trickles: Pressure, GPD and Flow, Explained",
+      "description": "GPD is a rating, not a promise. What incoming pressure, temperature and a tired membrane do to the water that actually reaches your glass — and how to fix a slow faucet.",
+      "category": "Troubleshooting",
+      "hero": "hero-reverse-osmosis-water-pressure-and-flow-rate",
+      "minutes": 15,
+      "date": "2026-08-20",
+      "featured": true
     }
   ]
 }
