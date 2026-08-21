@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Running RO Water to Your Fridge and Ice Maker (2026 Guide)</title>
+<meta name="description" content="The tee, the tubing run and the pressure problem nobody warns you about — how to feed a fridge from an under-sink system without starving the faucet.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/connect-reverse-osmosis-to-refrigerator-ice-maker">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="Running RO Water to Your Fridge and Ice Maker">
+<meta property="og:description" content="The tee, the tubing run and the pressure problem nobody warns you about — how to feed a fridge from an under-sink system without starving the faucet.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-connect-reverse-osmosis-to-refrigerator-ice-maker.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#distance">Why it's harder</a><a href="#tank">Tank systems</a><a href="#tankless">Tankless</a><a href="#run">The physical run</a><a href="#taste">Cloudy ice</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>Connecting RO to a fridge and ice maker</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">How-to</span>
+    <h1 class="serif">Running RO water to your fridge and ice maker</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>August 21, 2026</b></span><span>15 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+  <img class="hero-img" src="/images/hero-connect-reverse-osmosis-to-refrigerator-ice-maker.webp" alt="A quarter-inch tubing tee splicing off an under-sink reverse osmosis line, with the branch routed toward a refrigerator across the kitchen" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+
+  <section id="intro" style="padding-bottom:10px"><div class="prose">
+    <p>Most under-sink reverse osmosis guides quietly assume the finished water only has to travel about eighteen inches, from a tank or a tankless outlet to a faucet drilled a few inches away. Feed a refrigerator's ice maker and water dispenser off the same system and that assumption stops holding. The run is now ten to thirty feet, it threads behind cabinets and through at least one wall, and it ends at an appliance valve with its own pressure and flow expectations that have nothing to do with your RO system's spec sheet.</p>
+    <p>Nothing about the reverse osmosis system changes when you add a fridge line — the plumbing around it does. This guide covers what actually breaks when you extend an RO line that far: the pressure math a tank system quietly relies on, when a tankless unit is and isn't the automatic fix people assume it is, how the tee-and-tubing run should physically go in, why RO ice tastes like nothing and sometimes still turns up cloudy, and what to do about the small filter cartridge already hiding behind your fridge's grille. One thing worth saying upfront: this only works with a plumbed under-sink system. A <a href="/countertop-vs-under-sink-reverse-osmosis">countertop unit</a> has no fixed connection to route a fridge line from at all.</p>
+  </div></section>
+
+  <section id="distance"><div class="prose">
+    <h2 class="h2">Why the fridge is a harder customer than the kitchen faucet</h2>
+    <p>The RO faucet at the sink sits inches from the storage tank or the tankless unit's outlet port. A refrigerator, by contrast, is typically ten to twenty-five feet away measured along the actual tubing path — down through the base of the sink cabinet, along the toe-kick, across the kitchen floor plan, and up the back of the fridge — not the straight-line distance a tape measure gives you standing between the two. Every foot of tubing adds friction loss, and every fitting, elbow and quick-connect union along the way adds a little more; a run with three or four turns behind cabinetry loses noticeably more pressure than the same length pulled dead straight.</p>
+    <p>Elevation compounds it. If the fridge's water inlet valve sits a few feet above the RO system's outlet — common with a raised cabinet toe-kick or a system mounted low in a deep base cabinet — that height has to be paid for out of the same pressure budget as the distance. It isn't a large number on a home scale, roughly 0.43 psi per vertical foot of water column, but it's a real subtraction from a device that starts out well under municipal main pressure to begin with.</p>
+    <p>The reason it matters is that reverse osmosis is pressure-driven on both sides of the membrane: incoming line pressure pushes water through it, and whatever pressure survives the membrane and, on tank systems, the tank's air charge, is what drives water out to a fixture. A faucet six inches from the tank barely notices the trip. A fridge twenty feet and one wall away is the fixture that actually tests the system. Our guide to <a href="/reverse-osmosis-water-pressure-and-flow-rate">RO pressure and flow rate</a> goes deeper on why a GPD rating on the box isn't the same thing as delivered pressure at a distant fixture.</p>
+  </div></section>
+
+  <section id="tank"><div class="prose">
+    <h2 class="h2">Tank systems and the ice-maker problem: one 75 GPD system, two outlets</h2>
+    <p>A tank-based system like the iSpring RCC7-BN or the APEC Water ROES-PH75 doesn't deliver water at its rated GPD — it delivers water at whatever pressure is currently stored in a pressurized tank, and that tank is refilled at the rated GPD rate whenever it draws down. That distinction is the entire ice-maker problem in one sentence. The tank supplies both the kitchen faucet and the fridge from the same finite reserve, and pressure in an air-charged RO tank falls as the tank empties — full and near-empty are not the same delivered psi, they're two ends of the same curve.</p>
+    <p>Run the kitchen faucet to fill a pot at the same moment the icemaker's inlet valve opens, and both draws are pulling on a tank that is already losing pressure as it empties. Neither necessarily runs dry, but the icemaker's fill can slow to a trickle it wasn't designed around, or the fill cycle can time out before the tray is full — an intermittent fault that looks like a failing icemaker long before anyone thinks to suspect the RO tank behind it.</p>
+    <p>The production side is the other half of it. At 75 GPD, a system like the RCC7-BN, the six-stage alkaline APEC ROES-PH75, or the iSpring RCC7AK-BN is refilling its tank at roughly 3 gallons an hour — plain arithmetic on the rated output, not a separate guarantee, and that GPD figure is itself a manufacturer rating taken under specific test conditions rather than a promise about your kitchen. A household running a kettle, a coffee maker and an icemaker off the same tank across a busy morning can ask it to give up water faster than 75 GPD replaces it, and the fridge — usually the last thing anyone thinks to check — is the outlet that goes quiet first, because its inlet valve simply won't open below its own minimum rated pressure.</p>
+    <p>None of this means a 75 GPD tank system can't run a fridge line; plenty do, without complaint. It means the tank is shared infrastructure rather than a private reserve for one faucet, and the practical fix is patience rather than new hardware: let the tank recover between heavy draws, and don't be surprised if simultaneous faucet-and-icemaker demand is the one combination that exposes a small system's limits.</p>
+  </div></section>
+
+  <section id="tankless"><div class="prose">
+    <h2 class="h2">Tankless systems, permeate pumps, and where even those fall short</h2>
+    <p>A tankless system removes the shared-reserve problem by removing the reserve. The Waterdrop G2P600, rated at 600 GPD, produces water on demand instead of storing it, so the faucet and the fridge draw from the same instantaneous production rather than competing for what's left in a tank. On paper that's a large multiple of a 75 GPD tank system's output, and in practice it's the more forgiving option for a household running two outlets off one system — provided the rest of the installation cooperates.</p>
+    <p>Two conditions still apply, and neither is optional. The G2P600 needs power at the point of installation — it's a pumped system, and with no outlet under or near the sink it isn't an option at all. And a GPD rating, tankless or not, is still a number taken under specific pressure and temperature conditions rather than a promise about yours; weak city pressure will hold a tankless system back just as it would a tank system.</p>
+    <p>On tank systems specifically — not tankless ones — a permeate pump is the usual answer when incoming pressure is marginal or a long fridge run adds resistance the tank has to fill against. It's a small, non-electric accessory plumbed into the reject, or drain, line: it uses the pressure of the water the system is already sending down the drain to help push finished water into the tank, which speeds refill and lowers the waste ratio without adding a component that needs a plug. That solves a production problem, though — a tank that fills faster is still a tank, and a permeate pump does nothing for the simultaneous-draw pressure problem covered above.</p>
+    <p>Where neither a tankless unit nor a permeate pump is enough — a long run to a fridge on the far side of an open-plan kitchen, a second-floor installation, or genuinely low municipal pressure, well under the 40 psi most systems assume — the honest fix stops being an RO accessory and becomes a whole-house or point-of-use booster pump ahead of the system, sized by a plumber for your actual pressure and run length. That's a household plumbing decision, not a spec on any RO unit, and it's worth ruling out low incoming pressure with a simple hose-bib gauge before spending money on either a permeate pump or a booster.</p>
+  </div></section>
+
+  <section id="run"><div class="prose">
+    <h2 class="h2">The physical run: tee, tubing, routing and the freeze risk nobody mentions</h2>
+    <p>Every fridge-feed installation starts at the same point: a tee inserted into the system's finished-water line, downstream of the tank valve on a tank system or the outlet port on a tankless one — never upstream of the membrane, where the water hasn't been treated yet, and never off the raw feed line, which would just deliver treated tap water disguised as RO water. Most 1/4-inch quick-connect fridge-line kits include this tee already; where they don't, a standard 1/4" push-to-connect tee from any RO parts supplier does the job, using the same collet-and-tube system already covered in our <a href="/how-to-install-an-under-sink-reverse-osmosis-system">under-sink install guide</a>.</p>
+    <ol>
+      <li><strong>Tee into the finished-water line</strong>, past the tank or tankless outlet, never before the membrane.</li>
+      <li><strong>Run 1/4-inch OD tubing</strong> — the same size already used for the feed and product lines — sized generously, not cut to the tape-measure minimum.</li>
+      <li><strong>Route behind the base cabinets and through the toe-kick</strong>, secured every few feet, clear of drawer slides and hinges.</li>
+      <li><strong>Leave a service loop at the fridge end</strong> and connect at the appliance's own quick-connect inlet, following its manual for orientation.</li>
+      <li><strong>Open the line slowly, check every joint by hand, then flush</strong> before using the first ice or water the fridge produces.</li>
+    </ol>
+    <p>Tubing size stays the same 1/4-inch OD polyethylene used everywhere else in the system — no reason to step up or down in diameter for the fridge branch. Buy more than the tape-measure distance calls for: coiling a slightly long run at the fridge end, rather than pulling one taut, gives the fridge room to be pulled out for cleaning without disconnecting a line every time.</p>
+    <p>Routing is where installs go wrong. Run the tubing along the back of the base cabinets rather than across a cabinet floor where it'll get walked on, through the toe-kick space at floor level where most cabinet runs travel sideways anyway, and up the wall or cabinet side behind the fridge rather than exposed across an open doorway. Secure it every few feet with the clips most kits include — an unsecured run sags and rubs against cabinet edges over months, failing the same slow way as the joints in our install guide's leak-mistakes list. Keep it clear of drawer slides and hinges, which will pinch a line the first time the drawer closes on it.</p>
+    <p>The freeze risk is specific and easy to miss. If any part of that run passes along an exterior wall, through an unheated garage wall, or near an uninsulated crawlspace vent, the tubing can freeze solid in cold weather and split — a plastic 1/4-inch line has far less thermal mass than a copper supply pipe and freezes faster for the same outside temperature. Route around exterior walls wherever the floor plan allows it, and where you genuinely can't, wrap the exposed section in pipe insulation or a foam sleeve rather than routing blind and hoping the house stays warm enough. A split line usually shows up as a puddle behind the fridge on the first thaw, not at the moment it happened.</p>
+  </div></section>
+
+  <section id="taste"><div class="prose">
+    <h2 class="h2">Ice that tastes of nothing, and the cloudy-cube question</h2>
+    <p>Ice made from RO water routinely gets described as tasting like nothing, and that's an accurate description rather than a flaw. Reverse osmosis membranes reject the great majority of dissolved minerals along with the contaminants, and dissolved minerals are a meaningful part of what a palate reads as flavor in water. We go into that mechanism in more detail in our guide to <a href="/does-reverse-osmosis-remove-minerals">what reverse osmosis does to minerals</a>, but the short version for ice specifically is that flat-tasting cubes are the system working as designed, not malfunctioning.</p>
+    <p>Cloudiness is a different mechanism, and mostly not a water-quality question at all. Cloudy ice is overwhelmingly a function of how fast the water freezes and how much dissolved air it's carrying, not how many dissolved solids are in it: water freezes from the outside in, and anything that hasn't frozen yet — dissolved air, and to a lesser degree dissolved minerals — gets pushed toward the center of the cube, where it forms the visible white core once it's finally trapped. Slower freezing gives gas more time to escape before it's sealed in, which is why still, degassed water and slow freezing both tend to produce clearer ice, largely independent of whether a membrane touched the water first.</p>
+    <p>What RO actually changes for cloudiness is smaller than people expect: lower dissolved solids mean less mineral content available to concentrate in that cloudy core, so RO ice is often somewhat clearer than ice made from hard tap water, but it will not reliably produce the fully clear cubes you'd get from directional freezing in a specialty ice mold, because the icemaker's ordinary fill-and-freeze cycle is what it is regardless of the water source feeding it. If genuinely clear ice matters more than a working kitchen icemaker, that's a freezing-method problem to solve, not a filtration one.</p>
+  </div></section>
+
+  <section id="existing"><div class="prose">
+    <h2 class="h2">What to do when the fridge already has its own filter</h2>
+    <p>Most refrigerators with an icemaker or a water dispenser ship with their own inline filter cartridge — a sediment-and-carbon cartridge rated for chlorine taste and odor, occasionally with a lead or cyst-reduction claim, and not a reverse osmosis membrane. Once an RO system is feeding that same line, the fridge's own filter is filtering water that has already been through a five- or six-stage RO system, so it has very little left to do.</p>
+    <p>There are two honest options here, not one correct answer. Leaving the stock filter in place is harmless — it's simply redundant — but it adds a second flow restriction on a line already working against distance and elevation, and it still needs its own replacement schedule and its own "change filter" light regardless of what's actually treating the water. Bypassing it, using the plastic bypass plug most manufacturers sell or include for this, removes that restriction and the ongoing cartridge cost, at the price of losing whatever filter reminder your model uses to track it.</p>
+    <p>Check your refrigerator's manual before deciding either way. A few manufacturers tie warranty language to the filter remaining installed and genuine, and some models won't dispense water or ice at all with an empty filter housing and no bypass plug fitted — you need the actual bypass part, not just an empty slot. And if ice-maker flow has felt sluggish ever since the RO install and you never addressed the stock filter, that stacked restriction is worth ruling out before touching anything upstream of it.</p>
+  </div></section>
+
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">Two-outlet duty</span></div>
+    <h2 class="h2">Systems that can carry a fridge line without drama</h2>
+    <p class="sub">Picks from our main lineup, framed here for what they ask of a two-outlet install rather than for filtration alone. Prices move on Amazon — confirm before buying.</p>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>Base tank pick</small></div>
+        <div>
+          <h3>iSpring RCC7-BN</h3>
+          <div class="who">A straightforward 75 GPD tank system to build a fridge branch off</div>
+          <div class="rl2"><b>NSF certified</b> · <b>75 GPD</b> · 5 stages · tank · top-mounted faucet</div>
+          <p class="body">A conventional five-stage tank system with the patented top-mounted faucet fastener that makes the faucet half of the install easier, whether or not you're also running a line to the fridge. It's the simplest, least expensive of our tank picks, and the pressure and refill-rate limits covered above apply to it exactly as described.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B003XELTTG.webp" alt="iSpring RCC7-BN 5-stage reverse osmosis system with brushed nickel faucet" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$185.22</div><span class="tag">Tank · 5-stage</span><a class="buy" href="https://www.amazon.com/dp/B003XELTTG?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">02<small>Serviceable tank pick</small></div>
+        <div>
+          <h3>APEC Water ROES-PH75</h3>
+          <div class="who">Standard housings, a wide feed-pressure window, alkaline stage</div>
+          <div class="rl2"><b>WQA certified</b> · <b>75 GPD</b> · 6 stages · alkaline · tank</div>
+          <p class="body">Heavy standard housings, a published 40–85 psi feed-pressure window, and a calcium remineralization stage. The wide pressure spec is useful context if you're feeding a fridge on a longer run — it tells you the range the system itself is built to accept, though it says nothing about what actually survives to the fridge end of the branch.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00NWZ1RCK.webp" alt="APEC Water ROES-PH75 6-stage alkaline reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$189.99</div><span class="tag">Tank · alkaline</span><a class="buy" href="https://www.amazon.com/dp/B00NWZ1RCK?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>Easiest faucet, tank</small></div>
+        <div>
+          <h3>iSpring RCC7AK-BN</h3>
+          <div class="who">NSF/ANSI 58 as a whole system, transparent first housing</div>
+          <div class="rl2"><b>NSF/ANSI 58</b> · <b>75 GPD</b> · 6 stages · alkaline · tank</div>
+          <p class="body">Certified to NSF/ANSI 58 as a complete system rather than on individual components, with a transparent first housing that lets you watch the sediment load — a small but genuinely useful signal on a system that's now also running a longer, harder-working line out to a fridge. Same top-mounted faucet fastener as the RCC7-BN.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B005LJ8EXU.webp" alt="iSpring RCC7AK-BN 6-stage alkaline reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$234.99</div><span class="tag">Tank · 6-stage</span><a class="buy" href="https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">04<small>Tankless pick</small></div>
+        <div>
+          <h3>Waterdrop G2P600</h3>
+          <div class="who">No tank, no shared-reserve problem — but it needs an outlet</div>
+          <div class="rl2"><b>NSF/ANSI 372</b> · <b>600 GPD</b> · 2:1 drain · tankless</div>
+          <p class="body">Produces water on demand instead of storing it, so the fridge and the faucet draw from the same instantaneous production rather than competing for what's left in a tank — the most direct answer to the tank-sharing problem described above. It requires under-sink electricity to run its pump, which is the one condition worth confirming before you buy it for this purpose.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B08746M1NX.webp" alt="Waterdrop G2P600 tankless under-sink reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$289</div><span class="tag">Tankless · 600 GPD</span><a class="buy" href="https://www.amazon.com/dp/B08746M1NX?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Questions people ask before wiring a fridge into RO</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Can any under-sink RO system feed a refrigerator?</summary><p>Technically, yes — the tee-and-tubing connection is the same regardless of system. Whether it feeds it well is a different question. A 75 GPD tank system can run a fridge line comfortably on a short, low run, but the same simultaneous faucet-and-icemaker demand that a short run shrugs off can starve a longer, higher one. A tankless system with a higher GPD rating, such as the Waterdrop G2P600, tends to be more forgiving on longer runs because it isn't sharing a fixed tank reserve.</p></details>
+      <details><summary>Do I need a permeate pump to feed a fridge line?</summary><p>Only sometimes, and only on tank systems. A permeate pump helps a tank refill faster and more efficiently when incoming pressure is marginal or a long branch line adds resistance — it does nothing on a tankless system, which has no tank to fill, and it doesn't fix low pressure at the moment of simultaneous draw. Check your incoming pressure with a hose-bib gauge before assuming you need one.</p></details>
+      <details><summary>Why is my icemaker slow or intermittent after adding an RO system?</summary><p>The most common cause is a tank system's pressure dropping as it draws down while the kitchen faucet and the icemaker's inlet valve are both open at once. The second most common cause is simple distance and elevation loss over a long, multi-turn tubing run. The third is a fridge's own inline filter adding a second flow restriction on top of both. Check them in that order.</p></details>
+      <details><summary>Should I remove my fridge's built-in filter after installing RO?</summary><p>You can, using the manufacturer's own bypass plug, and it removes a redundant flow restriction along with an ongoing cartridge cost. Read your fridge's manual first: some models tie warranty terms to the filter staying installed, and some won't dispense water or ice at all without either the cartridge or a proper bypass plug in place.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if you're setting this up</h2>
+    <div class="keep">
+      <a href="/how-to-install-an-under-sink-reverse-osmosis-system"><span class="kt">How to install one</span><span class="kd">The feed valve, drain saddle and faucet hole, in the order that avoids a second trip to the hardware store.</span></a>
+      <a href="/how-to-sanitize-and-maintain-a-reverse-osmosis-system"><span class="kt">Sanitizing and maintenance</span><span class="kd">The routine that keeps a longer tubing run — fridge branch included — from turning stagnant.</span></a>
+      <a href="/reverse-osmosis-water-pressure-and-flow-rate"><span class="kt">Why your RO faucet trickles</span><span class="kd">GPD is a rating, not a promise — what pressure, temperature and a tired membrane do to real flow.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+ "headline":"Running RO Water to Your Fridge and Ice Maker",
+ "description":"The tee, the tubing run and the pressure problem nobody warns you about - how to feed a fridge from an under-sink system without starving the faucet.",
+ "image":"https://best-reverse-osmosis-systems.com/images/hero-connect-reverse-osmosis-to-refrigerator-ice-maker.webp",
+ "author":{"@type":"Person","name":"Ilane Tall"},
+ "publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},
+ "datePublished":"2026-08-21","dateModified":"2026-08-21",
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/connect-reverse-osmosis-to-refrigerator-ice-maker"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo",
+ "name":"How to run a reverse osmosis line to a refrigerator ice maker",
+ "description":"Tee into a finished-water RO line, run quarter-inch tubing behind cabinets to the refrigerator, and connect to the appliance's own inlet without starving the kitchen faucet.",
+ "image":"https://best-reverse-osmosis-systems.com/images/hero-connect-reverse-osmosis-to-refrigerator-ice-maker.webp",
+ "estimatedCost":{"@type":"MonetaryAmount","currency":"USD","value":"25"},
+ "tool":[
+  {"@type":"HowToTool","name":"Tubing cutter"},
+  {"@type":"HowToTool","name":"1/4-inch push-to-connect tee"},
+  {"@type":"HowToTool","name":"Pipe insulation or foam sleeve (for runs near exterior walls)"},
+  {"@type":"HowToTool","name":"Cable clips or tubing clips"}],
+ "supply":[
+  {"@type":"HowToSupply","name":"1/4-inch OD polyethylene quick-connect tubing"},
+  {"@type":"HowToSupply","name":"1/4-inch push-to-connect tee fitting"}],
+ "step":[
+  {"@type":"HowToStep","name":"Tee into the finished-water line","text":"Insert a 1/4-inch push-to-connect tee into the system's finished-water line, downstream of the tank valve on a tank system or the outlet port on a tankless system - never upstream of the membrane and never off the raw feed line."},
+  {"@type":"HowToStep","name":"Run tubing to the refrigerator","text":"Cut and run 1/4-inch OD polyethylene tubing, the same size used elsewhere in the system, sized generously rather than to the tape-measure minimum so a service loop can be left at the fridge end."},
+  {"@type":"HowToStep","name":"Route behind cabinets and through the toe-kick","text":"Run the tubing along the back of base cabinets and through the toe-kick space rather than across a cabinet floor, secure it every few feet, and keep it clear of drawer slides and hinges."},
+  {"@type":"HowToStep","name":"Protect any section near an exterior wall","text":"Where the run passes along an exterior wall, an unheated garage wall, or near a crawlspace vent, wrap the exposed tubing in pipe insulation or a foam sleeve to prevent it freezing and splitting in cold weather."},
+  {"@type":"HowToStep","name":"Connect at the fridge and flush before use","text":"Leave a service loop, connect to the refrigerator's own quick-connect water inlet per its manual, open the line slowly while checking every joint by hand, then run and discard the first water and ice the appliance produces."}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Can any under-sink RO system feed a refrigerator?","acceptedAnswer":{"@type":"Answer","text":"Technically yes - the tee-and-tubing connection is the same regardless of system. Whether it feeds it well is a different question. A 75 GPD tank system can run a fridge line comfortably on a short, low run, but the same simultaneous faucet-and-icemaker demand that a short run shrugs off can starve a longer, higher one. A tankless system with a higher GPD rating, such as the Waterdrop G2P600, tends to be more forgiving on longer runs because it isn't sharing a fixed tank reserve."}},
+ {"@type":"Question","name":"Do I need a permeate pump to feed a fridge line?","acceptedAnswer":{"@type":"Answer","text":"Only sometimes, and only on tank systems. A permeate pump helps a tank refill faster and more efficiently when incoming pressure is marginal or a long branch line adds resistance - it does nothing on a tankless system, which has no tank to fill, and it doesn't fix low pressure at the moment of simultaneous draw. Check incoming pressure with a hose-bib gauge before assuming one is needed."}},
+ {"@type":"Question","name":"Why is my icemaker slow or intermittent after adding an RO system?","acceptedAnswer":{"@type":"Answer","text":"The most common cause is a tank system's pressure dropping as it draws down while the kitchen faucet and the icemaker's inlet valve are both open at once. The second most common cause is simple distance and elevation loss over a long, multi-turn tubing run. The third is the refrigerator's own inline filter adding a second flow restriction on top of both. Check them in that order."}},
+ {"@type":"Question","name":"Should I remove my fridge's built-in filter after installing RO?","acceptedAnswer":{"@type":"Answer","text":"You can, using the manufacturer's own bypass plug, and it removes a redundant flow restriction along with an ongoing cartridge cost. Read the fridge's manual first: some models tie warranty terms to the filter staying installed, and some won't dispense water or ice at all without either the cartridge or a proper bypass plug in place."}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

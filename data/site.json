@@ -135,6 +135,16 @@
       "minutes": 15,
       "date": "2026-08-20",
       "featured": true
+    },
+    {
+      "slug": "connect-reverse-osmosis-to-refrigerator-ice-maker",
+      "title": "Running RO Water to Your Fridge and Ice Maker",
+      "description": "The tee, the tubing run and the pressure problem nobody warns you about — how to feed a fridge from an under-sink system without starving the faucet.",
+      "category": "How-to",
+      "hero": "hero-connect-reverse-osmosis-to-refrigerator-ice-maker",
+      "minutes": 15,
+      "date": "2026-08-21",
+      "featured": true
     }
   ]
 }
