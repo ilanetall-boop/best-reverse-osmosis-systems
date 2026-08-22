@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your TDS Meter Says 12. What Does That Actually Mean?</title>
+<meta name="description" content="The number every RO owner watches, and the four things it cannot tell you. How to read it, when it signals a dying membrane, and why low TDS isn't the same as safe.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/tds-meter-what-the-number-means">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="Your TDS Meter Says 12. What Does That Actually Mean?">
+<meta property="og:description" content="The number every RO owner watches, and the four things it cannot tell you. How to read it, when it signals a dying membrane, and why low TDS isn't the same as safe.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-tds-meter-what-the-number-means.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#measures">What it measures</a><a href="#numbers">Typical numbers</a><a href="#rejection">Rejection rate</a><a href="#signals">Rising number</a><a href="#reminerals">Remineralization</a><a href="#blind">Blind spots</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>TDS meter, explained</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Water quality</span>
+    <h1 class="serif">Your TDS meter says 12. What does that actually mean?</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>August 22, 2026</b></span><span>13 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-tds-meter-what-the-number-means.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" alt="A handheld TDS meter reading a low number in a glass of water beside an under-sink reverse osmosis faucet">
+
+  <section id="measures">
+    <div class="prose">
+      <p>Every reverse osmosis owner eventually buys a little pen-shaped gadget, dips it in a glass of water, and watches a number appear. Tap water: 240. RO water: 12. The instinct is to read that drop as a report card — lower is better, and a single-digit number means the system is doing its job. That instinct is mostly right, and it is also missing almost everything the number cannot tell you.</p>
+      <p>Start with what the meter actually does. A "TDS meter" does not measure total dissolved solids directly — nobody makes an affordable consumer device that weighs the residue left behind when you evaporate a sample, which is the only way to measure TDS for real. What the pen actually measures is <strong>electrical conductivity</strong>: it passes a small current between two probes and reads how easily the water carries it. Pure H₂O barely conducts electricity at all. Dissolved minerals and salts ionize in solution and carry current far more readily, so the more of them there are, the higher the conductivity reading. The meter then multiplies that conductivity by a conversion factor — usually one calibrated against a reference salt like sodium chloride or potassium chloride — and displays the result in parts per million as if it had weighed something.</p>
+      <p>That conversion is the whole story, and it is also the whole limitation. Conductivity responds to <em>how many charged particles are in the water and how easily they move</em>, not to <em>what those particles are</em>. Calcium, magnesium, sodium, potassium, nitrate, chloride, bicarbonate — a conductivity meter cannot tell any of them apart, and it is functionally blind to anything that does not carry an electrical charge in solution. Two glasses of water can post the identical "247 ppm" reading while containing completely different dissolved chemistry: one might be dominated by calcium and magnesium hardness, the other by sodium and chloride, the third by agricultural nitrate. The meter reports a quantity. It never reports an identity.</p>
+      <p>If you have already read <a href="/does-reverse-osmosis-remove-minerals">does reverse osmosis remove minerals</a>, you've seen the same principle from the other direction: RO strips almost everything indiscriminately, and a TDS meter measures the aftermath indiscriminately too. Both are honest about quantity and silent about identity — a fine trade as a monthly maintenance check, a poor one if you're trying to answer "is my water safe."</p>
+    </div>
+  </section>
+
+  <section id="numbers">
+    <div class="prose">
+      <h2 class="h2">Typical numbers: tap, RO permeate and remineralized water</h2>
+      <p>Numbers on a TDS meter only mean something in context, so here is the context most US households will see, in the three states water passes through on its way from the wall to the glass.</p>
+      <p><strong>Untreated tap water</strong> commonly reads anywhere from about 50 ppm on a soft municipal supply to 400 ppm or more on hard groundwater or a private well, with anything north of 500 ppm generally flagged as noticeably mineral-heavy. This is almost entirely calcium, magnesium and bicarbonate — ordinary hardness — plus whatever the local utility or well adds or picks up along the way. It is the baseline reading you should take before you judge anything your RO system produces, because "how much did the system remove" only means something relative to what went in.</p>
+      <p><strong>RO permeate</strong> — the water that comes out of the dedicated faucet — typically lands in the single digits to low double digits on a well-maintained system fed by ordinary municipal water, and a bit higher on hard well water or an aging membrane. iSpring publishes a 93 to 98 percent TDS reduction figure for the RCC7AK-BN, and rates its 75 GPD membrane at up to 97 percent rejection under NSF/ANSI 58 test conditions — so on a 300 ppm feed, a healthy example of that system should land somewhere in the 6 to 21 ppm range, and closer to the low end is the expected outcome, not a lucky one. Some tankless systems put that number in front of you automatically: the Waterdrop G3P600's faucet displays a live TDS reading alongside remaining filter life, so you are not reaching for a separate meter to get the same information the system is already collecting.</p>
+      <p><strong>Remineralized water</strong> — RO water that has passed through an alkaline stage or an inline remineralization cartridge after the membrane — reads noticeably higher than plain permeate, often back up into the 30 to 100+ ppm range depending on the media and how recently the cartridge was changed. That is not the system leaking or a membrane failing; it is the stage working exactly as designed, and it is the subject of its own section below, because it is the single most common source of "my TDS number went up, is something wrong" questions we see about this category.</p>
+    </div>
+  </section>
+
+  <section id="rejection">
+    <div class="prose">
+      <h2 class="h2">Rejection rate: the only TDS calculation worth doing</h2>
+      <p>A single permeate reading — "my RO water is 14" — tells you almost nothing on its own, because 14 could be excellent or mediocre depending entirely on what went into the membrane. The number that actually means something is <strong>rejection rate</strong>, and it takes thirty extra seconds to calculate:</p>
+      <p style="font-family:var(--serif);font-size:1.15rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px">Rejection rate = (feed TDS − permeate TDS) ÷ feed TDS × 100</p>
+      <p>Do it monthly, and it takes about a minute: measure the raw tap or feed water going into the system, measure the RO faucet, subtract, divide by the feed number, multiply by 100. Write both raw numbers down, not just the percentage — you'll want the history later. A system holding at 93 to 98 percent rejection, the range iSpring publishes for the RCC7AK-BN, is behaving exactly as its certification says it should. A system that has drifted down into the 80s is telling you something is wearing out, months before the water tastes any different.</p>
+      <p>The reason rejection rate beats a raw permeate reading is that feed water isn't constant. A utility flushing mains, a well after heavy rain, a seasonal swing in a municipal source — any of these can push your incoming TDS up or down by fifty or a hundred ppm without your RO system doing anything differently at all. If you only watch the permeate number, a feed spike from 200 to 320 ppm can drag a perfectly healthy membrane's output from 8 ppm to 13 ppm, and it will look like the system got worse. Run the ratio instead and you'll see the rejection rate barely moved — the membrane is fine, your water changed. That's also exactly the situation where checking against your baseline matters: take a feed and permeate reading in the first week of ownership, log it, and every later reading is a comparison against your own system rather than a guess against a number on a box.</p>
+    </div>
+  </section>
+
+  <section id="signals">
+    <div class="prose">
+      <h2 class="h2">When a rising number means a membrane, and when it means a pre-filter</h2>
+      <p>Once you're tracking rejection rate instead of a raw number, a rising trend splits cleanly into two different problems that get fixed in two completely different ways — and mixing them up is the most expensive mistake in this category, because one fix costs twenty-five dollars and the other costs a membrane.</p>
+      <p><strong>Rejection rate itself falling</strong> — feed steady, permeate creeping up relative to it — points at the membrane. Thin-film composite membranes don't clog like a sediment filter; they slowly foul and lose their ability to reject dissolved solids, typically over two to three years of normal use. A gradual decline in rejection over months, tracked against a stable feed reading, is that process happening on schedule. A sudden, sharp drop is different and usually means something damaged the membrane outright — most often chlorine that made it past an exhausted carbon stage, which is exactly the scenario the pre-filters exist to prevent in the first place.</p>
+      <p><strong>Permeate TDS rising while rejection rate stays flat</strong> is not a membrane story at all — it means your feed water changed, and the fix is patience or a look at the source, not a new membrane. This is the case our <a href="/reverse-osmosis-for-well-water">reverse osmosis for well water</a> guide covers in more depth, because well supplies are the most common source of exactly this kind of swing: sediment after a rain event, a shift in mineral content between seasons, a neighbor's well work stirring up the aquifer.</p>
+      <p><strong>A rising number paired with falling flow</strong> is usually a pre-filter problem before it's a membrane problem, and it's good news when it is, because sediment and carbon cartridges are the cheap parts. A clogged sediment stage restricts flow directly; an exhausted carbon stage lets chlorine through, changing taste immediately while damaging the membrane on a slower clock. If the faucet is also trickling, read alongside <a href="/reverse-osmosis-water-pressure-and-flow-rate">why your RO faucet trickles</a> — flow and TDS are often two readouts of the same upstream problem.</p>
+      <p>Systems with a built-in display remove some of the guesswork. The Waterdrop G3P600's faucet shows live TDS alongside filter life, so a rejection-rate check is a glance rather than a two-step measurement — though it still can't tell you <em>why</em> the number moved, which is the judgment call this section is for. Whichever cartridge turns out to be the culprit, staying on schedule with <a href="/how-to-sanitize-and-maintain-a-reverse-osmosis-system">how to sanitize an RO system</a> is what keeps a fixable pre-filter problem from becoming an expensive membrane one.</p>
+    </div>
+  </section>
+
+  <section id="reminerals">
+    <div class="prose">
+      <h2 class="h2">Why a remineralization stage raises TDS on purpose</h2>
+      <p>This is the single most common source of confused emails in this category: an owner installs an alkaline stage or an inline remineralization cartridge, watches their TDS reading jump from 9 to 45, and assumes something has failed. Nothing has failed. The membrane already did its job upstream — it stripped dissolved solids down to nearly nothing — and the remineralization stage is a separate, later step that deliberately puts some of them back, specifically calcium and magnesium (and on some media, small amounts of potassium and sodium), to restore taste and the mineral content some people prefer over flat, near-zero-TDS water. A higher number after that stage is the stage doing exactly its job, not a leak, a bypass, or a sign the membrane is failing.</p>
+      <p>Some systems ship with this built in. The iSpring RCC7AK-BN is a 6-stage alkaline system with a calcium remineralization stage included from the factory, which is why an owner of that system should expect a noticeably higher permeate reading than someone running a plain 5-stage system on the same feed water — that gap is the design, not a defect. Owners of plain systems who want the same effect can retrofit it: the <strong>Waterdrop MNR35</strong> is an inline remineralization cartridge that plumbs onto the outlet of most under-sink RO systems with 1/4" and 3/8" quick-connect tubing, rated for nine to twelve months or 1,100 gallons — Waterdrop's own guidance is to replace it at the nine-month mark rather than waiting for the full year. For households running two systems, or who'd rather keep a spare on the shelf instead of reordering mid-cycle, the <strong>Waterdrop MNR35-2</strong> is the same cartridge sold as a two-pack.</p>
+      <p>The practical takeaway: if your TDS number climbed right after you added or changed a remineralization cartridge, that's the expected outcome, and the number to actually watch going forward is whether it stays roughly stable at the new, higher baseline — not whether it matches the near-zero reading you were used to before the stage existed. For the fuller picture of what RO removes and what a remineralization stage does and doesn't restore, see <a href="/does-reverse-osmosis-remove-minerals">does reverse osmosis remove minerals</a>.</p>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">Referenced in this guide</span></div>
+    <h2 class="h2">The remineralization cartridges and systems mentioned above</h2>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>Add-on</small></div>
+        <div>
+          <h3>Waterdrop MNR35</h3>
+          <div class="who">Remineralization for a system that didn't come with it</div>
+          <div class="rl2"><b>$29.99</b> · 9–12 months or 1,100 gallons · 1/4" &amp; 3/8" quick-connect · inline</div>
+          <p class="body">Plumbs onto the outlet of most under-sink RO systems and puts calcium and magnesium back after the membrane — the reason a plain system's TDS number rises once this is installed. Waterdrop rates it at nine to twelve months or 1,100 gallons and recommends replacing at nine.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B08DXYL81C.webp" alt="Waterdrop MNR35 inline remineralization filter for under-sink reverse osmosis systems" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$29.99</div><span class="tag">1 count</span><a class="buy" href="https://www.amazon.com/dp/B08DXYL81C?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">02<small>Two-pack</small></div>
+        <div>
+          <h3>Waterdrop MNR35-2</h3>
+          <div class="who">A spare on the shelf, or two systems running remineralization</div>
+          <div class="rl2"><b>$57.99</b> · 2.16"D x 2.16"W x 10.2"H · same media as the MNR35</div>
+          <p class="body">Two of the same remineralization cartridge, useful if you'd rather not reorder mid-cycle or if you're maintaining more than one under-sink system on the same schedule.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0CX1QGB65.webp" alt="Waterdrop MNR35-2 two-pack remineralization filters" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$57.99</div><span class="tag">2 count</span><a class="buy" href="https://www.amazon.com/dp/B0CX1QGB65?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>Built-in</small></div>
+        <div>
+          <h3>iSpring RCC7AK-BN</h3>
+          <div class="who">Remineralization included from the factory</div>
+          <div class="rl2"><b>NSF/ANSI 58</b> · <b>75 GPD</b> · 6-stage alkaline · 93–98% TDS reduction (published)</div>
+          <p class="body">A 6-stage tank system with a calcium remineralization stage already built in, so its permeate reads higher than a plain 5-stage system on the same feed water — that gap is by design. iSpring publishes 93 to 98 percent TDS reduction for the whole system.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B005LJ8EXU.webp" alt="iSpring RCC7AK-BN 6-stage alkaline reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$234.99</div><span class="tag">Tank · alkaline</span><a class="buy" href="https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">04<small>Live display</small></div>
+        <div>
+          <h3>Waterdrop G3P600</h3>
+          <div class="who">Watches rejection rate for you</div>
+          <div class="rl2"><b>NSF/ANSI 58 &amp; 372</b> · <b>600 GPD</b> · tankless · faucet TDS &amp; filter-life display</div>
+          <p class="body">The faucet display shows live TDS alongside remaining filter life, which turns the monthly rejection-rate check in this guide into a glance rather than a two-step measurement with a separate meter.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B07P1XFYJP.webp" alt="Waterdrop G3P600 tankless reverse osmosis system with TDS display faucet" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$429.00</div><span class="tag">Tankless · 600 GPD</span><a class="buy" href="https://www.amazon.com/dp/B07P1XFYJP?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="blind">
+    <div class="prose">
+      <h2 class="h2">The four things TDS cannot tell you</h2>
+      <p>A TDS meter is a genuinely useful maintenance tool, and it is also easy to over-trust, because a single clean number feels like a verdict. It isn't one. Here is what it structurally cannot see, no matter how low the reading.</p>
+      <p><strong>1. Which specific contaminants are present.</strong> This is the big one, and it's the direct consequence of conductivity being a quantity measurement, not an identity one. Lead, PFAS/PFOA, nitrates, pesticides and arsenic are exactly the contaminants people buy an RO system to worry about, and a TDS meter is largely useless for detecting any of them specifically — some contribute negligibly to conductivity at concerning concentrations, and the meter has no way to distinguish "12 ppm of mostly harmless minerals" from "12 ppm that includes something you'd want to know about." A low TDS reading is not a substitute for a certified water test if you have a specific contaminant concern; it's a general health-of-the-system indicator, not a contaminant panel.</p>
+      <p><strong>2. Bacteria and other pathogens.</strong> Biological contamination doesn't meaningfully register on a conductivity reading — living organisms aren't the dissolved ionic solids the meter is built to detect. A system can post a flawless single-digit TDS number and still have a bacterial problem if the maintenance schedule slips, which is exactly why the sanitizing step in <a href="/how-to-sanitize-and-maintain-a-reverse-osmosis-system">how to sanitize an RO system</a> isn't optional, and why "the number looks great" isn't the same claim as "the system is clean."</p>
+      <p><strong>3. What kind of dissolved solids you're looking at.</strong> Two glasses of water can share an identical TDS reading — say, 220 ppm — while one is dominated by calcium and magnesium hardness and the other by sodium and chloride. They will taste different, behave differently in a kettle, and matter differently to someone managing sodium intake, and the meter reports the same number for both. The reading is a total, not a breakdown.</p>
+      <p><strong>4. Whether a lower number is actually better for you.</strong> Near-zero TDS isn't automatically the goal. It's general information, not medical advice, but it's worth knowing: drinking water is a minor contributor to mineral intake compared with food for most people, ultra-low-TDS water is frequently described as flat-tasting rather than dangerous, and there's no established position that very low TDS drinking water is harmful for a typical healthy adult. Whether that matters enough to add a remineralization stage — see above — or whether an RO system is worth the tradeoff at all is a bigger question than a single meter reading can answer; we work through the fuller cost-and-benefit case in <a href="/are-reverse-osmosis-systems-worth-it">are reverse osmosis systems worth it</a>.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Common questions about TDS and RO water</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>What is a "good" TDS reading for RO water?</summary><p>There's no single universal number, because it depends on your feed water — a good reading is a high <em>rejection rate</em>, not a specific permeate figure. iSpring publishes 93 to 98 percent TDS reduction for the RCC7AK-BN; on a 250 ppm feed, that puts healthy permeate somewhere in the 5 to 18 ppm range. Track your own feed and permeate numbers rather than chasing a number you saw quoted for someone else's water.</p></details>
+      <details><summary>Why does my remineralized water read higher TDS than plain RO water?</summary><p>Because that's the point of a remineralization or alkaline stage: it deliberately adds calcium and magnesium back after the membrane has already stripped almost everything out. A jump from single digits to 30–100+ ppm right after installing a cartridge like the Waterdrop MNR35, or on a system like the iSpring RCC7AK-BN that includes the stage from the factory, is the design working as intended — not a leak or a failing membrane.</p></details>
+      <details><summary>How often should I check TDS, and how?</summary><p>Monthly is enough for most households. Measure the feed (raw tap) water, then the RO permeate, and calculate rejection rate: (feed − permeate) ÷ feed × 100. Log both raw numbers, not just the percentage, so you have a baseline to compare future readings against. Systems with a built-in display, like the Waterdrop G3P600, show a live permeate TDS reading on the faucet, which removes the need for a separate handheld meter for that half of the check.</p></details>
+      <details><summary>Can a TDS meter detect lead, PFAS, or bacteria?</summary><p>No. A TDS meter measures electrical conductivity, which responds to the total quantity of dissolved, electrically-charged solids in the water — it cannot identify which specific substances are present, and it does not detect biological contamination like bacteria at all. A low TDS reading is a useful sign the RO system is generally functioning, not a certified test for any specific contaminant. If you have a specific concern, a targeted test is the only way to answer it.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if you're maintaining or choosing a system</h2>
+    <div class="keep">
+      <a href="/how-to-install-an-under-sink-reverse-osmosis-system"><span class="kt">How to install one</span><span class="kd">The feed valve, the drain saddle and the faucet hole — where your feed-water baseline reading should be taken.</span></a>
+      <a href="/connect-reverse-osmosis-to-refrigerator-ice-maker"><span class="kt">Running RO to your fridge</span><span class="kd">The tee and the pressure problem nobody warns you about when you split RO water to an ice maker.</span></a>
+      <a href="/best-countertop-reverse-osmosis-systems"><span class="kt">Best countertop systems</span><span class="kd">Plug-in purifiers for kitchens where drilling isn't an option, compared on output and honest capacity.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Your TDS Meter Says 12. What Does That Actually Mean?","description":"The number every RO owner watches, and the four things it cannot tell you. How to read it, when it signals a dying membrane, and why low TDS isn't the same as safe.","image":"https://best-reverse-osmosis-systems.com/images/hero-tds-meter-what-the-number-means.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-08-22","dateModified":"2026-08-22","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/tds-meter-what-the-number-means"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"What is a \"good\" TDS reading for RO water?","acceptedAnswer":{"@type":"Answer","text":"There is no single universal number, because it depends on your feed water - a good reading is a high rejection rate, not a specific permeate figure. iSpring publishes 93 to 98 percent TDS reduction for the RCC7AK-BN; on a 250 ppm feed, that puts healthy permeate somewhere in the 5 to 18 ppm range. Track your own feed and permeate numbers rather than chasing a number you saw quoted for someone else's water."}},
+ {"@type":"Question","name":"Why does my remineralized water read higher TDS than plain RO water?","acceptedAnswer":{"@type":"Answer","text":"Because that is the point of a remineralization or alkaline stage: it deliberately adds calcium and magnesium back after the membrane has already stripped almost everything out. A jump from single digits to 30 to 100-plus ppm right after installing a cartridge like the Waterdrop MNR35, or on a system like the iSpring RCC7AK-BN that includes the stage from the factory, is the design working as intended, not a leak or a failing membrane."}},
+ {"@type":"Question","name":"How often should I check TDS, and how?","acceptedAnswer":{"@type":"Answer","text":"Monthly is enough for most households. Measure the feed (raw tap) water, then the RO permeate, and calculate rejection rate: (feed minus permeate) divided by feed, times 100. Log both raw numbers, not just the percentage, so you have a baseline to compare future readings against. Systems with a built-in display, like the Waterdrop G3P600, show a live permeate TDS reading on the faucet."}},
+ {"@type":"Question","name":"Can a TDS meter detect lead, PFAS, or bacteria?","acceptedAnswer":{"@type":"Answer","text":"No. A TDS meter measures electrical conductivity, which responds to the total quantity of dissolved, electrically-charged solids in the water - it cannot identify which specific substances are present, and it does not detect biological contamination like bacteria at all. A low TDS reading is a useful sign the RO system is generally functioning, not a certified test for any specific contaminant."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Remineralization cartridges and systems referenced in this guide","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Waterdrop MNR35 Remineralization Filter","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B08DXYL81C?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Waterdrop MNR35-2 Remineralization Filters (2-Pack)","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"57.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0CX1QGB65?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"iSpring RCC7AK-BN 6-Stage Alkaline Reverse Osmosis System","brand":{"@type":"Brand","name":"iSpring"},"offers":{"@type":"Offer","price":"234.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Waterdrop G3P600 Tankless Reverse Osmosis System","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"429.00","priceCurrency":"USD","url":"https://www.amazon.com/dp/B07P1XFYJP?tag=bestreverseosmosis-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

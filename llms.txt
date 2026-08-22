@@ -26,6 +26,7 @@ We pulled every reverse osmosis system, under-sink filter and replacement cartri
 ## Guides
 
 <!--LLMS-GUIDES:START-->
+- [Your TDS Meter Says 12. What Does That Actually Mean?](https://best-reverse-osmosis-systems.com/tds-meter-what-the-number-means): The number every RO owner watches, and the four things it cannot tell you. How to read it, when it signals a dying membrane, and why low TDS isn't the same as safe.
 - [Running RO Water to Your Fridge and Ice Maker](https://best-reverse-osmosis-systems.com/connect-reverse-osmosis-to-refrigerator-ice-maker): The tee, the tubing run and the pressure problem nobody warns you about — how to feed a fridge from an under-sink system without starving the faucet.
 - [Why Your RO Faucet Trickles: Pressure, GPD and Flow, Explained](https://best-reverse-osmosis-systems.com/reverse-osmosis-water-pressure-and-flow-rate): GPD is a rating, not a promise. What incoming pressure, temperature and a tired membrane do to the water that actually reaches your glass — and how to fix a slow faucet.
 - [How to Sanitize an RO System (and Change Filters Without Wrecking It)](https://best-reverse-osmosis-systems.com/how-to-sanitize-and-maintain-a-reverse-osmosis-system): The step most owners skip: sanitising at cartridge changes. The full routine, the mistakes that contaminate a clean system, and what to do about a stagnant tank.

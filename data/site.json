@@ -145,6 +145,16 @@
       "minutes": 15,
       "date": "2026-08-21",
       "featured": true
+    },
+    {
+      "slug": "tds-meter-what-the-number-means",
+      "title": "Your TDS Meter Says 12. What Does That Actually Mean?",
+      "description": "The number every RO owner watches, and the four things it cannot tell you. How to read it, when it signals a dying membrane, and why low TDS isn't the same as safe.",
+      "category": "Water quality",
+      "hero": "hero-tds-meter-what-the-number-means",
+      "minutes": 15,
+      "date": "2026-08-22",
+      "featured": true
     }
   ]
 }
