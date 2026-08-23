@@ -155,6 +155,16 @@
       "minutes": 15,
       "date": "2026-08-22",
       "featured": true
+    },
+    {
+      "slug": "best-reverse-osmosis-systems-under-250",
+      "title": "The Best Reverse Osmosis Systems Under $250",
+      "description": "Six systems at the price where most people actually buy — what the budget tier gives up, and the two that give up almost nothing.",
+      "category": "Budget picks",
+      "hero": "hero-best-reverse-osmosis-systems-under-250",
+      "minutes": 15,
+      "date": "2026-08-23",
+      "featured": true
     }
   ]
 }
