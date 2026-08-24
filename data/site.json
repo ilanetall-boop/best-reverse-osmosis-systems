@@ -165,6 +165,16 @@
       "minutes": 15,
       "date": "2026-08-23",
       "featured": true
+    },
+    {
+      "slug": "under-sink-water-filter-vs-reverse-osmosis",
+      "title": "Under-Sink Carbon Filter vs Reverse Osmosis: Which Do You Need?",
+      "description": "A $95 carbon block fixes taste, chlorine and some contaminants with no drain line and no waste. Here's exactly where it stops and RO becomes necessary.",
+      "category": "Comparison",
+      "hero": "hero-under-sink-water-filter-vs-reverse-osmosis",
+      "minutes": 16,
+      "date": "2026-08-24",
+      "featured": true
     }
   ]
 }
