@@ -175,6 +175,16 @@
       "minutes": 16,
       "date": "2026-08-24",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-troubleshooting-leaks-and-noises",
+      "title": "RO Troubleshooting: Leaks, Gurgles and the Faucet That Never Stops",
+      "description": "Nine symptoms, what each one usually is, and the order to check them in — before you replace a part that was never broken.",
+      "category": "Troubleshooting",
+      "hero": "hero-reverse-osmosis-troubleshooting-leaks-and-noises",
+      "minutes": 17,
+      "date": "2026-08-25",
+      "featured": true
     }
   ]
 }

@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RO Troubleshooting: Leaks, Gurgles and the Faucet That Never Stops</title>
+<meta name="description" content="Nine symptoms, what each one usually is, and the order to check them in — before you replace a part that was never broken.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/reverse-osmosis-troubleshooting-leaks-and-noises">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="RO Troubleshooting: Leaks, Gurgles and the Faucet That Never Stops">
+<meta property="og:description" content="Nine symptoms, what each one usually is, and the order to check them in — before you replace a part that was never broken.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-troubleshooting-leaks-and-noises.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#order">Diagnostic order</a><a href="#leaks">Water under the cabinet</a><a href="#drain">Continuous drain</a><a href="#noise">Gurgling</a><a href="#slow">Slow faucet</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>Troubleshooting leaks and noises</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Troubleshooting</span>
+    <h1 class="serif">RO Troubleshooting: Leaks, Gurgles and the Faucet That Never Stops</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>August 25, 2026</b></span><span>15 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-reverse-osmosis-troubleshooting-leaks-and-noises.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" alt="Under-sink reverse osmosis system with cabinet doors open, showing filter housings, tubing and a puddle being checked for the source of a leak">
+
+  <section id="order">
+    <div class="prose">
+      <p>Almost every reverse osmosis complaint reaches us in the same shape: something is wrong under the sink, and the instinct is to start replacing parts until it stops. That is the expensive way to fix an RO system, because the parts most people reach for first — a new membrane, a whole new tank, a full filter set — are rarely the actual problem. A stuck check valve, a loose push-fit fitting and a genuinely dying membrane can produce symptoms that look identical from the kitchen, and only one of those three costs more than fifteen dollars to fix.</p>
+      <p>This page works through nine symptoms in the order we'd actually check them in: cheapest and most likely first, most expensive and least likely last. If you fix something on this list and the problem persists, that is useful information too — it rules a cause out and tells you where to look next, instead of leaving you holding a $50 membrane that was never the issue.</p>
+
+      <h2 class="h2" id="order-list">The order to check things in, and why</h2>
+      <p>There is a reason plumbers and RO manufacturers' support lines default to the same sequence, and it isn't laziness — it's base rates. Loose fittings and worn O-rings fail constantly, because they are the parts under the most mechanical stress every time the system pressurizes and depressurizes. Membranes fail rarely, because they have no moving parts and are protected by everything upstream of them. Checking in the wrong order means you're most likely to spend money on the part least likely to be broken.</p>
+      <ol>
+        <li><strong>Fittings and connections</strong> — tighten or reseat first. Cost: free. Fixes the majority of leaks.</li>
+        <li><strong>O-rings and housing seals</strong> — inspect for a pinch, a twist or visible wear. Cost: a few dollars if a spare is on hand, otherwise the price of a filter set that includes them.</li>
+        <li><strong>The check valve and the ASO valve</strong> — the two small parts that control drain flow and tank fill. Cost: under $15 each, widely available.</li>
+        <li><strong>The pressure tank's air charge</strong> — a bicycle-pump-and-gauge job, not a purchase.</li>
+        <li><strong>Filter cartridges on schedule</strong> — cheap, routine, and the most commonly neglected cause of a slow or bad-tasting faucet.</li>
+        <li><strong>The membrane</strong> — check last, because it is both the most expensive part and the one most protected from failure by everything ahead of it in the sequence.</li>
+      </ol>
+      <p>Work down that list and stop as soon as the symptom resolves. Skipping to the bottom because a symptom "sounds serious" is how a $12 check valve turns into a $200 system replacement that didn't need to happen.</p>
+    </div>
+  </section>
+
+  <section id="leaks">
+    <div class="prose">
+      <h2 class="h2">Water under the cabinet: the four usual sources</h2>
+      <p>A puddle under the sink is the single most common RO complaint, and it has almost always got one of four sources. Dry the cabinet floor completely, lay paper towels under each suspect area, run the system for a few minutes, and check which towel is wet first — that tells you more than staring at standing water ever will.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">1. A push-fit fitting that was never fully seated</h3>
+      <p>RO systems use quick-connect push-fit fittings almost everywhere — tubing pushes into a collet, a gripper ring bites the outside of the tube, and an O-ring inside the fitting seals it. This is the single most common leak source on any RO system, and it is nearly always caused by one of three things: the tube wasn't pushed in far enough to seat past the O-ring, the tube end wasn't cut square, or the tube has a scratch or gouge running along it from a bad prior cut. Push the tube in firmly until it stops, then tug gently to confirm it's gripped. If a fitting keeps weeping after reseating, cut half an inch off the tube with a fresh, square cut and reinsert — a scored tube will never seal against the O-ring no matter how hard you push it.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">2. A filter housing that wasn't torqued evenly, or a swapped O-ring</h3>
+      <p>Standard 10"×2.5" housings — the kind used on systems like the APEC ROES-PH75 and the iSpring RCC7AK-BN — seal with a large O-ring at the top of the canister. After a filter change, a leak here usually means the housing wasn't tightened evenly (most are hand-tight plus a quarter turn with the supplied wrench, not more), the O-ring wasn't seated fully in its groove before closing, or the O-ring itself is pinched, twisted or missing a light coat of food-grade silicone grease. Reopen the housing, check that the O-ring sits flush all the way around with no visible twist, add a thin film of grease if it looks dry, and close it evenly by hand before using the wrench for the final quarter-turn.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">3. The feed valve or the saddle valve at the cold-water line</h3>
+      <p>This is where the system taps into your home's plumbing, and it's a compression or self-piercing fitting under constant line pressure, not RO system pressure. A weep here after months of no issue is usually the compression nut backing off slightly, or — on a saddle valve — the rubber gasket compressing over time. Tighten the compression nut a partial turn and check again; if it's the saddle valve gasket, that's a part swap, not a wrench job.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">4. The drain saddle at the waste pipe</h3>
+      <p>The saddle clamps onto your drain pipe and a small tube carries reject water into it. Leaks here show up as water on the cabinet floor near the drain pipe rather than near the system itself, and the fix is almost always re-tightening the saddle's screws evenly on both sides, or confirming the hole drilled into the drain pipe lines up cleanly with the saddle's opening — an off-center hole lets water track along the outside of the pipe instead of draining into it.</p>
+      <p>One diagnostic habit worth adopting permanently: keep a folded towel under the housings at all times. It turns a slow weep you'd otherwise discover as a swollen cabinet floor two weeks later into something you notice the same day.</p>
+    </div>
+  </section>
+
+  <section id="drain">
+    <div class="prose">
+      <h2 class="h2">Continuous drain flow: the check valve, the ASO valve, and a stuck membrane</h2>
+      <p>Some drain flow during operation is normal — that's the mechanism, not a fault. The problem worth chasing is a drain line that keeps running steadily after the storage tank is full and the faucet is closed. Three components can cause this, roughly in order of likelihood.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">The check valve</h3>
+      <p>Tank-style systems have a check valve positioned after the membrane, and its job is to stop pressurized water in the tank from flowing backward through the membrane and out to drain once the tank is full. When a check valve sticks open — usually from a bit of sediment lodged in the seat, or a worn seal — tank pressure pushes water continuously across the membrane and down the drain, and it will keep doing that indefinitely even with the faucet shut. This is the single most common cause of a drain line that won't stop running. Check valves are inexpensive, install inline, and are worth replacing on suspicion alone if the system is more than a couple of years old — they're not a serviceable part, just a swap.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">The ASO (automatic shut-off) valve</h3>
+      <p>The ASO valve is a tank-pressure-sensing valve that stops feed water from flowing to the membrane once the storage tank reaches roughly two-thirds of the home's incoming line pressure — the point at which further production would be too slow to be worth the water. If the ASO valve fails to sense a full tank, the system keeps producing water — and sending the reject portion to drain — well past the point it should have stopped. A failed ASO valve is diagnosed by checking the tank's air pre-charge first (see the slow-faucet section below), because a tank with a collapsed air charge never reaches the pressure the ASO valve is waiting for, and looks exactly like a bad ASO valve until you rule that out.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">A membrane that's fouled past the point of rejecting properly</h3>
+      <p>This is the least common cause and the one to check last. A badly fouled membrane can lose enough rejection efficiency that the system essentially can't tell "clean enough" from "still working," and some designs respond by running longer to compensate. If the check valve and ASO valve both test fine and the drain still won't stop, take a TDS reading at the faucet and compare it to feed water — see <a href="/tds-meter-what-the-number-means">what the TDS number actually means</a> for how to turn that reading into a rejection percentage rather than an isolated figure. A membrane whose rejection has fallen well below its rated range, on a system like the iSpring RCC7AK-BN or the APEC ROES-PH75, is the remaining explanation, and at that point a replacement membrane is the correct fix rather than a guess.</p>
+    </div>
+  </section>
+
+  <section id="noise">
+    <div class="prose">
+      <h2 class="h2">Gurgling and air noises after a filter change: usually normal</h2>
+      <p>This is the symptom that generates the most unnecessary panic, because it sounds like something failing when it's almost always just physics. Every time a housing is opened for a filter change, air enters the system. That air has to go somewhere, and "somewhere" is through the tubing, into the tank, and eventually out through the faucet or the drain line — and air moving through water-filled tubing gurgles.</p>
+      <p>Expect gurgling, hissing or intermittent air-spitting from the faucet for the first several tank-fill cycles after any filter change or system reinstall. Draw a full glass, let the tank refill, draw another, and repeat — each cycle purges more trapped air, and the noise fades over roughly the first day of normal use. This is standard behavior after reinstalling housings on systems like the APEC ROES-PH75 or the iSpring RCC7AK-BN, and it is not a sign that something was installed wrong.</p>
+      <p>Where it's worth a second look: gurgling that hasn't faded after several days of normal use, or that starts up on a system nobody has touched in months. Persistent gurgling with no recent filter change usually points to one of two things — a slow air leak on the intake side of a fitting (air is being drawn in continuously rather than purged once), or a nearly empty pressure tank pulling air through the last of its water because the air charge has failed and the bladder has collapsed. The fitting check from the leaks section above and the tank-charge check below cover both.</p>
+    </div>
+  </section>
+
+  <section id="slow">
+    <div class="prose">
+      <h2 class="h2">Slow faucet: pressure, tank charge, or a spent membrane</h2>
+      <p>A faucet that used to fill a glass in seconds and now trickles has three realistic causes, and — usefully — they're diagnosable in an order that goes cheapest first again.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">Incoming water pressure</h3>
+      <p>RO systems need a minimum feed pressure to work at their rated output — the APEC ROES-PH75, for example, specifies 40 to 85 psi. Anything below that range slows production system-wide, and it's rarely the RO system's fault: a partially closed feed valve, a water softener or whole-house filter with its own pressure drop, or genuinely low municipal pressure can all be the actual cause. A cheap inline pressure gauge at the feed valve settles this in under a minute and costs less than any part on this page — <a href="/reverse-osmosis-water-pressure-and-flow-rate">our guide to pressure and flow rate</a> goes deeper into how GPD ratings translate to actual output at your specific pressure.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">The pressure tank's air charge</h3>
+      <p>This is the most overlooked cause of a slow faucet, and it's the one people skip straight past on their way to blaming the membrane. A standard RO storage tank has two chambers separated by a rubber bladder: water on one side, compressed air on the other. The air side is what pushes stored water out to the faucet with any real force — an RO tank has no pump of its own. That air charge is supposed to sit at around 7 psi empty, and it bleeds down slowly over a year or two just from normal use. A tank with a low or collapsed air charge still fills with water at the same rate, so it doesn't look empty — but it delivers that water to the faucet as a weak trickle instead of a steady stream, because there's no air pressure left to push it out.</p>
+      <p>Checking it takes five minutes: with the tank empty (draw water from the faucet until it stops), use a standard tire gauge on the Schrader valve, usually on the underside of the tank. Around 7 psi with the tank empty is normal; noticeably lower means topping it up with a bicycle pump or a compressor set low, a few pounds at a time, rechecking as you go. This is a five-minute, zero-cost fix that resolves a large share of "my faucet got slow" complaints without touching a single filter or the membrane.</p>
+
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">A spent membrane</h3>
+      <p>Only after pressure and tank charge check out should the membrane become the suspect. A membrane loses permeability as it fouls, and the system simply produces water more slowly — it's typically a two-to-three-year part, and the fouling accelerates with hard water, high feed TDS, or a neglected pre-filter that let chlorine and sediment reach it early. A TDS check (feed versus product, computed as a rejection percentage) is the way to confirm it rather than guess: a membrane that once held in the low-to-mid nineties and has drifted well below its published range, alongside a genuinely slow fill, is the point where the membrane itself — not the tank, not the pressure, not the filters — is the answer.</p>
+    </div>
+  </section>
+
+  <section id="taste">
+    <div class="prose">
+      <h2 class="h2">Bad taste or smell returning: the post-carbon stage and stagnation</h2>
+      <p>Taste and odor complaints on an RO system point at two different causes depending on when they show up. If the water tasted fine right after a filter change and has been sliding since, that's the post-carbon (also called the "inline" or "polish") filter exhausting — it's the last stage before the faucet, and it's specifically there to strip any residual taste from water that's been sitting in the tank. Carbon doesn't clog when it exhausts; it just stops adsorbing, silently, so taste is genuinely the correct signal for this particular stage rather than a symptom to distrust. Replacing the post-carbon cartridge on its normal schedule — typically alongside the other filters, on systems like the APEC ROES-PH75 or the iSpring RCC7AK-BN — resolves this in one change.</p>
+      <p>If the water tastes stale or faintly "off" rather than chemically wrong, and especially if the system has sat unused for a week or more — a vacation, a slow winter, a rental between tenants — the more likely cause is stagnation rather than a spent filter. Water sitting motionless in the tank and tubing for days picks up a flat taste even with fresh filters installed, simply from lack of turnover. The fix is to draw and discard several full glasses in a row to flush the tank with fresh product water before drinking it normally again. A system that's sat idle for a month or more should also be sanitized before returning to regular use — <a href="/how-to-sanitize-and-maintain-a-reverse-osmosis-system">the sanitizing routine</a> covers what that involves and why it matters more after a filter change than most owners expect.</p>
+      <p>A returning chlorine taste specifically — rather than a generic staleness — is worth taking more seriously than the others, because it means the carbon stages ahead of the membrane may also be exhausted, and free chlorine reaching the membrane is what shortens its life. If chlorine taste and a slow faucet show up together, check the pre-filters before anything else.</p>
+    </div>
+  </section>
+
+  <section id="cost">
+    <div class="prose">
+      <h2 class="h2">When the fix costs more than the system, and what that means at year seven</h2>
+      <p>Every part discussed above is cheap on its own — a check valve, a tank recharge, a fitting, a filter set. The one place the math changes is a full replacement stack: a new membrane, a new tank, and a full filter set all at once, on a system old enough that several of its other components are also nearing end of life. At that point it's worth pricing the repair against a new system rather than assuming the existing one is worth saving by default.</p>
+      <p>The APEC ROES-PH75 sells for $189.99 and the iSpring RCC7AK-BN for $234.99 — both complete 6-stage systems, tank included. A replacement filter set alone, like the <a href="https://www.amazon.com/dp/B00I11HUGW?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">APEC FILTER-SET-ES</a> at $25.46 for a six-month pre-filter set, or the <a href="https://www.amazon.com/dp/B07NZSSBWC?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Waterdrop G3-N1CF</a> at $29.99 for a proprietary front filter, is a small fraction of either system's price. But stack a new membrane, a new tank (tanks aren't cheap to replace individually — they're often a large share of a system's original price) and a full filter set together on a seven-year-old unit, and the repair bill can land within striking distance of, or past, the cost of a new complete system with a fresh warranty and none of the other unknowns an old unit carries — a housing that's been cross-threaded once, tubing that's gone slightly brittle, a faucet valve that's stiffening up.</p>
+      <p>The practical rule: fix single components as they fail, in the cheap-to-expensive order above, for as long as failures come one at a time. When a system needs its tank, its membrane and its full filter set replaced in the same visit, get the price of both paths — repair parts and a new complete system — before committing to either, because at year seven the new-system column is a live alternative, not a throwaway comparison. If budget is the deciding factor, <a href="/best-reverse-osmosis-systems-under-250">our roundup of systems under $250</a> is priced for exactly this replacement decision.</p>
+    </div>
+  </section>
+
+  <section id="parts">
+    <div class="kicker"><span class="eyebrow">Parts referenced above</span></div>
+    <h2 class="h2">The filter sets mentioned in this guide</h2>
+    <p class="sub">Not diagnostic tools — the routine replacement parts that keep the pre-filter and membrane stages from being the cause of the symptoms above in the first place.</p>
+    <div class="costs">
+      <div class="cost">
+        <div class="cimg"><img src="/images/amazon-B00I11HUGW.webp" alt="APEC FILTER-SET-ES replacement pre-filter set" width="800" height="800" loading="lazy" decoding="async"></div>
+        <h3>APEC FILTER-SET-ES</h3>
+        <div class="cprice">$25.46</div>
+        <p>A 6-month sediment and carbon pre-filter set for APEC ROES-series systems — the stage that protects the membrane from the chlorine and sediment that shorten its life.</p>
+        <a class="buy" href="https://www.amazon.com/dp/B00I11HUGW?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a>
+      </div>
+      <div class="cost">
+        <div class="cimg"><img src="/images/amazon-B07NZSSBWC.webp" alt="Waterdrop G3-N1CF replacement front filter cartridge" width="800" height="800" loading="lazy" decoding="async"></div>
+        <h3>Waterdrop G3-N1CF</h3>
+        <div class="cprice">$29.99</div>
+        <p>The proprietary 3-in-1 front filter for Waterdrop's G3-W, G3P600 and G3P800 systems, rated for six months or 550 gallons — a twist-in swap with no tools.</p>
+        <a class="buy" href="https://www.amazon.com/dp/B07NZSSBWC?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="systems">
+    <div class="kicker"><span class="eyebrow">If it's time to replace</span></div>
+    <h2 class="h2">Two complete systems, if repair no longer makes sense</h2>
+    <p class="sub">Priced against the repair-versus-replace math above — both are complete 6-stage under-sink systems with a tank included.</p>
+    <div class="picks">
+      <article class="pick">
+        <div class="rank">01<small>Serviceable</small></div>
+        <div>
+          <h3>APEC Water ROES-PH75</h3>
+          <div class="who">Standard housings, wide parts availability</div>
+          <div class="rl2"><b>6-stage</b> · alkaline · <b>75 GPD</b> · WQA certified · tank</div>
+          <p class="body">A tank system built on standard 10"×2.5" housings, which is what makes the fittings, O-rings and filter sets in this guide widely available and inexpensive for as long as you own it. The transparent first housing also makes the sediment-load check mentioned above a glance rather than a guess.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00NWZ1RCK.webp" alt="APEC Water ROES-PH75 6-stage alkaline reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$189.99</div><span class="tag">Tank · alkaline</span><a class="buy" href="https://www.amazon.com/dp/B00NWZ1RCK?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+      <article class="pick">
+        <div class="rank">02<small>Alternative</small></div>
+        <div>
+          <h3>iSpring RCC7AK-BN</h3>
+          <div class="who">NSF/ANSI 58 certified as a complete system</div>
+          <div class="rl2"><b>6-stage</b> · alkaline · <b>75 GPD</b> · NSF/ANSI 58 · top-mounted faucet</div>
+          <p class="body">Also a standard-housing tank system, certified to NSF/ANSI 58 as a whole assembly rather than on materials alone. The top-mounted faucet design is meant to simplify the install itself — worth knowing if the reason you're replacing is that the old system's faucet valve had also started failing.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B005LJ8EXU.webp" alt="iSpring RCC7AK-BN 6-stage alkaline reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$234.99</div><span class="tag">Tank · alkaline</span><a class="buy" href="https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Common troubleshooting questions</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>My RO system's drain line never stops running. What's wrong?</summary><p>Most often a stuck-open check valve letting tank pressure push water backward through the membrane and out to drain continuously. A failed ASO (automatic shut-off) valve is the second possibility, but rule out a low pressure-tank air charge first — a tank that never reaches full pressure looks identical to a bad ASO valve. Both the check valve and the ASO valve are inexpensive inline parts; a fouled membrane is the least likely cause and worth checking last, with a TDS reading to confirm before replacing it.</p></details>
+      <details><summary>Is gurgling after a filter change normal?</summary><p>Yes, almost always. Opening a housing lets air into the system, and that air works its way out through the tubing and faucet over the first several tank-fill cycles — draw and refill a few times and it typically clears within a day. It's only worth investigating further if the gurgling hasn't faded after several days, or if it starts on a system nobody has recently serviced, which points to an air leak at a fitting or a collapsed pressure-tank air charge instead.</p></details>
+      <details><summary>Why did my RO faucet suddenly get slow?</summary><p>Check in this order: incoming water pressure (a cheap inline gauge confirms it in a minute), the pressure tank's air charge (should sit around 7 psi empty, checked with a tire gauge on the Schrader valve and topped up with a bicycle pump if low), and only then the membrane. A collapsed tank air charge is the most commonly overlooked cause — the tank still fills with water at a normal rate, so it doesn't look empty, but it can no longer push that water out to the faucet with any force.</p></details>
+      <details><summary>Where do RO systems usually leak?</summary><p>Four places, roughly in order of frequency: a push-fit fitting that wasn't fully seated or has a scored tube, a filter housing O-ring that's dry, pinched or twisted, the feed valve at the cold-water line loosening slightly over time, and the drain saddle at the waste pipe. Dry the cabinet, lay paper towels under each suspect area, run the system, and check which towel gets wet first rather than guessing.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if the system needs more than a fix</h2>
+    <div class="keep">
+      <a href="/reverse-osmosis-water-pressure-and-flow-rate"><span class="kt">Why your faucet trickles</span><span class="kd">A deeper look at GPD ratings, incoming pressure and what a tired membrane does to actual flow.</span></a>
+      <a href="/how-to-sanitize-and-maintain-a-reverse-osmosis-system"><span class="kt">Sanitizing and maintenance</span><span class="kd">The step most owners skip at filter changes, and the full routine for a system that's sat idle.</span></a>
+      <a href="/tds-meter-what-the-number-means"><span class="kt">Reading your TDS meter</span><span class="kd">How to turn a feed-versus-product reading into a real rejection percentage, and what drift actually means.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"RO Troubleshooting: Leaks, Gurgles and the Faucet That Never Stops","description":"Nine symptoms, what each one usually is, and the order to check them in — before you replace a part that was never broken.","image":"https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-troubleshooting-leaks-and-noises.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-08-25","dateModified":"2026-08-25","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/reverse-osmosis-troubleshooting-leaks-and-noises"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to diagnose a leaking or noisy reverse osmosis system","step":[
+ {"@type":"HowToStep","name":"Check fittings and connections","text":"Reseat any push-fit tubing that wasn't pushed in fully, and check for a square, unscored tube end. This resolves the majority of leaks."},
+ {"@type":"HowToStep","name":"Inspect O-rings and housing seals","text":"Open filter housings and check the O-ring sits flush and ungreased O-rings get a thin coat of food-grade silicone grease."},
+ {"@type":"HowToStep","name":"Test the check valve and ASO valve","text":"If the drain line runs continuously with the faucet closed, these two inexpensive inline parts are the most likely cause."},
+ {"@type":"HowToStep","name":"Check the pressure tank's air charge","text":"With the tank empty, use a tire gauge on the Schrader valve; it should read around 7 psi. Top up with a bicycle pump if low."},
+ {"@type":"HowToStep","name":"Replace filter cartridges on schedule","text":"A slow or bad-tasting faucet is commonly a neglected pre-filter or post-carbon cartridge rather than a system fault."},
+ {"@type":"HowToStep","name":"Test the membrane last","text":"Take a TDS reading of feed versus product water and compare the rejection percentage to the manufacturer's published range before replacing the membrane."}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"My RO system's drain line never stops running. What's wrong?","acceptedAnswer":{"@type":"Answer","text":"Most often a stuck-open check valve letting tank pressure push water backward through the membrane and out to drain continuously. A failed ASO (automatic shut-off) valve is the second possibility, but rule out a low pressure-tank air charge first, since a tank that never reaches full pressure looks identical to a bad ASO valve. Both the check valve and the ASO valve are inexpensive inline parts; a fouled membrane is the least likely cause and worth checking last, with a TDS reading to confirm before replacing it."}},
+ {"@type":"Question","name":"Is gurgling after a filter change normal?","acceptedAnswer":{"@type":"Answer","text":"Yes, almost always. Opening a housing lets air into the system, and that air works its way out through the tubing and faucet over the first several tank-fill cycles - draw and refill a few times and it typically clears within a day. It is only worth investigating further if the gurgling has not faded after several days, or if it starts on a system nobody has recently serviced, which points to an air leak at a fitting or a collapsed pressure-tank air charge instead."}},
+ {"@type":"Question","name":"Why did my RO faucet suddenly get slow?","acceptedAnswer":{"@type":"Answer","text":"Check in this order: incoming water pressure, the pressure tank's air charge (should sit around 7 psi empty, checked with a tire gauge and topped up with a bicycle pump if low), and only then the membrane. A collapsed tank air charge is the most commonly overlooked cause - the tank still fills with water at a normal rate, so it does not look empty, but it can no longer push that water out to the faucet with any force."}},
+ {"@type":"Question","name":"Where do RO systems usually leak?","acceptedAnswer":{"@type":"Answer","text":"Four places, roughly in order of frequency: a push-fit fitting that was not fully seated or has a scored tube, a filter housing O-ring that is dry, pinched or twisted, the feed valve at the cold-water line loosening slightly over time, and the drain saddle at the waste pipe. Dry the cabinet, lay paper towels under each suspect area, run the system, and check which towel gets wet first rather than guessing."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Parts and systems referenced in this troubleshooting guide","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"APEC Water FILTER-SET-ES Replacement Reverse Osmosis Pre-Filter Set","brand":{"@type":"Brand","name":"APEC Water"},"offers":{"@type":"Offer","price":"25.46","priceCurrency":"USD","url":"https://www.amazon.com/dp/B00I11HUGW?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Waterdrop G3-N1CF Replacement Front Filter","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"29.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B07NZSSBWC?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"APEC Water ROES-PH75 6-Stage Under Sink RO System","brand":{"@type":"Brand","name":"APEC Water"},"offers":{"@type":"Offer","price":"189.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B00NWZ1RCK?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"iSpring RCC7AK-BN 6-Stage Alkaline Reverse Osmosis System","brand":{"@type":"Brand","name":"iSpring"},"offers":{"@type":"Offer","price":"234.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B005LJ8EXU?tag=bestreverseosmosis-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>
