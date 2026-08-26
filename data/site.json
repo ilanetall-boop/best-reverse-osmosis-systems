@@ -185,6 +185,16 @@
       "minutes": 17,
       "date": "2026-08-25",
       "featured": true
+    },
+    {
+      "slug": "nsf-58-vs-nsf-372-certification-explained",
+      "title": "NSF 58 vs NSF 372 vs WQA: What RO Certifications Actually Mean",
+      "description": "One certifies that the system removes contaminants. One certifies that its plastic is lead-free. Manufacturers rely on you not knowing the difference.",
+      "category": "Buying advice",
+      "hero": "hero-nsf-58-vs-nsf-372-certification-explained",
+      "minutes": 13,
+      "date": "2026-08-26",
+      "featured": true
     }
   ]
 }
