@@ -195,6 +195,16 @@
       "minutes": 13,
       "date": "2026-08-26",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-remineralization-filters",
+      "title": "Remineralization Filters: What They Add Back, and Whether It Matters",
+      "description": "Reverse osmosis strips calcium and magnesium along with everything else. Here is what putting them back does to the taste.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-remineralization-filters",
+      "minutes": 13,
+      "date": "2026-08-30",
+      "featured": true
     }
   ]
 }
