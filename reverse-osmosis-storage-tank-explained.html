@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The RO Storage Tank: Pressure, Size, and Why Yours Runs Out</title>
+<meta name="description" content="A four-gallon tank does not hold four gallons. Here is why, and how to bring a slow one back.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/reverse-osmosis-storage-tank-explained">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="The RO Storage Tank: Pressure, Size, and Why Yours Runs Out">
+<meta property="og:description" content="A four-gallon tank does not hold four gallons. Here is why, and how to bring a slow one back.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-storage-tank-explained.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#capacity">Real capacity</a><a href="#bladder">Pre-charge</a><a href="#symptoms">Failure signs</a><a href="#recharge">Recharge it</a><a href="#picks">The picks</a><a href="#replace">Replace or repair</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>Storage tank explained</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Guide</span>
+    <h1 class="serif">The RO storage tank: pressure, size, and why yours runs out</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>September 1, 2026</b></span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-reverse-osmosis-storage-tank-explained.webp" alt="Reverse osmosis storage tank installed under a kitchen sink alongside filter housings, showing the tank's air valve and outlet fitting" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+
+  <section id="capacity">
+    <div class="prose">
+      <p>Somewhere on the side of your reverse osmosis tank, in raised plastic letters, is a number: 3.2 gallons, 4 gallons, sometimes as high as 11. It is the first spec anyone quotes when they're comparing systems, and it is close to useless on its own, because a "four-gallon" tank was never going to hand you four gallons at the faucet. On a typical residential setup, you get roughly two and a half — a little more on a good day, noticeably less if the tank is old or under-charged. This is not a defect. It is how the tank was designed to work, and understanding why turns a lot of "my RO system is so slow" complaints into a five-minute pressure check instead of a wasted service call.</p>
+      <p>The gap comes down to one part almost nobody thinks about: the pocket of compressed air sealed inside the tank, on the other side of a rubber diaphragm or bladder from the water. That air is what pushes your water out to the faucet — reverse osmosis systems don't have a pump moving water to the tap, so without that stored pressure you'd get nothing but a trickle limited to whatever your house's incoming line pressure can force through a skinny faucet line. The tradeoff is that the same air cushion caps how much water the tank can ever hold, long before it reaches its stamped volume.</p>
+      <h2 class="h2">The physics in one paragraph</h2>
+      <p>Picture the tank empty of water, sitting at its <em>pre-charge</em> pressure — factory-set, typically in the 5 to 7 psi range for the small diaphragm tanks used under a sink. As your RO membrane slowly produces permeate, that water pushes into the tank and compresses the air pocket. Compressing a gas raises its pressure (this is Boyle's Law, the same relationship that governs a bicycle pump), so the more water goes in, the harder the air pushes back. Eventually the tank pressure climbs high enough to equal the membrane's own operating pressure, and production essentially stops — the membrane simply can't push any more permeate against that resistance. That equilibrium point is almost never anywhere close to a physically full tank.</p>
+      <p>Industry convention treats <strong>50 to 65 percent of the stamped volume as a realistic usable draw</strong> for a standard residential tank at a healthy pre-charge, feeding from typical low-pressure RO membranes. A 4-gallon tank giving you about 2.5 usable gallons sits right in that band — around 62 percent. A 3.2-gallon tank, common on compact under-sink kits, nets closer to 1.5 to 2 gallons. None of the products discussed later in this guide publish a specific usable-capacity figure separate from the stamped tank size, and neither do most manufacturers — which is exactly why this math is worth doing yourself before you assume a bigger number on the box means a bigger pour at the tap.</p>
+      <p>It matters more than it sounds like it should for anything that draws water in a hurry. If you've <a href="/connect-reverse-osmosis-to-refrigerator-ice-maker">connected your RO line to a refrigerator ice maker</a>, the ice maker and a filled water pitcher can empty a small tank's usable reserve in one go, and the system then needs time — often thirty minutes to a couple of hours — to slowly refill against house pressure before the next draw is back to full strength.</p>
+    </div>
+  </section>
+
+  <section id="bladder">
+    <div class="prose">
+      <h2 class="h2">Air bladders, pre-charge pressure, and how to check yours</h2>
+      <p>Two constructions show up in residential RO tanks, and the terms get used loosely, so it's worth being precise about what's actually inside. A <strong>bladder tank</strong> has a balloon-like rubber bladder that holds the air charge, suspended inside the steel or plastic shell, with water filling the space around it. A <strong>diaphragm tank</strong> instead has a single flexible diaphragm sealed across the middle of the tank, splitting it into a permanent air chamber on one side and a water chamber on the other. Functionally, for the purpose of this guide, they fail the same way and are diagnosed and recharged the same way, so we'll use "bladder" as the general term the way most manufacturers and installers do.</p>
+      <p>The pre-charge is set at the factory, but it doesn't stay put forever. Rubber is not perfectly airtight — air molecules slowly migrate through the bladder wall over months and years, and temperature swings under a sink (a dishwasher running next to it, a cold snap in an unheated basement) cause the trapped air to expand and contract, which accelerates the drift. A tank that shipped at 7 psi can quietly settle to 3 or 4 psi after a few years of normal use, and every drop in pre-charge pressure eats directly into the usable capacity calculated above, because the air pocket reaches equilibrium with the membrane sooner.</p>
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">Checking it takes five minutes and a tire gauge</h3>
+      <p>You don't need anything specialized. A standard automotive tire pressure gauge reads this valve just as accurately as it reads a car tire, because it's the same type of valve — a Schrader valve, usually capped in plastic or metal, on the bottom or side of the tank near the base.</p>
+      <ol>
+        <li><strong>Shut off the feed water</strong> to the RO system at its inlet valve, then open the RO faucet and let it run until it sputters and stops. The tank has to be completely empty of water for this reading to mean anything — checking a partly full tank gives you a falsely high number, because the water still inside is adding its own pressure on top of the air charge.</li>
+        <li><strong>Unscrew the valve cap</strong> and press a tire gauge onto the stem the same way you would on a bicycle or car tire.</li>
+        <li><strong>Read the number.</strong> For most small residential undersink tanks, a healthy empty pre-charge sits around 5 to 7 psi — noticeably lower than a well-pump pressure tank, which typically runs 20 to 40 psi. If your tank or system documentation specifies a different figure, that number takes precedence over the general range.</li>
+        <li><strong>Replace the cap</strong> snugly — a loose cap is a slow, silent leak path in its own right.</li>
+      </ol>
+      <p>Do this check once a year, or any time flow at the faucet has started feeling weaker than it used to. It costs nothing and it's the single most informative five minutes you can spend on a system that seems to be underperforming.</p>
+    </div>
+  </section>
+
+  <div class="notes" id="symptoms">
+    <div class="n"><div class="num">01</div><h3>Flow dies almost immediately</h3><p>A healthy tank gives a strong pour that gradually tapers as it empties. A bladder that's lost its charge gives you a weak stream, or none, from the very first second at the faucet — there's no stored pressure left to push with.</p></div>
+    <div class="n"><div class="num">02</div><h3>The faucet spits air</h3><p>Sputtering, coughing, or air bubbling out alongside the water is one of the clearest tells that the air side of the tank has lost its seal and is mixing with the water side.</p></div>
+    <div class="n"><div class="num">03</div><h3>A "full" tank feels wrong</h3><p>Lift or press on the tank. One that feels heavy and sloshes with liquid even after you've run the faucet dry has water-logged — the bladder has likely ruptured and the tank is now holding almost all water and no air cushion at all.</p></div>
+    <div class="n"><div class="num">04</div><h3>The system short-cycles</h3><p>A membrane that seems to run constantly, or a drain line that never quite goes quiet, can mean the tank isn't holding back-pressure the way it should, so the system keeps trying to refill a tank that won't stay full. Cross-check against our <a href="/reverse-osmosis-troubleshooting-leaks-and-noises">troubleshooting guide for leaks and noises</a> before assuming it's the tank.</p></div>
+  </div>
+
+  <section id="recharge">
+    <div class="prose">
+      <h2 class="h2">Recharging a tank, step by step</h2>
+      <p>If the pressure check above showed a low but even reading — no water hissing or dripping out of the air valve when you press the gauge on — the bladder is very likely intact and simply needs air. That's a genuine do-it-yourself fix.</p>
+      <ol>
+        <li><strong>Close the feed valve.</strong> This is the shutoff on the cold-water line supplying the RO system's pre-filter or membrane housing — usually a small valve, sometimes a saddle valve, mounted right where the system taps into your plumbing.</li>
+        <li><strong>Drain the tank fully.</strong> Open the RO faucet and leave it open until the flow sputters to nothing. This depressurizes the water side completely, which you need before adjusting the air side.</li>
+        <li><strong>Find the air valve.</strong> Look on the bottom or side of the tank for a small plastic or metal cap, identical in principle to a tire valve stem cap. Remove it.</li>
+        <li><strong>Read the current pressure</strong> with a standard tire gauge, exactly as described above.</li>
+        <li><strong>Add air in small amounts.</strong> Using a hand or foot bicycle pump — a household air compressor works too, at low output — add short bursts of air, checking with the gauge between each one, until you reach the target pre-charge for an empty tank. For most residential undersink tanks that's roughly 5 to 7 psi; follow the number printed on your specific tank or in its documentation if one is available.</li>
+        <li><strong>Don't overshoot.</strong> Too much pre-charge pressure works against you just as much as too little — it can prevent the tank from accepting water at all, since the membrane may never build enough pressure to overcome an over-charged air side.</li>
+        <li><strong>Cap the valve, reopen the feed, close the faucet,</strong> and let the system refill. It will take longer than usual the first time, since it's filling from empty against a freshly set pre-charge.</li>
+        <li><strong>Write the date somewhere on the tank</strong> — a strip of tape and a marker is enough. It turns "is this normal drift" into a five-second lookup next time flow feels off.</li>
+      </ol>
+      <p>If, instead, you heard air hissing out with the water still in the line, or water itself came out of the air valve when you pressed the gauge on, stop — that's a ruptured bladder, not a pressure problem, and no amount of pumping will fix it. That takes you to the next section.</p>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">If you're shopping instead of repairing</span></div>
+    <h2 class="h2">Three tank-based systems worth knowing</h2>
+    <p class="sub">All three below are conventional pressurized-tank systems — not tankless units — so everything in this guide about pre-charge and bladders applies to them the same way it applies to the system already under your sink.</p>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>5-stage</small></div>
+        <div>
+          <h3>iSpring RCC7-BN</h3>
+          <div class="who">NSF certified, brushed nickel faucet</div>
+          <div class="rl2"><b>NSF certified</b> · <b>75 GPD</b> · 5 stages · top-mounted faucet</div>
+          <p class="body">A high-capacity 5-stage under-sink system rated at 75 gallons per day, with a top-mounted faucet fastener that lets you tighten the fit from above the sink deck rather than lying underneath it. Standard tank-and-housings layout, so the pre-charge check earlier in this guide is exactly the maintenance step to build into its schedule.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B003XELTTG.webp" alt="iSpring RCC7-BN 5-stage under sink reverse osmosis system with brushed nickel faucet" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$219.96</div><span class="tag">5-stage · tank</span><a class="buy" href="https://www.amazon.com/dp/B003XELTTG?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">02<small>Highest output</small></div>
+        <div>
+          <h3>APEC Water RO-90</h3>
+          <div class="who">The most gallons per day of this group</div>
+          <div class="rl2"><b>90 GPD</b> · 5 stages · under-sink · chrome</div>
+          <p class="body">APEC's RO-90 is rated for 90 gallons a day, ahead of the other two picks here — meaningful if your household draws heavily on the tank between refills, since a higher-output membrane refills a depleted tank faster after the kind of big draw discussed at the start of this guide.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00HRHHFPW.webp" alt="APEC Water RO-90 5-stage under sink reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$219.99</div><span class="tag">5-stage · tank</span><a class="buy" href="https://www.amazon.com/dp/B00HRHHFPW?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>Alkaline</small></div>
+        <div>
+          <h3>iSpring RCC7AK-BLK</h3>
+          <div class="who">Adds minerals back after the membrane</div>
+          <div class="rl2"><b>NSF/ANSI 58</b> · 6 stages · pH+ remineralization · black faucet</div>
+          <p class="body">The same RCC7 platform with a sixth, alkaline stage added, certified to NSF/ANSI 58 and putting minerals back into the water after the membrane strips them out — see our <a href="/reverse-osmosis-remineralization-filters">guide to remineralization filters</a> for what that stage does and doesn't change about the water. Certification specifics are covered in our <a href="/nsf-58-vs-nsf-372-certification-explained">NSF 58 vs NSF 372 explainer</a> if you want to know exactly what that badge is testing for.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0CN7JB1VD.webp" alt="iSpring RCC7AK-BLK alkaline 6-stage reverse osmosis system with black faucet" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$249.99</div><span class="tag">6-stage · alkaline</span><a class="buy" href="https://www.amazon.com/dp/B0CN7JB1VD?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="replace">
+    <div class="prose">
+      <h2 class="h2">When replacing the tank is cheaper than fighting it</h2>
+      <p>A stuck-but-intact bladder is worth recharging — it's free, it takes five minutes, and it usually works. A ruptured one is not worth chasing. Once the bladder has torn, air and water mix freely no matter how much you pump into the valve, and the tank will keep water-logging within hours of a recharge. At that point you're choosing between a standalone replacement tank and a full system swap, and the honest answer is that it depends on the age of everything else under the sink, not just the tank.</p>
+      <p>A tank is a commodity part on the standard sizes used by systems like the three above, and sourcing an exact physical and thread match for an older or discontinued system can turn into more hunting than the part itself is worth — bracket styles, tank-outlet thread sizes and mounting footprints all vary enough between brands that "close enough" sometimes isn't. If the membrane, housings and faucet are also several years old, a failed tank is frequently the symptom that shows up first while the rest of the system is quietly approaching the end of its useful life at the same time.</p>
+      <p>That's the actual calculation worth running: price a standalone tank plus your time against a complete system in the same range as the picks above, all of which land between roughly $220 and $250. If the gap between "replacement tank" and "replacement system" is small, the system wins, because you also reset the clock on a membrane and housings you'd likely be replacing within a year or two anyway. Our <a href="/best-reverse-osmosis-systems-under-250">roundup of systems under $250</a> is the wider version of that comparison if you want more than three options.</p>
+      <p>One more thing worth knowing before you decide: this entire failure mode — a bladder losing pressure or rupturing — doesn't exist on tankless RO systems, which produce water on demand using a pump instead of storing pressurized output. If a failing tank is the second or third time you've dealt with this on the same system, our <a href="/best-tankless-reverse-osmosis-systems">guide to the best tankless reverse osmosis systems</a> covers the alternative that sidesteps the problem entirely, at the cost of needing a nearby outlet.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Common questions</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Why doesn't my four-gallon tank deliver four gallons?</summary><p>Because part of that stamped volume is permanently reserved for the compressed-air pocket that pushes water to your faucet. As water enters the tank it compresses that air, and once the tank's internal pressure rises to match the membrane's operating pressure, the membrane stops producing. For a standard residential tank at a healthy pre-charge, that equilibrium typically lands around 50 to 65 percent of the stamped volume — roughly 2.5 usable gallons out of a nominal 4.</p></details>
+      <details><summary>What pressure should my RO tank be at?</summary><p>Checked empty, most small residential undersink tanks should read around 5 to 7 psi at the air valve — noticeably lower than a well-pump pressure tank, which runs 20 to 40 psi. Always defer to the figure printed on your specific tank or its documentation if one is available, and always check with the tank fully drained of water, since a partly full tank reads artificially high.</p></details>
+      <details><summary>How do I know if my tank's bladder has failed?</summary><p>Four signals, usually together: flow that's weak or absent from the first second at the faucet rather than tapering off gradually, air sputtering out with the water, a tank that feels heavy and sloshes with liquid even after you've run the faucet until it's dry, and a system that seems to run or cycle far more than it used to. Water or a hissing sound coming out of the air valve itself when you check pressure confirms a rupture rather than a simple pressure drop.</p></details>
+      <details><summary>Can I recharge a tank myself, or do I need a plumber?</summary><p>You can almost always do it yourself. It requires closing the feed valve, draining the tank through the faucet, and adding air at the tank's Schrader valve with an ordinary tire or bicycle pump and a tire gauge — the same tools and skills used to check a car tire. A plumber becomes worth calling only if the bladder itself has ruptured, since that requires replacing the tank rather than adjusting its pressure.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if the tank isn't your only question</h2>
+    <div class="keep">
+      <a href="/reverse-osmosis-troubleshooting-leaks-and-noises"><span class="kt">Leaks, gurgles and noises</span><span class="kd">Nine other symptoms, what each one usually is, and the order to check them in.</span></a>
+      <a href="/best-tankless-reverse-osmosis-systems"><span class="kt">Best tankless systems</span><span class="kd">No tank, no bladder, no pre-charge to check — what you trade for it instead.</span></a>
+      <a href="/best-reverse-osmosis-systems-under-250"><span class="kt">Best systems under $250</span><span class="kd">Six systems at the price where most people actually buy, tank-based and otherwise.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"The RO Storage Tank: Pressure, Size, and Why Yours Runs Out","description":"A four-gallon tank does not hold four gallons. Here is why, and how to bring a slow one back.","image":"https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-storage-tank-explained.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-09-01","dateModified":"2026-09-01","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/reverse-osmosis-storage-tank-explained"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Why doesn't my four-gallon tank deliver four gallons?","acceptedAnswer":{"@type":"Answer","text":"Because part of that stamped volume is permanently reserved for the compressed-air pocket that pushes water to your faucet. As water enters the tank it compresses that air, and once the tank's internal pressure rises to match the membrane's operating pressure, the membrane stops producing. For a standard residential tank at a healthy pre-charge, that equilibrium typically lands around 50 to 65 percent of the stamped volume - roughly 2.5 usable gallons out of a nominal 4."}},
+ {"@type":"Question","name":"What pressure should my RO tank be at?","acceptedAnswer":{"@type":"Answer","text":"Checked empty, most small residential undersink tanks should read around 5 to 7 psi at the air valve - noticeably lower than a well-pump pressure tank, which runs 20 to 40 psi. Always defer to the figure printed on your specific tank or its documentation if one is available, and always check with the tank fully drained of water, since a partly full tank reads artificially high."}},
+ {"@type":"Question","name":"How do I know if my tank's bladder has failed?","acceptedAnswer":{"@type":"Answer","text":"Four signals, usually together: flow that's weak or absent from the first second at the faucet rather than tapering off gradually, air sputtering out with the water, a tank that feels heavy and sloshes with liquid even after you've run the faucet until it's dry, and a system that seems to run or cycle far more than it used to. Water or a hissing sound coming out of the air valve itself when you check pressure confirms a rupture rather than a simple pressure drop."}},
+ {"@type":"Question","name":"Can I recharge a tank myself, or do I need a plumber?","acceptedAnswer":{"@type":"Answer","text":"You can almost always do it yourself. It requires closing the feed valve, draining the tank through the faucet, and adding air at the tank's Schrader valve with an ordinary tire or bicycle pump and a tire gauge - the same tools and skills used to check a car tire. A plumber becomes worth calling only if the bladder itself has ruptured, since that requires replacing the tank rather than adjusting its pressure."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to recharge a reverse osmosis storage tank","description":"Steps to restore the correct air pre-charge pressure in a residential reverse osmosis storage tank using a tire gauge and a hand pump.","step":[
+ {"@type":"HowToStep","name":"Close the feed valve","text":"Close the shutoff valve on the cold-water line supplying the RO system's pre-filter or membrane housing."},
+ {"@type":"HowToStep","name":"Drain the tank fully","text":"Open the RO faucet and let it run until the flow sputters and stops, fully depressurizing the water side of the tank."},
+ {"@type":"HowToStep","name":"Find the air valve","text":"Locate and remove the plastic or metal cap covering the Schrader air valve on the bottom or side of the tank."},
+ {"@type":"HowToStep","name":"Read the current pressure","text":"Press a standard tire pressure gauge onto the valve stem and note the reading."},
+ {"@type":"HowToStep","name":"Add air in small amounts","text":"Using a hand or foot bicycle pump, add short bursts of air, checking with the gauge between each one, until reaching roughly 5 to 7 psi for most residential undersink tanks, or the manufacturer's specified figure."},
+ {"@type":"HowToStep","name":"Avoid overshooting","text":"Stop at the target pressure; an over-charged tank can prevent the system from filling it at all."},
+ {"@type":"HowToStep","name":"Reopen the system","text":"Replace the valve cap, reopen the feed valve, close the faucet, and allow the tank to refill."}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Tank-based reverse osmosis systems referenced in this guide","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"iSpring RCC7-BN NSF Certified High Capacity Under Sink 5-Stage Reverse Osmosis Water Filter System","brand":{"@type":"Brand","name":"iSpring"},"offers":{"@type":"Offer","price":"219.96","priceCurrency":"USD","url":"https://www.amazon.com/dp/B003XELTTG?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"APEC Water RO-90 5-Stage Under Sink Reverse Osmosis System","brand":{"@type":"Brand","name":"APEC Water"},"offers":{"@type":"Offer","price":"219.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B00HRHHFPW?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"iSpring RCC7AK-BLK Alkaline 6-Stage Reverse Osmosis System","brand":{"@type":"Brand","name":"iSpring"},"offers":{"@type":"Offer","price":"249.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0CN7JB1VD?tag=bestreverseosmosis-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

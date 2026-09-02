@@ -215,6 +215,16 @@
       "minutes": 15,
       "date": "2026-08-31",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-storage-tank-explained",
+      "title": "The RO Storage Tank: Pressure, Size, and Why Yours Runs Out",
+      "description": "A four-gallon tank does not hold four gallons. Here is why, and how to bring a slow one back.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-storage-tank-explained",
+      "minutes": 13,
+      "date": "2026-09-02",
+      "featured": true
     }
   ]
 }
