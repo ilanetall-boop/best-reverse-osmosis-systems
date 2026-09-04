@@ -235,6 +235,16 @@
       "minutes": 14,
       "date": "2026-09-03",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-waste-water-ratio-explained",
+      "title": "The RO Waste Water Ratio, Explained",
+      "description": "Older systems send four gallons down the drain for every one they make. Here is what the ratio means and which systems changed it.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-waste-water-ratio-explained",
+      "minutes": 11,
+      "date": "2026-09-04",
+      "featured": true
     }
   ]
 }
