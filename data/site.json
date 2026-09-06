@@ -255,6 +255,16 @@
       "minutes": 15,
       "date": "2026-09-05",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-membrane-replacement-guide",
+      "title": "When to Replace an RO Membrane (and How to Tell)",
+      "description": "The membrane is the expensive cartridge and the one people change on the wrong schedule.",
+      "category": "How-to",
+      "hero": "hero-reverse-osmosis-membrane-replacement-guide",
+      "minutes": 12,
+      "date": "2026-09-06",
+      "featured": true
     }
   ]
 }
