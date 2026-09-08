@@ -275,6 +275,16 @@
       "minutes": 15,
       "date": "2026-09-07",
       "featured": true
+    },
+    {
+      "slug": "how-to-add-a-reverse-osmosis-faucet",
+      "title": "How to Add an RO Faucet to a Sink With No Spare Hole",
+      "description": "The air-gap hole, the soap dispenser sacrifice, and drilling granite without cracking it.",
+      "category": "How-to",
+      "hero": "hero-how-to-add-a-reverse-osmosis-faucet",
+      "minutes": 14,
+      "date": "2026-09-08",
+      "featured": true
     }
   ]
 }
