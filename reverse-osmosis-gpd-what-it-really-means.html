@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RO Systems and GPD: What the Number Really Tells You</title>
+<meta name="description" content="A 600 GPD system does not make 600 gallons a day in your kitchen. Here is what it does mean.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/reverse-osmosis-gpd-what-it-really-means">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="RO Systems and GPD: What the Number Really Tells You">
+<meta property="og:description" content="A 600 GPD system does not make 600 gallons a day in your kitchen. Here is what it does mean.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-gpd-what-it-really-means.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#measured">How it's measured</a><a href="#conditions">Pressure &amp; temp</a><a href="#flow">GPD vs. flow</a><a href="#helps">Where it helps</a><a href="#picks">The picks</a><a href="#compare">Compare instead</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>GPD, what it really means</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Guide</span>
+    <h1 class="serif">RO systems and GPD: what the number really tells you</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>September 9, 2026</b></span><span>13 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no additional cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-reverse-osmosis-gpd-what-it-really-means.webp" alt="Close-up of an under-sink reverse osmosis system's tankless housing with a GPD rating label, installed beside a kitchen cabinet" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+
+  <section id="measured">
+    <div class="prose">
+      <p>Every reverse osmosis listing leads with the same number: GPD, gallons per day. 75 GPD, 600 GPD, 800 GPD. It reads like a spec that describes your kitchen — how much water this thing will make for you — and that reading is the source of most of the disappointment buyers report after installing a system that never seems to hit its printed number. GPD is real, it's measured honestly by reputable manufacturers, and it is still not a description of what will happen at your sink.</p>
+      <p>Here is what it actually is. Nearly every published reverse osmosis GPD figure assumes something close to the same test bench: roughly 60 psi of feed pressure, water at about 77°F (25°C), and a feed source with a defined total dissolved solids reading in the low hundreds of parts per million. Those are the conditions written into the NSF/ANSI 58 test protocol, and most manufacturers test against them whether or not the specific unit on the box carries the NSF/ANSI 58 certification itself — the bench parameters are the industry's shared yardstick even when the third-party certification wasn't purchased for that particular model.</p>
+      <p>That yardstick exists to answer one narrow, useful question: how does this membrane compare with that membrane, under identical conditions? It is not a promise about a specific installation, any more than a car's window-sticker mileage is a promise about your commute. A 600 GPD system and an 800 GPD system were tested the same way, so the gap between the two figures is real and comparable. The mistake is assuming either number describes what comes out of your faucet.</p>
+      <p>Run the arithmetic and the abstraction gets obvious fast. Six hundred gallons a day works out to a hair over 0.4 gallons a minute if a membrane produced water continuously, at a steady rate, for a full 24 hours — a little over 50 ounces every sixty seconds. No household drinks water on that schedule, and no residential membrane is actually asked to run edge-to-edge for a day straight. The figure is a 24-hour production ceiling under bench conditions, not a description of how fast water leaves your tap on a Tuesday morning. Ceiling versus flow rate is the single most useful distinction to keep in mind before comparing two systems by their GPD number alone.</p>
+    </div>
+  </section>
+
+  <section id="conditions">
+    <div class="prose">
+      <h2 class="h2">Your pressure and your water temperature move the number more than the model name does</h2>
+      <p>Two variables specific to your house, not the system you buy, sit on top of the bench figure and can pull it down hard: incoming water pressure and the actual temperature of your feed water.</p>
+      <p>Most residential systems specify an operating window somewhere around 40 to 85 psi, with the rated GPD figure assuming something near the middle of that range — close to the 60 psi bench condition above. Below roughly 40 psi, output doesn't fade in a straight line; it falls off sharply, because the pressure differential pushing water across the membrane is the entire mechanism, and a membrane needs a minimum push before any meaningful amount of water crosses at all. A system rated at 600 GPD running on a 32 psi supply isn't operating at a modest discount — it can be operating at a fraction of that number, discount or not.</p>
+      <p>Feed water temperature matters almost as much and gets far less attention. Reverse osmosis membranes pass warmer water more readily than cold, and as a rough industry rule of thumb, output drops somewhere around 1.5 to 3 percent for every degree Fahrenheit the feed water sits below that 77°F bench baseline. Groundwater across much of the U.S. runs in the 50s Fahrenheit before winter, and an uninsulated line through an unheated crawlspace or slab can push that into the 40s — a 30-plus-degree gap from the bench that alone can cut rated output close to half, with nothing broken and nothing wrong with the unit itself.</p>
+      <p>These two variables stack, and a third compounds them over time: a membrane that's aging or fouled behind a neglected pre-filter loses rejection and output together, on a schedule that has nothing to do with the calendar printed on the box — <a href="/reverse-osmosis-membrane-replacement-guide">our guide to knowing when a membrane actually needs replacing</a> covers how to tell a supply problem apart from a parts problem. Put a genuinely cold, genuinely low-pressure household on an aging membrane, and an 800 GPD system can spend its whole working life behaving like something rated a fraction of that — accurately labeled, honestly tested, and still nothing like the number on the box in daily use.</p>
+    </div>
+  </section>
+
+  <section id="flow">
+    <div class="prose">
+      <h2 class="h2">GPD versus what actually comes out of the faucet</h2>
+      <p>The other reason the label and the lived experience diverge is structural: nothing about a GPD rating describes how water is delivered to your glass, because that job belongs to different hardware than the membrane the rating was measured on.</p>
+      <p>A classic tank-and-housings system stores finished water ahead of demand in a pressurized bladder tank, and the burst you get when you open the RO faucet is that stored tank discharging — not the membrane keeping pace with you in real time. <a href="/reverse-osmosis-storage-tank-explained">Our guide to the RO storage tank</a> goes through why that tank refills slowly over the following hour rather than instantly, and why a system's real day-to-day feel depends on tank size and refill speed at least as much as on the membrane's rated output.</p>
+      <p>Tankless designs skip the tank and use a small booster pump to push a higher instantaneous flow through the membrane in short bursts instead of spreading production evenly across 24 hours — one reason tankless systems can feel faster at the tap than a tank system carrying a similar or even higher GPD figure. Even then, flow at an RO faucet is nowhere close to an ordinary kitchen tap, and that's by design rather than a limitation of the membrane: RO faucets run on dedicated, narrow-bore tubing and a separate air-gap fixture rather than the household's main supply lines, which is also why <a href="/how-to-add-a-reverse-osmosis-faucet">adding one to a sink</a> is its own small plumbing project rather than a spout swap. Two systems fed at the same pressure, one rated 600 GPD and one rated 800 GPD, can produce a very similar trickle at the actual faucet — the difference between the two ratings mostly shows up in how quickly a tank refills, or how long a pump can sustain output before something else in the house draws water too.</p>
+      <p>None of this makes the rating meaningless — it's a genuinely comparable engineering figure between two systems tested the same way. It means treating it as a stand-in for "how fast will my glass fill" is the wrong read of what the number is for.</p>
+    </div>
+  </section>
+
+  <section id="helps">
+    <div class="prose">
+      <h2 class="h2">Where a genuinely higher rating earns its keep</h2>
+      <p>A bigger GPD number isn't marketing filler — it does real work in a specific set of households, and it's worth being precise about which ones.</p>
+      <p>Households where more than one thing draws from the RO line at once are the clearest case: a family filling glasses while a pot fills for pasta, or a system also feeding an ice maker or a second fridge dispenser. A 75 GPD system built around one or two people sipping water has very little slack for a second and third simultaneous draw; a 600 or 800 GPD system has real headroom to spare.</p>
+      <p>Because pressure and temperature can both derate a system well below its label, as covered above, a higher rating is also a way to buy margin against a house that will never see bench conditions. A household on cold well water and marginal pressure that would leave a 75 GPD system struggling has a much better chance of staying comfortable on a 600 or 800 GPD unit, even though neither will hit its printed number in that house. Buying headroom this way is a legitimate strategy — it's headroom against your own conditions, not a guarantee of the number on the box.</p>
+      <p>The flip side is just as real. A household of one or two people using RO strictly for drinking water and an occasional coffee maker rarely stresses even a 75 GPD tank system, and paying a premium for an 800 GPD rating buys very little there beyond peace of mind — the tank refills faster than anyone in that house is likely to empty it, and a tankless unit at that tier is more pump and more plumbing than the demand justifies.</p>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">The picks</span></div>
+    <h2 class="h2">Four systems, two GPD tiers, and where each earns the label</h2>
+    <p class="sub">All four are tankless under-sink systems, so the tank-refill variable above isn't in play here — the comparison is squarely about the GPD tier and what each one is built to answer.</p>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>600 GPD tier</small></div>
+        <div>
+          <h3>VIOMI V6 600GPD Under Sink Tankless Reverse Osmosis Water Filtration System</h3>
+          <div class="who">The 600 GPD tier, at its most straightforward</div>
+          <div class="rl2"><b>600 GPD</b> · tankless · under-sink</div>
+          <p class="body">A tankless under-sink system rated at 600 GPD — the tier suited to a household drawing drinking water at more than one tap without needing the higher-output class covered above. At $219.98 it's the lower-priced way into that 600 GPD class among the systems on this page. Confirm the current listing for stage count and certification before buying; we're working from the published rating, size and price here, not a full spec sheet.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0DKSZX9CB.webp" alt="VIOMI V6 600GPD tankless under-sink reverse osmosis water filtration system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$219.98</div><span class="tag">Tankless · 600 GPD</span><a class="buy" href="https://www.amazon.com/dp/B0DKSZX9CB?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">02<small>600 GPD tier</small></div>
+        <div>
+          <h3>VIOMI Pure B6W 600GPD Under-Sink Tankless Reverse Osmosis Water Filtration</h3>
+          <div class="who">A second build in the same tier</div>
+          <div class="rl2"><b>600 GPD</b> · tankless · under-sink</div>
+          <p class="body">Also tankless, also rated at 600 GPD, the Pure B6W sits in the identical output class as the V6 above, at a somewhat higher $249.99. Two systems rated at the same GPD figure were tested against the same bench conditions described earlier, so the number itself doesn't settle the choice between them — price, warranty terms and the stage count on each specific listing are what actually differ, and worth comparing directly.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0GGMJ3Q24.webp" alt="VIOMI Pure B6W 600GPD under-sink tankless reverse osmosis water filtration system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$249.99</div><span class="tag">Tankless · 600 GPD</span><a class="buy" href="https://www.amazon.com/dp/B0GGMJ3Q24?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>600 GPD tier</small></div>
+        <div>
+          <h3>Waterdrop G2P600 Under-Sink RO System, 600 GPD Tankless RO Water Filtration</h3>
+          <div class="who">A familiar name in the same 600 GPD class</div>
+          <div class="rl2"><b>600 GPD</b> · tankless · under-sink</div>
+          <p class="body">Waterdrop's G2P600 lands in the same tankless 600 GPD class as the two VIOMI systems above, at $289.00. It's a familiar name if you've read our <a href="/best-tankless-reverse-osmosis-systems">roundup of the best tankless reverse osmosis systems</a> — Waterdrop turns up there too, including the higher-output sibling covered next.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B08746M1NX.webp" alt="Waterdrop G2P600 tankless under-sink reverse osmosis system, 600 GPD" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$289.00</div><span class="tag">Tankless · 600 GPD</span><a class="buy" href="https://www.amazon.com/dp/B08746M1NX?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">04<small>800 GPD tier</small></div>
+        <div>
+          <h3>Waterdrop G3P800 Reverse Osmosis Water Filter, 800 GPD, Tankless RO System</h3>
+          <div class="who">The tier that earns the premium — under the right conditions</div>
+          <div class="rl2"><b>800 GPD</b> · tankless</div>
+          <p class="body">At 800 GPD, the G3P800 is a genuine step into the higher tier described above: a household drawing water at more than one point at once, or a house fighting low pressure or cold groundwater that would derate a 600 GPD system further than it derates this one. At $759.00 it isn't a like-for-like swap with the other three systems here — it's the pick for the specific conditions in the "where it helps" section, not a default upgrade for every kitchen.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0987FCQQW.webp" alt="Waterdrop G3P800 tankless reverse osmosis system, 800 GPD" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$759.00</div><span class="tag">Tankless · 800 GPD</span><a class="buy" href="https://www.amazon.com/dp/B0987FCQQW?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="prose">
+      <h2 class="h2">The number worth comparing instead</h2>
+      <p>Once GPD is understood as a bench-tested ceiling rather than a promise, comparing two systems by that number alone stops being very useful unless you also know they were tested under the same protocol — which, per the NSF/ANSI 58 bench parameters above, most are. What actually predicts your day-to-day experience is a mix of things a spec sheet states, plus one thing only your house can answer.</p>
+      <p>The closest thing to a "real" number is your own feed pressure and temperature, measured at the point the system connects. A $15 screw-on pressure gauge and a kitchen thermometer answer a question a GPD label can't: how far below bench conditions does your house actually run? That answer, not the number on the box, decides whether a 600 GPD system will feel like 600 GPD or considerably less.</p>
+      <p>Where GPD compares poorly across brands, the drain-to-product ratio compares honestly, because it's a plain statement of how much of the water entering the system becomes usable output versus how much goes down the drain — <a href="/reverse-osmosis-waste-water-ratio-explained">our guide to the RO waste water ratio</a> goes through why older systems run 3:1 or 4:1 against you while modern tankless designs are commonly 2:1 or better. Two systems can carry an identical 600 GPD rating and differ meaningfully in how much water each one wastes to hit it.</p>
+      <p>A verified NSF/ANSI 58 certification is worth more than an uncertified GPD figure, too, because it's independently tested contaminant and TDS reduction performance rather than a peak-output number a manufacturer self-reports. Between two systems, the one with third-party verification behind its numbers — GPD included — is the safer bet even if its printed rating is lower. And if you're choosing a tank system rather than tankless, tank size becomes the figure that predicts burst behavior at the sink more directly than GPD does, since it's the buffer you're actually drawing from between refills.</p>
+      <p>None of this makes GPD worthless. It correctly separates a 75 GPD tank tier built for light drinking-water use from the 600-to-800 GPD tankless tier built for busier households and rougher conditions — it's the right number for choosing a class. It's the wrong number for predicting a specific kitchen, and the figures above — your own pressure, your own temperature, the drain ratio, and the certification — are what actually do that job.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Common questions</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Does a 600 GPD reverse osmosis system really produce 600 gallons of water a day?</summary><p>Technically, under lab bench conditions — roughly 60 psi of feed pressure, water at about 77°F, and a defined feed TDS — yes, that's the 24-hour production ceiling the manufacturer measured. In practice, no household draws water on that schedule, and few households sit at those exact bench conditions, so the figure is best read as a comparison point between systems rather than a forecast for your kitchen.</p></details>
+      <details><summary>Why does my RO faucet still run slowly even with a high GPD rating?</summary><p>Because GPD describes a 24-hour ceiling, not the flow rate at your faucet. That flow comes from a storage tank discharging or a booster pump running in short bursts, through a deliberately narrow, dedicated RO faucet line — not from the membrane keeping pace with you in real time. Incoming pressure below roughly 40 psi and feed water well below the 77°F bench temperature can also cut real output well under the rated figure.</p></details>
+      <details><summary>Is a higher GPD rating always worth paying more for?</summary><p>Not for every household. It earns its keep where more than one fixture draws from the RO line at once, or where cold groundwater and marginal pressure would otherwise derate a lower-rated system hard. A household of one or two people drinking RO water and running a coffee maker rarely stresses even a 75 GPD tank system, and a higher rating there mostly buys peace of mind rather than a noticeable daily difference.</p></details>
+      <details><summary>What should I actually compare between two RO systems instead of the GPD number?</summary><p>Your own measured feed pressure and temperature against the system's specified operating range, the drain-to-product waste ratio, and whether the performance figures carry a verified NSF/ANSI 58 certification rather than a self-reported peak output. On a tank system, tank size predicts day-to-day burst behavior more directly than GPD does.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if you're still comparing systems</h2>
+    <div class="keep">
+      <a href="/best-alkaline-reverse-osmosis-systems"><span class="kt">Best alkaline RO systems</span><span class="kd">A remineralization stage built in rather than bolted on — and which systems do it properly.</span></a>
+      <a href="/best-reverse-osmosis-systems-with-uv"><span class="kt">Best RO systems with UV</span><span class="kd">RO removes almost everything; UV handles what survives. When the extra stage is justified.</span></a>
+      <a href="/reverse-osmosis-vs-distilled-water"><span class="kt">RO vs. distilled water</span><span class="kd">Two routes to very pure water, with different residues, different costs and different jobs.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products and we don't run a testing lab. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"RO Systems and GPD: What the Number Really Tells You","description":"A 600 GPD system does not make 600 gallons a day in your kitchen. Here is what it does mean.","image":"https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-gpd-what-it-really-means.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-09-09","dateModified":"2026-09-09","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/reverse-osmosis-gpd-what-it-really-means"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Does a 600 GPD reverse osmosis system really produce 600 gallons of water a day?","acceptedAnswer":{"@type":"Answer","text":"Technically, under lab bench conditions - roughly 60 psi of feed pressure, water at about 77°F, and a defined feed TDS - yes, that's the 24-hour production ceiling the manufacturer measured. In practice, no household draws water on that schedule, and few households sit at those exact bench conditions, so the figure is best read as a comparison point between systems rather than a forecast for your kitchen."}},
+ {"@type":"Question","name":"Why does my RO faucet still run slowly even with a high GPD rating?","acceptedAnswer":{"@type":"Answer","text":"Because GPD describes a 24-hour ceiling, not the flow rate at your faucet. That flow comes from a storage tank discharging or a booster pump running in short bursts, through a deliberately narrow, dedicated RO faucet line, not from the membrane keeping pace with you in real time. Incoming pressure below roughly 40 psi and feed water well below the 77°F bench temperature can also cut real output well under the rated figure."}},
+ {"@type":"Question","name":"Is a higher GPD rating always worth paying more for?","acceptedAnswer":{"@type":"Answer","text":"Not for every household. It earns its keep where more than one fixture draws from the RO line at once, or where cold groundwater and marginal pressure would otherwise derate a lower-rated system hard. A household of one or two people drinking RO water and running a coffee maker rarely stresses even a 75 GPD tank system, and a higher rating there mostly buys peace of mind rather than a noticeable daily difference."}},
+ {"@type":"Question","name":"What should I actually compare between two RO systems instead of the GPD number?","acceptedAnswer":{"@type":"Answer","text":"Your own measured feed pressure and temperature against the system's specified operating range, the drain-to-product waste ratio, and whether the performance figures carry a verified NSF/ANSI 58 certification rather than a self-reported peak output. On a tank system, tank size predicts day-to-day burst behavior more directly than GPD does."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"RO systems referenced in this GPD guide","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"VIOMI V6 600GPD Under Sink Tankless Reverse Osmosis Water Filtration System","brand":{"@type":"Brand","name":"VIOMI"},"offers":{"@type":"Offer","price":"219.98","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0DKSZX9CB?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"VIOMI Pure B6W 600GPD Under-Sink Tankless Reverse Osmosis Water Filtration","brand":{"@type":"Brand","name":"VIOMI"},"offers":{"@type":"Offer","price":"249.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0GGMJ3Q24?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Waterdrop G2P600 Under-Sink RO System, 600 GPD Tankless RO Water Filtration","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"289.00","priceCurrency":"USD","url":"https://www.amazon.com/dp/B08746M1NX?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Waterdrop G3P800 Reverse Osmosis Water Filter, 800 GPD, Tankless RO System","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"759.00","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0987FCQQW?tag=bestreverseosmosis-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

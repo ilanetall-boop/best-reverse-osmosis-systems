@@ -285,6 +285,16 @@
       "minutes": 14,
       "date": "2026-09-08",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-gpd-what-it-really-means",
+      "title": "RO Systems and GPD: What the Number Really Tells You",
+      "description": "A 600 GPD system does not make 600 gallons a day in your kitchen. Here is what it does mean.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-gpd-what-it-really-means",
+      "minutes": 13,
+      "date": "2026-09-09",
+      "featured": true
     }
   ]
 }
