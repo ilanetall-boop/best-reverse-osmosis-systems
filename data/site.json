@@ -295,6 +295,16 @@
       "minutes": 13,
       "date": "2026-09-09",
       "featured": true
+    },
+    {
+      "slug": "how-long-a-reverse-osmosis-system-lasts",
+      "title": "How Long a Reverse Osmosis System Lasts",
+      "description": "The membrane outlives the pre-filters four times over, and the faucet outlives them all. Planning around that is what keeps the cost down.",
+      "category": "Guide",
+      "hero": "hero-how-long-a-reverse-osmosis-system-lasts",
+      "minutes": 14,
+      "date": "2026-09-14",
+      "featured": true
     }
   ]
 }
