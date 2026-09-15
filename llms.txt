@@ -26,6 +26,7 @@ We pulled every reverse osmosis system, under-sink filter and replacement cartri
 ## Guides
 
 <!--LLMS-GUIDES:START-->
+- [What Reverse Osmosis Actually Removes — and What It Misses](https://best-reverse-osmosis-systems.com/what-reverse-osmosis-actually-removes): Lead, fluoride, PFAS, chlorine, bacteria: the membrane handles some of these outright, and leans on the other filters for the rest.
 - [How Long a Reverse Osmosis System Lasts](https://best-reverse-osmosis-systems.com/how-long-a-reverse-osmosis-system-lasts): The membrane outlives the pre-filters four times over, and the faucet outlives them all. Planning around that is what keeps the cost down.
 - [RO Systems and GPD: What the Number Really Tells You](https://best-reverse-osmosis-systems.com/reverse-osmosis-gpd-what-it-really-means): A 600 GPD system does not make 600 gallons a day in your kitchen. Here is what it does mean.
 - [How to Add an RO Faucet to a Sink With No Spare Hole](https://best-reverse-osmosis-systems.com/how-to-add-a-reverse-osmosis-faucet): The air-gap hole, the soap dispenser sacrifice, and drilling granite without cracking it.

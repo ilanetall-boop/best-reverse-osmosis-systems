@@ -305,6 +305,16 @@
       "minutes": 14,
       "date": "2026-09-14",
       "featured": true
+    },
+    {
+      "slug": "what-reverse-osmosis-actually-removes",
+      "title": "What Reverse Osmosis Actually Removes — and What It Misses",
+      "description": "Lead, fluoride, PFAS, chlorine, bacteria: the membrane handles some of these outright, and leans on the other filters for the rest.",
+      "category": "Guide",
+      "hero": "hero-what-reverse-osmosis-actually-removes",
+      "minutes": 16,
+      "date": "2026-09-15",
+      "featured": true
     }
   ]
 }
