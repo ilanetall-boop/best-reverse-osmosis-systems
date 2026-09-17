@@ -315,6 +315,16 @@
       "minutes": 16,
       "date": "2026-09-15",
       "featured": true
+    },
+    {
+      "slug": "best-reverse-osmosis-systems-for-renters",
+      "title": "The Best Reverse Osmosis Systems for Renters",
+      "description": "No drilling, no cutting the supply line, nothing the landlord can object to — and it leaves with you.",
+      "category": "Roundup",
+      "hero": "hero-best-reverse-osmosis-systems-for-renters",
+      "minutes": 13,
+      "date": "2026-09-17",
+      "featured": true
     }
   ]
 }
