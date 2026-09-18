@@ -325,6 +325,16 @@
       "minutes": 13,
       "date": "2026-09-17",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-electric-vs-non-electric",
+      "title": "Electric vs. Non-Electric Reverse Osmosis: Do You Need a Dedicated Outlet?",
+      "description": "Tankless RO systems plug in; classic tank systems don't. What that difference costs in standby power and installation hassle, and what happens to each one during a power cut.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-electric-vs-non-electric",
+      "minutes": 15,
+      "date": "2026-09-18",
+      "featured": true
     }
   ]
 }
