@@ -345,6 +345,16 @@
       "minutes": 14,
       "date": "2026-09-19",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-to-dishwasher-and-coffee-maker",
+      "title": "Plumbing RO Water to a Dishwasher or Coffee Maker (Not Just the Fridge)",
+      "description": "The fridge line gets all the attention. What it takes to add a dishwasher, a coffee maker or a kettle tap to the same system — and which systems are actually built with a second line for it.",
+      "category": "How-to",
+      "hero": "hero-reverse-osmosis-to-dishwasher-and-coffee-maker",
+      "minutes": 15,
+      "date": "2026-09-21",
+      "featured": true
     }
   ]
 }
