@@ -355,6 +355,16 @@
       "minutes": 15,
       "date": "2026-09-21",
       "featured": true
+    },
+    {
+      "slug": "why-new-reverse-osmosis-water-tastes-off",
+      "title": "New RO System Tastes Like Plastic or Chlorine? What's Normal and What Isn't",
+      "description": "The first week's water can taste like the inside of the box it came in. How long that's supposed to last, what a lingering chlorine or metallic taste actually signals, and which stage is responsible.",
+      "category": "Troubleshooting",
+      "hero": "hero-why-new-reverse-osmosis-water-tastes-off",
+      "minutes": 14,
+      "date": "2026-09-22",
+      "featured": true
     }
   ]
 }
