@@ -375,6 +375,16 @@
       "minutes": 14,
       "date": "2026-09-24",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-water-for-baby-formula",
+      "title": "Reverse Osmosis Water for Baby Formula: What to Know Before You Mix a Bottle",
+      "description": "Pediatric guidance on water for formula is about minerals and fluoride, not brand names. General information worth knowing before you decide — not medical advice.",
+      "category": "Honest take",
+      "hero": "hero-reverse-osmosis-water-for-baby-formula",
+      "minutes": 15,
+      "date": "2026-09-25",
+      "featured": true
     }
   ]
 }
