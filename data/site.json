@@ -385,6 +385,16 @@
       "minutes": 15,
       "date": "2026-09-25",
       "featured": true
+    },
+    {
+      "slug": "best-reverse-osmosis-systems-for-large-families",
+      "title": "The Best Reverse Osmosis Systems for Large Families",
+      "description": "Five people sharing one kitchen tap need more than a 400 GPD residential unit. Four tankless systems rated 600-800 GPD, and what that throughput actually buys at dinnertime.",
+      "category": "Roundup",
+      "hero": "hero-best-reverse-osmosis-systems-for-large-families",
+      "minutes": 16,
+      "date": "2026-09-26",
+      "featured": true
     }
   ]
 }
