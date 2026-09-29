@@ -399,6 +399,16 @@
       "minutes": 16,
       "date": "2026-09-26",
       "featured": true
+    },
+    {
+      "slug": "generic-vs-oem-reverse-osmosis-replacement-filters",
+      "title": "Generic vs. OEM Reverse Osmosis Filters: Do Third-Party Cartridges Actually Fit?",
+      "description": "A standard 10x2.5 housing will take almost anyone's cartridge. Four replacement filter sets from brands that aren't the system manufacturer, and what their own listings say about compatibility.",
+      "category": "Buying advice",
+      "hero": "hero-generic-vs-oem-reverse-osmosis-replacement-filters",
+      "minutes": 15,
+      "date": "2026-09-29",
+      "featured": true
     }
   ]
 }
