@@ -419,6 +419,16 @@
       "minutes": 14,
       "date": "2026-10-01",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-systems-with-smart-displays",
+      "title": "RO Systems With Smart Displays: Which Touch Panels and TDS Readouts Earn Their Price",
+      "description": "A glowing screen on a water purifier isn't automatically useful. Four countertop systems with a specific advertised display feature, checked against what a panel can and can't actually tell you.",
+      "category": "Buying guide",
+      "hero": "hero-reverse-osmosis-systems-with-smart-displays",
+      "minutes": 14,
+      "date": "2026-10-02",
+      "featured": true
     }
   ]
 }
