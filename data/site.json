@@ -439,6 +439,16 @@
       "minutes": 13,
       "date": "2026-10-03",
       "featured": true
+    },
+    {
+      "slug": "instant-hot-reverse-osmosis-systems",
+      "title": "Instant Hot Reverse Osmosis Systems: Is the Boiling Tap Worth It",
+      "description": "Two RO systems add a built-in boiling-hot dispense on top of filtration. What that feature costs against a standard tankless unit, and who actually uses it.",
+      "category": "Honest take",
+      "hero": "hero-instant-hot-reverse-osmosis-systems",
+      "minutes": 14,
+      "date": "2026-10-04",
+      "featured": true
     }
   ]
 }
