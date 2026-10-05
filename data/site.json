@@ -449,6 +449,16 @@
       "minutes": 14,
       "date": "2026-10-04",
       "featured": true
+    },
+    {
+      "slug": "self-cleaning-reverse-osmosis-systems",
+      "title": "Self-Cleaning Reverse Osmosis Systems: What Auto-Flush Actually Does",
+      "description": "Auto-flush and self-cleaning claims show up on both countertop and tankless RO units. What the mechanism does to membrane life, and what it can't substitute for.",
+      "category": "Guide",
+      "hero": "hero-self-cleaning-reverse-osmosis-systems",
+      "minutes": 13,
+      "date": "2026-10-05",
+      "featured": true
     }
   ]
 }
