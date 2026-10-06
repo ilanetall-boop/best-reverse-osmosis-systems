@@ -459,6 +459,16 @@
       "minutes": 13,
       "date": "2026-10-05",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-systems-for-small-offices",
+      "title": "Reverse Osmosis Systems for Small Offices and Break Rooms",
+      "description": "A shared kitchenette needs faster recovery than a single-family kitchen, without the footprint of a commercial unit. Three tankless systems sized for the job.",
+      "category": "Picks",
+      "hero": "hero-reverse-osmosis-systems-for-small-offices",
+      "minutes": 13,
+      "date": "2026-10-06",
+      "featured": true
     }
   ]
 }
