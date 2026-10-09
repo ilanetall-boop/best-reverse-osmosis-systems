@@ -489,6 +489,16 @@
       "minutes": 12,
       "date": "2026-10-08",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-permeate-pumps-explained",
+      "title": "Permeate Pumps: The Non-Electric Trick That Fills an RO Tank Faster",
+      "description": "A permeate pump uses wasted drain pressure to push the tank fuller and cut water waste, with no motor and no plug. How it works, and which systems build one in.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-permeate-pumps-explained",
+      "minutes": 13,
+      "date": "2026-10-09",
+      "featured": true
     }
   ]
 }
