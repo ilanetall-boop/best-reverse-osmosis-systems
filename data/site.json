@@ -509,6 +509,16 @@
       "minutes": 15,
       "date": "2026-10-10",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-reject-water-reuse-ideas",
+      "title": "What to Do With RO Reject Water Instead of Sending It Down the Drain",
+      "description": "Every gallon of filtered water sends more down the drain line. Practical, safe ways to reuse that reject water around the house instead of wasting it.",
+      "category": "How-to",
+      "hero": "hero-reverse-osmosis-reject-water-reuse-ideas",
+      "minutes": 14,
+      "date": "2026-10-11",
+      "featured": true
     }
   ]
 }
