@@ -529,6 +529,16 @@
       "minutes": 15,
       "date": "2026-10-12",
       "featured": true
+    },
+    {
+      "slug": "is-ro-water-safe-for-pets",
+      "title": "Is Reverse Osmosis Water Safe for Cats and Dogs? What to Know",
+      "description": "General information on giving pets RO-filtered water, the mineral-stripping question vets get asked most, and why this isn't a substitute for veterinary advice.",
+      "category": "Honest take",
+      "hero": "hero-is-ro-water-safe-for-pets",
+      "minutes": 14,
+      "date": "2026-10-13",
+      "featured": true
     }
   ]
 }
