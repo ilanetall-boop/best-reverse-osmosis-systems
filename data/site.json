@@ -539,6 +539,16 @@
       "minutes": 14,
       "date": "2026-10-13",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-booster-pump-low-water-pressure",
+      "title": "RO Systems With a Built-In Booster Pump: When Low Pressure Needs Help",
+      "description": "Most RO systems quietly assume at least 40 psi from the wall. Apartments, wells and older city mains often don't deliver that. One system in this catalogue solves it with a motor instead of a plumber.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-booster-pump-low-water-pressure",
+      "minutes": 14,
+      "date": "2026-10-14",
+      "featured": true
     }
   ]
 }
