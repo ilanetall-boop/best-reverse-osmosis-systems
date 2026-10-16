@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RO Stage Count Explained: Why 11 Stages Isn't Twice as Good as 5</title>
+<meta name="description" content="Manufacturers count every cartridge, housing and coating as a 'stage.' Four systems rated 5, 7, 10 and 11 stages, and what's actually different between them beyond the number on the box.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/reverse-osmosis-stage-count-explained">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="RO Stage Count Explained: Why 11 Stages Isn't Twice as Good as 5">
+<meta property="og:description" content="Manufacturers count every cartridge, housing and coating as a 'stage.' Four systems rated 5, 7, 10 and 11 stages, and what's actually different between them beyond the number on the box.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-stage-count-explained.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "y3991alayc");
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6YK89EJMR"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());gtag('config', 'G-Z6YK89EJMR');</script>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#what-is-a-stage">What's a stage</a><a href="#core-three">The core three</a><a href="#compare">Compare</a><a href="#maintenance">Maintenance</a><a href="#predicts">What predicts quality</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>Stage count explained</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Buying advice</span>
+    <h1 class="serif">RO Stage Count Explained: Why 11 Stages Isn't Twice as Good as 5</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>October 16, 2026</b></span><span>15 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. We compare published specifications, certifications and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-reverse-osmosis-stage-count-explained.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" alt="Cutaway illustration of reverse osmosis filter cartridges and housings arranged in sequence showing multiple filtration stages">
+
+  <section id="what-is-a-stage">
+    <div class="prose">
+      <p>Scroll through under-sink reverse osmosis listings on Amazon and the headline number does a lot of the selling: 5-stage, 7-stage, 10-stage, 11-stage. The instinct is to treat it like a spec you can rank on, the way you'd rank megapixels or horsepower. Higher must be better, and an 11-stage system must be doing more than twice the work of a 5-stage one.</p>
+      <p>It isn't, and the reason is that "stage" is not a defined unit. No certifying body hands out a stamp for stage count the way NSF/ANSI 58 certifies that a system actually reduces total dissolved solids. A stage is whatever the manufacturer decides to call a stage — a housing, a cartridge, a mineral ball, a coating on a cartridge, a lamp. Two companies building functionally similar systems can land on different numbers simply because one of them split a single carbon cartridge's job into two line items on the box and the other didn't.</p>
+      <p>That is exactly what you can see across four real listings. The <a href="https://www.amazon.com/dp/B003XELTTG?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">iSpring RCC7-BN</a> is sold as a 5-stage system. The <a href="https://www.amazon.com/dp/B006T3HYQ0?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">iSpring RCC7AK-UVBN</a> is 7. The <a href="https://www.amazon.com/dp/B00MU20LN2?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Express Water ROALK5D</a> is 10. The <a href="https://www.amazon.com/dp/B06Y2GJMSS?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Express Water ROALKUV10D</a> is 11. None of those jumps happen because the water gets filtered more thoroughly in some fundamental sense. They happen because of what got added on top of — and how finely the box split up — the same small set of jobs every one of these systems has to do.</p>
+    </div>
+  </section>
+
+  <section id="core-three">
+    <div class="prose">
+      <h2 class="h2">The three stages no RO system can skip</h2>
+      <p>Strip the marketing off any of these four boxes and there are exactly three jobs that have to happen, in this order, or what comes out of the faucet isn't reverse osmosis water at all.</p>
+      <p><strong>Sediment.</strong> A spun or pleated filter catching sand, rust flakes and particulate before anything else touches the water. It is the cheapest, crudest stage in the system, and it exists as much to protect everything downstream as to clean the water itself.</p>
+      <p><strong>Carbon.</strong> Activated carbon stripping chlorine, chloramine and the taste and odor that come with them. This stage is not a courtesy — free chlorine will attack and shorten the life of the thin-film composite membrane that comes next, so carbon is doing protective work as much as cosmetic work.</p>
+      <p><strong>The membrane.</strong> The actual reverse-osmosis step: a semi-permeable membrane that rejects dissolved solids down to a fraction of a micron, under pressure, sending part of the feed water to drain as reject. Take this stage away and there is no RO system left, just a carbon filter.</p>
+      <p>Sediment, carbon, membrane — that's the floor. Almost every listing adds one more thing on top as a near-default fourth: a post-carbon polish after the membrane, giving the water a final pass before it reaches the faucet. The iSpring RCC7-BN's own "5-stage" count is a clean illustration of how the arithmetic works: sediment is stage one, the carbon job gets split into a granular-carbon stage and a carbon-block stage (two and three), the membrane is stage four, and the post-carbon polish is stage five. Three hard requirements, one near-universal addition, and the number on the box already depends on whether the carbon job got counted once or twice.</p>
+    </div>
+  </section>
+
+  <section id="extra-numbers">
+    <div class="prose">
+      <h2 class="h2">Where the bigger numbers actually come from</h2>
+      <p>Once you can see that a 5-stage listing is really "three required jobs plus one split plus one near-default extra," the jump to 7, 10 and 11 stops looking mysterious. It comes from three places, and a given system can use any combination of them.</p>
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">1. Splitting sediment and carbon further</h3>
+      <p>Nothing stops a manufacturer from running two sediment stages at different micron ratings instead of one, or breaking the carbon job into granular carbon, then a carbon block, then a second carbon block. Each split is a real, physically distinct cartridge — it isn't fake — but it's also not a new capability. It's the same pre-filtration job, counted in smaller pieces. A listing that reaches 10 stages typically gets several of them this way before a single drop of water has reached the membrane.</p>
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">2. Adding an alkaline or remineralization stage</h3>
+      <p>The membrane strips out dissolved minerals along with everything else it rejects, and an alkaline cartridge puts some back — typically a blend of mineral media like calcium and magnesium, sometimes alongside tourmaline or infrared balls marketed for pH. Manufacturers building an "alkaline" system commonly count each mineral media type inside that cartridge as its own stage rather than one combined stage, which is how a single remineralization add-on can turn into three or four extra numbers on the box almost at once. Whether any of that remineralization changes anything that matters for your health is a separate question from the stage count, and it's one we work through on its own in <a href="/does-alkaline-ro-water-actually-do-anything">does alkaline RO water actually do anything</a>.</p>
+      <h3 style="font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:1.4rem 0 .5rem">3. Adding a UV lamp</h3>
+      <p>A UV sterilization stage sits after the storage tank and irradiates the water on its way to the faucet, targeting bacteria that could otherwise multiply in stagnant tank water. It is the one add-on in this list that needs electricity to do anything. Look at our four systems again and the UV stage is the entire difference between two otherwise comparable pairs: it's the gap between the iSpring RCC7-BN (5, no UV) and the RCC7AK-UVBN (7, alkaline and UV added), and it's the exact one-stage gap between the Express Water ROALK5D (10, alkaline, no UV) and the ROALKUV10D (11, alkaline plus UV).</p>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="kicker"><span class="eyebrow">Side by side</span></div>
+    <h2 class="h2">Four systems, four stage counts</h2>
+    <p class="sub">What each of these actually is, priced as we recorded. "More stages" here tracks what got added — alkaline, UV, extra splitting — not a deeper filtration capability.</p>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">05<small>Stages</small></div>
+        <div>
+          <h3>iSpring RCC7-BN</h3>
+          <div class="who">The plainest version of the architecture</div>
+          <div class="rl2"><b>NSF Certified</b> · <b>75 GPD</b> · 5 stages · top-mounted brushed-nickel faucet</div>
+          <p class="body">Sediment, a split carbon job, the membrane and a post-carbon polish — the floor plus the one near-universal extra, with nothing bolted on afterward. It's the baseline every other system in this comparison is a variation of, and the listing's own NSF certification claim is one of only two in this group that says so explicitly.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B003XELTTG.webp" alt="iSpring RCC7-BN 5-stage reverse osmosis system with brushed nickel faucet" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$188.09</div><span class="tag">5-stage</span><a class="buy" href="https://www.amazon.com/dp/B003XELTTG?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">07<small>Stages</small></div>
+        <div>
+          <h3>iSpring RCC7AK-UVBN</h3>
+          <div class="who">The RCC7-BN's architecture, plus alkaline and plus UV</div>
+          <div class="rl2"><b>NSF Certified</b> · 7 stages · alkaline remineralization · UV filter · top-mounted faucet</div>
+          <p class="body">Same iSpring base as the RCC7-BN — sediment, split carbon, membrane, post-carbon — with an alkaline remineralization stage and a UV stage added on top, which is where the extra two numbers come from. It carries the same NSF certification claim as its 5-stage sibling, which is the detail worth noticing: the stage count moved by 40% and the certification claim didn't move at all.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B006T3HYQ0.webp" alt="iSpring RCC7AK-UVBN 7-stage reverse osmosis system with alkaline remineralization and UV filter" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$296.99</div><span class="tag">7-stage</span><a class="buy" href="https://www.amazon.com/dp/B006T3HYQ0?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">10<small>Stages</small></div>
+        <div>
+          <h3>Express Water ROALK5D</h3>
+          <div class="who">A different brand's route to a bigger number</div>
+          <div class="rl2"><b>50 GPD</b> · 10 stages · alkaline · no UV listed</div>
+          <p class="body">Ten stages without a UV lamp means the gap above the core architecture is being filled almost entirely by finer splitting of the pre-filter stages and an alkaline cartridge counted as several stages rather than one. Its listing title doesn't claim an NSF certification the way the two iSpring systems do — a difference worth noticing before the stage count alone decides the comparison.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B00MU20LN2.webp" alt="Express Water ROALK5D 10-stage alkaline under-sink reverse osmosis system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$188.99</div><span class="tag">10-stage · alkaline</span><a class="buy" href="https://www.amazon.com/dp/B00MU20LN2?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">11<small>Stages</small></div>
+        <div>
+          <h3>Express Water ROALKUV10D</h3>
+          <div class="who">The headline number in this comparison</div>
+          <div class="rl2"><b>100 Gallons/Day</b> · 11 stages · alkaline · UV</div>
+          <p class="body">The exact same ROALK5D architecture with a UV lamp added — which is the entire distance between 10 and 11 here, not a deeper or more thorough filtration path. At $249.99 it's also the most expensive of the four, and more than half of that premium over the ROALK5D is reasonably attributed to the electronics and lamp a UV stage requires, not to the two extra stage numbers on the box.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B06Y2GJMSS.webp" alt="Express Water ROALKUV10D 11-stage alkaline and UV reverse osmosis water filter system" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$249.99</div><span class="tag">11-stage · UV</span><a class="buy" href="https://www.amazon.com/dp/B06Y2GJMSS?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stage-by-stage">
+    <div class="prose">
+      <h2 class="h2">The 5-stage and the 11-stage, job by job</h2>
+      <p>Lining the two bookends up by job, rather than by the number printed on the box, is where "11 isn't twice as good as 5" actually becomes visible. The table below describes the typical way systems in each class reach their stated count — for the exact breakdown printed on any specific listing, always check its own stage diagram before buying, since two systems with the same headline number can still split the work differently.</p>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Job</th><th>iSpring RCC7-BN (5 stages)</th><th>Express Water ROALKUV10D (11 stages)</th></tr></thead>
+      <tbody>
+        <tr><td class="name">Sediment</td><td>One stage</td><td>Typically split into two stages at different micron ratings</td></tr>
+        <tr><td class="name">Carbon</td><td>Split into two stages (granular, then block)</td><td>Typically two to three stages, finer-split again</td></tr>
+        <tr><td class="name">Membrane</td><td>One stage — the only step that actually removes dissolved solids</td><td>One stage — the same single membrane, doing the same job</td></tr>
+        <tr><td class="name">Post-carbon polish</td><td>One stage</td><td>One stage</td></tr>
+        <tr><td class="name">Alkaline / remineralization</td><td>Not included</td><td>Typically bundled as several mineral-media stages counted individually</td></tr>
+        <tr><td class="name">UV sterilization</td><td>Not included</td><td>One stage, the lamp after the tank</td></tr>
+      </tbody>
+    </table></div>
+    <div class="prose" style="margin-top:22px">
+      <p>Notice what doesn't change between the two rows: the membrane. It is one stage on the 5-stage system and one stage on the 11-stage system, because there is exactly one membrane doing exactly one job in both of them. Everything that separates 5 from 11 happens on either side of that single row — more pre-filter splitting, an alkaline add-on, a UV lamp — and none of it makes the membrane itself reject more dissolved solids than it otherwise would.</p>
+    </div>
+  </section>
+
+  <section id="maintenance">
+    <div class="prose">
+      <h2 class="h2">Does more stages mean more maintenance — and what does that cost?</h2>
+      <p>Partly yes, but not in the way the headline number implies. More stages generally does mean more individual cartridges to track and swap, because each one is a physical part with its own service life. A 5-stage system has three consumable stages ahead of the long-lived membrane — sediment, granular carbon, carbon block — plus the post-carbon polish after it. An 11-stage alkaline-and-UV system adds an alkaline cartridge (or several, bundled as one physical part even when counted as multiple stages) and a UV lamp on top of that same base. That's more individual change events over a year, even though the jump from 5 to 11 looks like it more than doubled.</p>
+      <p>What it is not is a proportional increase in your filter bill. The sediment and carbon stages are the cheapest parts in any of these systems regardless of how many of them there are, and the single most expensive consumable — the membrane — doesn't change count or price based on the stage number on the box; both a 5-stage and an 11-stage system have exactly one. An alkaline cartridge adds a real, ongoing cost on its own schedule, and a UV lamp is a periodic replacement with its own cost on top of that — both genuine additions to your annual bill, but additions tied to the specific features you bought, not to "having more stages" as a category. If a 10- or 11-stage listing's price difference over a simpler system is bundling a spare filter set at checkout, that changes the first-year math — we break down what that's actually worth in <a href="/reverse-osmosis-systems-with-extra-filter-sets-included">RO systems that ship with a spare filter set</a>.</p>
+      <p>Stage count also tells you nothing about how fast a system fills or how it handles weak incoming pressure — that's a function of the GPD rating and, for homes with low pressure, whether the unit includes a booster pump. A worthwhile companion read if that's a live concern at your sink is our piece on <a href="/reverse-osmosis-booster-pump-low-water-pressure">RO systems with a built-in booster pump</a>.</p>
+    </div>
+  </section>
+
+  <section id="predicts">
+    <div class="prose">
+      <h2 class="h2">The number that predicts filtration quality, and the one that's mostly marketing</h2>
+      <p>If you can only look at one number before buying, make it the certification claim, not the stage count. NSF/ANSI 58 is a performance certification — it tests and certifies that a system actually reduces total dissolved solids and specific contaminants by a verified amount. A stage count is not tested or certified by anyone; it is simply how the manufacturer chose to describe its own box.</p>
+      <p>Our four listings make the contrast concrete without any guesswork: both iSpring systems — the 5-stage RCC7-BN and the 7-stage RCC7AK-UVBN — state "NSF Certified" directly in their listing titles. Neither Express Water listing in this comparison makes that claim in its title, despite one of them carrying the highest stage count of the four. Stage count went up; the certification claim that actually says something about filtration performance did not appear at all. That's the pattern worth remembering every time a bigger number on a box is doing the persuading: ask what's certified, not just what's counted.</p>
+      <p>None of this means a 10- or 11-stage alkaline-and-UV system is a bad buy — alkaline remineralization and UV sterilization are real features that real buyers want for real reasons, and if you want them, buying a system that includes them beats bolting them on separately. It means you should want them because you looked them up individually, not because "11" felt like more filtration than "5."</p>
+    </div>
+  </section>
+
+  <section id="how-to-read">
+    <div class="prose">
+      <h2 class="h2">How to read a stage breakdown before you assume higher is better</h2>
+      <ul>
+        <li><strong>Find the certification line first.</strong> NSF/ANSI 58, WQA, or a named equivalent tells you something tested. A stage count printed in bold on the box tells you how the manufacturer chose to count, and nothing else.</li>
+        <li><strong>Count how many stages come before the membrane.</strong> If most of the headline number is pre-filter splitting — a second sediment stage, a third carbon stage — you're mostly looking at more thorough protection for the membrane, not a system that rejects more contaminants once water reaches it.</li>
+        <li><strong>Separate "stage" from "feature."</strong> Alkaline and UV are genuine features with their own costs and their own value propositions. Evaluate each on its own merits — do you want remineralized water, do you want UV sterilization after the tank — rather than letting them inflate a single number you then compare like a spec.</li>
+        <li><strong>Check the GPD rating and drain ratio separately.</strong> Neither is implied by the stage count, and both affect how the system actually performs at your sink day to day.</li>
+        <li><strong>If you're shopping secondhand or a Renewed listing, verify the stage breakdown against the physical housings, not just the title.</strong> A reseller can carry over a stage count from the original listing without it being obvious whether every cartridge type is still present. Our guides on <a href="/buying-a-used-reverse-osmosis-system-what-to-check">buying a used reverse osmosis system</a> and <a href="/amazon-renewed-reverse-osmosis-systems-worth-it">whether an Amazon Renewed discount is worth the risk</a> both cover what to confirm before you buy.</li>
+      </ul>
+      <p>The short version: stage count is a useful shorthand for "what features did the manufacturer bundle in," and a poor shorthand for "how well does this filter my water." Treat it the first way and the number on the box stops being confusing.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Questions people ask about stage counts</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Does more stages mean better filtration?</summary><p>Not reliably. The stage that actually removes dissolved solids is the membrane, and every system in this comparison — 5-stage or 11-stage — has exactly one. Extra stages are usually finer pre-filter splitting, an alkaline remineralization add-on, or a UV lamp, not a deeper filtration path. A certification like NSF/ANSI 58 tells you more about verified performance than the stage count does.</p></details>
+      <details><summary>How many stages does a reverse osmosis system actually need?</summary><p>Three, structurally: a sediment stage, a carbon stage, and the membrane itself. Almost every system adds a fourth, a post-carbon polish, as a near-default. Anything past that — a split carbon job, alkaline remineralization, UV sterilization — is an added feature, not a filtration requirement.</p></details>
+      <details><summary>Do more stages mean more filters to replace?</summary><p>Generally yes — more physical cartridges means more individual change events over a year. But the cost impact is tied to which features were added, not to the stage number itself: the membrane, the single most expensive consumable, costs and counts the same whether the system is rated 5 stages or 11. Alkaline cartridges and UV lamps add real, specific costs on their own schedules.</p></details>
+      <details><summary>Is an 11-stage system worth paying more for than a 5-stage one?</summary><p>It can be, if you specifically want what the extra stages add. Comparing our four listings, the Express Water ROALKUV10D (11 stages, $249.99) adds alkaline remineralization and UV sterilization over the iSpring RCC7-BN (5 stages, $188.09) — real features with real value to some households. It's a poor reason to pay more if the only thing being compared is the number itself, since neither system's single membrane does more work than the other's.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if you're still choosing</h2>
+    <div class="keep">
+      <a href="/is-ro-water-safe-for-pets"><span class="kt">Is RO water safe for pets?</span><span class="kd">General information on giving cats and dogs RO-filtered water, independent of how many stages produced it.</span></a>
+      <a href="/reverse-osmosis-permeate-pumps-explained"><span class="kt">Permeate pumps explained</span><span class="kd">A non-electric add-on that fills the tank faster — a different kind of "extra stage" than alkaline or UV.</span></a>
+      <a href="/reverse-osmosis-reject-water-reuse-ideas"><span class="kt">What to do with reject water</span><span class="kd">Every stage count still sends water to the drain. Practical ways to reuse it instead of wasting it.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and verified customer reviews; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"RO Stage Count Explained: Why 11 Stages Isn't Twice as Good as 5","description":"Manufacturers count every cartridge, housing and coating as a 'stage.' Four systems rated 5, 7, 10 and 11 stages, and what's actually different between them beyond the number on the box.","image":"https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-stage-count-explained.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-10-16","dateModified":"2026-10-16","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/reverse-osmosis-stage-count-explained"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Does more stages mean better filtration?","acceptedAnswer":{"@type":"Answer","text":"Not reliably. The stage that actually removes dissolved solids is the membrane, and every system compared here - 5-stage or 11-stage - has exactly one. Extra stages are usually finer pre-filter splitting, an alkaline remineralization add-on, or a UV lamp, not a deeper filtration path. A certification like NSF/ANSI 58 tells you more about verified performance than the stage count does."}},
+ {"@type":"Question","name":"How many stages does a reverse osmosis system actually need?","acceptedAnswer":{"@type":"Answer","text":"Three, structurally: a sediment stage, a carbon stage, and the membrane itself. Almost every system adds a fourth, a post-carbon polish, as a near-default. Anything past that - a split carbon job, alkaline remineralization, UV sterilization - is an added feature, not a filtration requirement."}},
+ {"@type":"Question","name":"Do more stages mean more filters to replace?","acceptedAnswer":{"@type":"Answer","text":"Generally yes - more physical cartridges means more individual change events over a year. But the cost impact is tied to which features were added, not to the stage number itself: the membrane, the single most expensive consumable, costs and counts the same whether the system is rated 5 stages or 11. Alkaline cartridges and UV lamps add real, specific costs on their own schedules."}},
+ {"@type":"Question","name":"Is an 11-stage system worth paying more for than a 5-stage one?","acceptedAnswer":{"@type":"Answer","text":"It can be, if you specifically want what the extra stages add. Comparing four real listings, an 11-stage alkaline-and-UV system at $249.99 adds alkaline remineralization and UV sterilization over a 5-stage system at $188.09 - real features with real value to some households. It is a poor reason to pay more if the only thing being compared is the number itself, since neither system's single membrane does more work than the other's."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"RO systems compared by stage count","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"iSpring RCC7-BN NSF Certified 5-Stage Reverse Osmosis Water Filter System","brand":{"@type":"Brand","name":"iSpring"},"offers":{"@type":"Offer","price":"188.09","priceCurrency":"USD","url":"https://www.amazon.com/dp/B003XELTTG?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"iSpring RCC7AK-UVBN NSF Certified 7-Stage Reverse Osmosis System with Alkaline Remineralization and UV Filter","brand":{"@type":"Brand","name":"iSpring"},"offers":{"@type":"Offer","price":"296.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B006T3HYQ0?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Express Water ROALK5D 10-Stage Under Sink Alkaline Reverse Osmosis System","brand":{"@type":"Brand","name":"Express Water"},"offers":{"@type":"Offer","price":"188.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B00MU20LN2?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Express Water ROALKUV10D 11-Stage Reverse Osmosis Water Filter System with Alkaline and UV","brand":{"@type":"Brand","name":"Express Water"},"offers":{"@type":"Offer","price":"249.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B06Y2GJMSS?tag=bestreverseosmosis-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

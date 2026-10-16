@@ -559,6 +559,16 @@
       "minutes": 14,
       "date": "2026-10-15",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-stage-count-explained",
+      "title": "RO Stage Count Explained: Why 11 Stages Isn't Twice as Good as 5",
+      "description": "Manufacturers count every cartridge, housing and coating as a 'stage.' Four systems rated 5, 7, 10 and 11 stages, and what's actually different between them beyond the number on the box.",
+      "category": "Buying advice",
+      "hero": "hero-reverse-osmosis-stage-count-explained",
+      "minutes": 14,
+      "date": "2026-10-16",
+      "featured": true
     }
   ]
 }
