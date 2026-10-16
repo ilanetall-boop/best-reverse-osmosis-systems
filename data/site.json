@@ -569,6 +569,16 @@
       "minutes": 14,
       "date": "2026-10-16",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-systems-for-rvs-and-off-grid",
+      "title": "Reverse Osmosis for RVs and Off-Grid Living: What Actually Works Without Shore Power",
+      "description": "Campground pressure is unpredictable and a generator doesn't want to run a booster pump all day. The countertop and non-electric options that travel, and the ones that don't belong in a rig.",
+      "category": "Picks",
+      "hero": "hero-reverse-osmosis-systems-for-rvs-and-off-grid",
+      "minutes": 15,
+      "date": "2026-10-17",
+      "featured": true
     }
   ]
 }
