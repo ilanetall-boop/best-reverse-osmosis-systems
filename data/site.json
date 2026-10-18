@@ -579,6 +579,16 @@
       "minutes": 15,
       "date": "2026-10-17",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-pfas-forever-chemicals-testing",
+      "title": "PFAS and RO Systems: Which Claims Have Actual Testing Behind Them",
+      "description": "'Removes PFAS' shows up on boxes with wildly different levels of proof behind it. Three systems whose own listings cite a specific test or contaminant count, read against what that number actually certifies.",
+      "category": "Water quality",
+      "hero": "hero-reverse-osmosis-pfas-forever-chemicals-testing",
+      "minutes": 15,
+      "date": "2026-10-18",
+      "featured": true
     }
   ]
 }
