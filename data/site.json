@@ -589,6 +589,16 @@
       "minutes": 15,
       "date": "2026-10-18",
       "featured": true
+    },
+    {
+      "slug": "ispring-rcc7ak-family-compared",
+      "title": "iSpring's RCC7AK Family Compared: BN vs BLK vs the AKF3 Value Pack",
+      "description": "Three listings, the same core 6-stage alkaline system, and a real price spread. What the faucet finish, the color and the 'value pack' extra pre-filters actually change — and what stays identical.",
+      "category": "Comparison",
+      "hero": "hero-ispring-rcc7ak-family-compared",
+      "minutes": 14,
+      "date": "2026-10-19",
+      "featured": true
     }
   ]
 }
