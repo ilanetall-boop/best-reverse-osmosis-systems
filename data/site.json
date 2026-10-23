@@ -629,6 +629,16 @@
       "minutes": 18,
       "date": "2026-10-22",
       "featured": true
+    },
+    {
+      "slug": "simpure-t-series-tankless-reverse-osmosis-compared",
+      "title": "SimPure's T1 vs. T2 Tankless RO Systems: What the Jump From 400 to 600 GPD and UV Buys",
+      "description": "SimPure's two tankless under-sink models sit within ten dollars of each other despite a GPD jump and a UV stage. What that gap actually changes at the faucet, checked against the brand's own countertop UV unit.",
+      "category": "Comparison",
+      "hero": "hero-simpure-t-series-tankless-reverse-osmosis-compared",
+      "minutes": 13,
+      "date": "2026-10-23",
+      "featured": true
     }
   ]
 }
