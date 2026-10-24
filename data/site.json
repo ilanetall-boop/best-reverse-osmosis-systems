@@ -639,6 +639,16 @@
       "minutes": 13,
       "date": "2026-10-23",
       "featured": true
+    },
+    {
+      "slug": "matching-the-exact-replacement-filter-to-your-ro-model",
+      "title": "The Replacement Filter Mistake: Buying by Brand Instead of by Exact Model Number",
+      "description": "A filter listing that says it 'fits most RO systems' and one that names your exact model are different promises. Three real replacement filters, each tied to a narrow, named set of models.",
+      "category": "How-to",
+      "hero": "hero-matching-the-exact-replacement-filter-to-your-ro-model",
+      "minutes": 14,
+      "date": "2026-10-24",
+      "featured": true
     }
   ]
 }
