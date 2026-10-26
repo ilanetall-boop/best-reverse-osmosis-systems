@@ -659,6 +659,16 @@
       "minutes": 14,
       "date": "2026-10-25",
       "featured": true
+    },
+    {
+      "slug": "waterdrop-t3-series-compared",
+      "title": "Waterdrop's T3 Line Compared: T3-C vs. T3-M vs. T3-T, and Why Only One Needs an Outlet",
+      "description": "Three listings in the same tier, priced within fifty dollars of each other, differing on GPD, remineralization and one single line item: whether the unit needs a dedicated outlet at all.",
+      "category": "Comparison",
+      "hero": "hero-waterdrop-t3-series-compared",
+      "minutes": 14,
+      "date": "2026-10-26",
+      "featured": true
     }
   ]
 }
