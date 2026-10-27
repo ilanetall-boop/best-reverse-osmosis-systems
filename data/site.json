@@ -669,6 +669,16 @@
       "minutes": 14,
       "date": "2026-10-26",
       "featured": true
+    },
+    {
+      "slug": "ultrafiltration-vs-reverse-osmosis-under-sink",
+      "title": "Ultrafiltration Under-Sink Systems vs. Reverse Osmosis: No Waste Water, But What You Give Up",
+      "description": "A 0.01-micron ultrafiltration membrane needs no drain line and wastes nothing, but it can't touch dissolved solids the way an RO membrane can. Three UF systems, read against what they explicitly don't claim to remove.",
+      "category": "Comparison",
+      "hero": "hero-ultrafiltration-vs-reverse-osmosis-under-sink",
+      "minutes": 15,
+      "date": "2026-10-27",
+      "featured": true
     }
   ]
 }
