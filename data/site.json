@@ -709,6 +709,16 @@
       "minutes": 13,
       "date": "2026-10-30",
       "featured": true
+    },
+    {
+      "slug": "countertop-reverse-osmosis-uv-vs-no-uv",
+      "title": "Does a UV Stage on a Countertop RO Purifier Actually Matter?",
+      "description": "One countertop purifier in this catalogue adds a UV-C stage on top of the membrane. Two others reach similar contaminant-reduction claims without it. What UV is actually doing in a four-stage plug-in unit.",
+      "category": "Buying guide",
+      "hero": "hero-countertop-reverse-osmosis-uv-vs-no-uv",
+      "minutes": 16,
+      "date": "2026-10-31",
+      "featured": true
     }
   ]
 }
