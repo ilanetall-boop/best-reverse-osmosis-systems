@@ -719,6 +719,16 @@
       "minutes": 16,
       "date": "2026-10-31",
       "featured": true
+    },
+    {
+      "slug": "philips-reverse-osmosis-countertop-under-sink-tankless-compared",
+      "title": "One Appliance Brand, Three RO Formats: How Philips's Countertop, Under-Sink and Tankless Systems Compare",
+      "description": "Philips sells a plug-in countertop purifier, a 400G under-sink system and a 600 GPD tankless unit — and only some of them run on the Aquaporin biomimetic membrane the brand is known for. What's shared across the line and what isn't.",
+      "category": "Comparison",
+      "hero": "hero-philips-reverse-osmosis-countertop-under-sink-tankless-compared",
+      "minutes": 15,
+      "date": "2026-11-01",
+      "featured": true
     }
   ]
 }
