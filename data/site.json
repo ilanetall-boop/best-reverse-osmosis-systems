@@ -729,6 +729,16 @@
       "minutes": 15,
       "date": "2026-11-01",
       "featured": true
+    },
+    {
+      "slug": "replacement-ro-membrane-gpd-matching-guide",
+      "title": "Buying a Replacement RO Membrane? The GPD Number on the Box Has to Match",
+      "description": "A 75 GPD membrane and a 50 GPD membrane fit the same size housing but aren't interchangeable. Two generic 75 GPD replacement sets and one model-specific 50 GPD set, and what happens when the rating is wrong.",
+      "category": "How-to",
+      "hero": "hero-replacement-ro-membrane-gpd-matching-guide",
+      "minutes": 11,
+      "date": "2026-11-02",
+      "featured": true
     }
   ]
 }
