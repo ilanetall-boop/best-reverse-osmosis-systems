@@ -739,6 +739,16 @@
       "minutes": 11,
       "date": "2026-11-02",
       "featured": true
+    },
+    {
+      "slug": "ispring-ro500-orb-alkaline-vs-plain-compared",
+      "title": "iSpring's RO500-ORB vs. RO500AK-ORB: Same $633.60 Price, One Has Alkaline",
+      "description": "Two iSpring 500 GPD listings share an identical price tag and an oil-rubbed-bronze faucet. The only difference the titles disclose is a single letter — AK — and what it's actually worth against a cheaper 500 GPD alkaline alternative.",
+      "category": "Comparison",
+      "hero": "hero-ispring-ro500-orb-alkaline-vs-plain-compared",
+      "minutes": 14,
+      "date": "2026-11-03",
+      "featured": true
     }
   ]
 }
