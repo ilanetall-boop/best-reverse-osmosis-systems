@@ -759,6 +759,16 @@
       "minutes": 14,
       "date": "2026-11-04",
       "featured": true
+    },
+    {
+      "slug": "waterdrop-10ua-upgrade-paths-compared",
+      "title": "Waterdrop's 10UA Has Two Upgrades: The Reminder-Equipped UL12A and the Faucet-Equipped 10UB",
+      "description": "Starting from the plain $43.99 10UA, Waterdrop sells two different $6-and-$14 upgrades — one adds a time reminder, the other adds a dedicated faucet. They solve different problems, and only one of them is about the filter itself.",
+      "category": "Comparison",
+      "hero": "hero-waterdrop-10ua-upgrade-paths-compared",
+      "minutes": 14,
+      "date": "2026-11-05",
+      "featured": true
     }
   ]
 }
