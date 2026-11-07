@@ -779,6 +779,16 @@
       "minutes": 14,
       "date": "2026-11-06",
       "featured": true
+    },
+    {
+      "slug": "smart-led-faucet-indicators-reverse-osmosis-explained",
+      "title": "Smart LED Faucet Indicators on RO Systems: What the Light Actually Tells You",
+      "description": "A color-changing LED built into the faucet shows up on systems from $260 to $1,599. What the light is actually counting, how it differs from a separate display panel, and what it can't tell you about your water.",
+      "category": "Guide",
+      "hero": "hero-smart-led-faucet-indicators-reverse-osmosis-explained",
+      "minutes": 15,
+      "date": "2026-11-07",
+      "featured": true
     }
   ]
 }
