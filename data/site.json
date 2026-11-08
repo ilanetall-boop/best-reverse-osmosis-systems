@@ -789,6 +789,16 @@
       "minutes": 15,
       "date": "2026-11-07",
       "featured": true
+    },
+    {
+      "slug": "ispring-rcc7ak-uv-lamp-vs-led-uv-compared",
+      "title": "iSpring's Two 7-Stage UV Alkaline Systems: Traditional UV Lamp vs. LED UV",
+      "description": "The RCC7AK-UVBN and RCC7AK-UVBLK share the same 7-stage alkaline design and a $25 price gap — but one lights a traditional UV lamp and the other runs LED UV. Checked against a non-UV alkaline system for what the UV stage costs either way.",
+      "category": "Comparison",
+      "hero": "hero-ispring-rcc7ak-uv-lamp-vs-led-uv-compared",
+      "minutes": 12,
+      "date": "2026-11-08",
+      "featured": true
     }
   ]
 }
