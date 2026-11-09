@@ -799,6 +799,16 @@
       "minutes": 12,
       "date": "2026-11-08",
       "featured": true
+    },
+    {
+      "slug": "waterdrop-tsb-vs-tsa-dedicated-faucet-compared",
+      "title": "Waterdrop's TSB vs. TSA: What a Dedicated Second Faucet Adds to a Carbon Filter",
+      "description": "The TSB ships with its own faucet; the TSA connects straight to the cold line with none. The $11 price gap, the extra hole in the sink, and what the dedicated-faucet line actually costs to maintain.",
+      "category": "Comparison",
+      "hero": "hero-waterdrop-tsb-vs-tsa-dedicated-faucet-compared",
+      "minutes": 14,
+      "date": "2026-11-09",
+      "featured": true
     }
   ]
 }
