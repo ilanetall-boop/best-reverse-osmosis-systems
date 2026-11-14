@@ -849,6 +849,16 @@
       "minutes": 15,
       "date": "2026-11-13",
       "featured": true
+    },
+    {
+      "slug": "how-to-switch-from-bottled-water-to-reverse-osmosis-cost-payback",
+      "title": "Switching From Bottled Water to Reverse Osmosis: The Actual Payback Math",
+      "description": "A $195 under-sink tank system, a $409 plug-in countertop unit, and a $290 non-electric tankless system each pay back a bottled-water habit on a different timeline once install cost and filter upkeep are counted.",
+      "category": "Running costs",
+      "hero": "hero-how-to-switch-from-bottled-water-to-reverse-osmosis-cost-payback",
+      "minutes": 13,
+      "date": "2026-11-14",
+      "featured": true
     }
   ]
 }
