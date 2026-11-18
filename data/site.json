@@ -889,6 +889,16 @@
       "minutes": 15,
       "date": "2026-11-17",
       "featured": true
+    },
+    {
+      "slug": "bulk-replacement-filter-packs-worth-it",
+      "title": "Buying RO Filters in Bulk: Does a 2-Year, 19-Cartridge Pack Actually Save Money?",
+      "description": "A standard 5-stage set, a 1-year alkaline set and a 19-count 2-year bulk pack all come from the same brand. Pricing each one out per month settles whether buying further ahead is worth the upfront cost.",
+      "category": "Running costs",
+      "hero": "hero-bulk-replacement-filter-packs-worth-it",
+      "minutes": 14,
+      "date": "2026-11-18",
+      "featured": true
     }
   ]
 }
