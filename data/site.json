@@ -899,6 +899,16 @@
       "minutes": 14,
       "date": "2026-11-18",
       "featured": true
+    },
+    {
+      "slug": "800-gpd-tankless-stage-count-compared",
+      "title": "Same 800 GPD, 4 Stages vs. 10: What the Extra Cartridges in a Tankless System Actually Do",
+      "description": "Three tankless systems rated near 800 gallons a day disagree wildly on stage count, from a lean four-stage design to a ten-stage stack. What each extra cartridge is actually filtering, not just counting.",
+      "category": "Buying advice",
+      "hero": "hero-800-gpd-tankless-stage-count-compared",
+      "minutes": 13,
+      "date": "2026-11-19",
+      "featured": true
     }
   ]
 }
