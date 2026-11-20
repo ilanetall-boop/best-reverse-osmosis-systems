@@ -909,6 +909,16 @@
       "minutes": 13,
       "date": "2026-11-19",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-for-aquariums-and-reef-tanks",
+      "title": "Reverse Osmosis for Aquariums and Reef Tanks: Why Plain Beats Alkaline",
+      "description": "Fish keepers want RO water for the same reason drinking-water buyers do — stripped of dissolved solids — but for the opposite reason on minerals: reef and planted tanks need a blank slate, not a built-in alkaline stage. General information for hobbyists, not species-specific aquarium-keeping advice.",
+      "category": "Guide",
+      "hero": "hero-reverse-osmosis-for-aquariums-and-reef-tanks",
+      "minutes": 14,
+      "date": "2026-11-20",
+      "featured": true
     }
   ]
 }
