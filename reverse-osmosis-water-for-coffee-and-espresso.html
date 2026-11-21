@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RO Water for Coffee and Espresso: Why Near-Zero TDS Hurts Extraction</title>
+<meta name="description" content="Pure RO permeate is prized for drinking but can flatten a shot of espresso — brewing standards call for a mineral floor that stripped-down water doesn't have. What a built-in mineral stage changes, and what it doesn't fix. General brewing information, not a substitute for a machine manufacturer's water guidance.">
+<link rel="canonical" href="https://best-reverse-osmosis-systems.com/reverse-osmosis-water-for-coffee-and-espresso">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Best Reverse Osmosis Systems">
+<meta property="og:title" content="RO Water for Coffee and Espresso: Why Near-Zero TDS Hurts Extraction">
+<meta property="og:description" content="Pure RO permeate is prized for drinking but can flatten a shot of espresso — brewing standards call for a mineral floor that stripped-down water doesn't have.">
+<meta property="og:image" content="https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-water-for-coffee-and-espresso.webp">
+<meta name="theme-color" content="#06192B">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --ground:#F1F5F9; --surface:#FFFFFF; --surface-2:#E8EFF6;
+    --ink:#0A1F2E; --ink-soft:#1E3A4E; --muted:#5A7183; --line:#D9E3EC;
+    --aqua:#0F84C8; --aqua-deep:#0A5F97; --aqua-tint:#DCECF8;
+    --brass:#3E6E8E; --brass-lite:#8FC7E8; --brass-tint:#E7F1F8;
+    --dark:#06192B; --dark-2:#0B2A44; --on-dark:#E8F2F9; --on-dark-mute:#93B2C7;
+    --star:#D9A400;
+    --shadow:0 1px 2px rgba(10,31,46,.05),0 22px 48px -26px rgba(10,31,46,.30);
+    --shadow-sm:0 1px 2px rgba(10,31,46,.05),0 10px 24px -16px rgba(10,31,46,.24);
+    --radius:20px; --radius-sm:12px; --maxw:1120px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }}
+  :root[data-theme="dark"]{
+    --ground:#061320; --surface:#0B2033; --surface-2:#0E2B42;
+    --ink:#E8F2F9; --ink-soft:#C6DAE9; --muted:#8DA8BC; --line:#183A55;
+    --aqua:#3FB3F0; --aqua-deep:#6FCBF7; --aqua-tint:#0C2A40;
+    --brass:#7FC4EA; --brass-lite:#A9DAF3; --brass-tint:#0E2536;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 24px 52px -28px rgba(0,0,0,.7);
+    --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 12px 26px -18px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit}
+  h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+  .serif{font-family:var(--serif)}
+  p{margin:0 0 1rem}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .tnum{font-variant-numeric:tabular-nums}
+  .stars{color:var(--star);letter-spacing:2px}
+
+  /* ---------- header ---------- */
+  header.site{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--ground) 82%,transparent);
+    backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .brand .bn{font-family:var(--serif);font-size:1.16rem}
+  nav.site a{color:var(--muted);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.01em;margin-left:22px;transition:color .2s}
+  nav.site a:hover{color:var(--ink)}
+  @media (max-width:660px){nav.site{display:none}}
+
+  /* ---------- hero (immersive dark, water caustics) ---------- */
+  .hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,var(--dark-2),var(--dark) 60%);color:var(--on-dark);overflow:hidden;isolation:isolate}
+  .caustic{position:absolute;inset:-30%;z-index:0;opacity:.5;pointer-events:none;filter:blur(30px);
+    background:
+      radial-gradient(28% 40% at 22% 30%,rgba(63,179,240,.30),transparent 60%),
+      radial-gradient(24% 34% at 74% 24%,rgba(143,199,232,.20),transparent 60%),
+      radial-gradient(30% 42% at 60% 78%,rgba(15,132,200,.28),transparent 62%);
+    animation:drift 22s ease-in-out infinite alternate}
+  .caustic.b{opacity:.35;animation-duration:30s;animation-direction:alternate-reverse;
+    background:
+      radial-gradient(26% 36% at 40% 60%,rgba(111,203,247,.26),transparent 60%),
+      radial-gradient(22% 30% at 85% 70%,rgba(169,218,243,.18),transparent 60%)}
+  @keyframes drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}50%{transform:translate3d(3%,2%,0) scale(1.08)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+  .hero .wrap{position:relative;z-index:1;padding:74px 26px 88px}
+  .hero .eyebrow{color:var(--brass-lite)}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,1.4rem+4.6vw,4.7rem);letter-spacing:-.02em;max-width:15ch;margin:.5rem 0 0}
+  .hero h1 em{font-style:italic;color:var(--brass-lite)}
+  .hero .lede{font-size:1.24rem;line-height:1.55;color:var(--on-dark-mute);max-width:52ch;margin-top:1.3rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:.86rem;color:var(--on-dark-mute)}
+  .hero .meta b{color:var(--on-dark)}
+  .rule{height:1px;background:linear-gradient(90deg,var(--brass),transparent);border:0;margin:26px 0 0;max-width:220px}
+
+  /* ---------- #1 feature (the centerpiece) ---------- */
+  .feature{position:relative;z-index:2;margin:-56px 0 0}
+  .feature .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
+  .feature .left{padding:38px}
+  .feature .kick{display:inline-flex;align-items:center;gap:9px;color:var(--brass-text);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+  .feature .kick::before{content:"";width:26px;height:1px;background:var(--brass)}
+  .feature h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.2rem+2vw,2.7rem);margin:.5rem 0 .2rem}
+  .feature .verdict{color:var(--ink-soft);font-size:1.06rem;margin:.4rem 0 1rem;max-width:44ch}
+  .feature .rl{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);margin-bottom:1.2rem;flex-wrap:wrap}
+  .feature .rl b{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua);color:#fff;font-weight:700;
+    padding:14px 26px;border-radius:12px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,background .2s}
+  .btn:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  .btn .arw{transition:transform .2s}.btn:hover .arw{transform:translateX(3px)}
+  .feature .right{background:linear-gradient(160deg,var(--dark-2),var(--dark));color:var(--on-dark);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative}
+  .feature .right .lab{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute)}
+  .feature .bigprice{font-family:var(--serif);font-size:clamp(3rem,2rem+4vw,4.4rem);font-weight:600;line-height:1;color:var(--brass-lite)}
+  .feature .bigprice sup{font-size:.4em;top:-1.2em;color:var(--on-dark)}
+  .feature .right .note{color:var(--on-dark-mute);font-size:.92rem;margin-top:6px;max-width:30ch}
+  .feature .right .mono{margin-top:16px;font-family:var(--serif);font-size:1.05rem;color:var(--on-dark)}
+  @media (max-width:820px){.feature .card{grid-template-columns:1fr}.feature .right{order:-1}}
+
+  /* ---------- generic section ---------- */
+  section{padding:44px 0}
+  .kicker{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+  .kicker .eyebrow{color:var(--aqua-deep)}
+  .kicker::after{content:"";flex:1;height:1px;background:var(--line)}
+  .h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,1.2rem+1.7vw,2.5rem);letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:62ch;margin:.6rem 0 0}
+
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:24px}
+  .notes .n{background:var(--surface);padding:24px}
+  .notes .num{font-family:var(--serif);font-size:1.5rem;color:var(--brass-text);line-height:1}
+  .notes h3{font-size:1.02rem;font-weight:750;margin:.5rem 0 .35rem}
+  .notes p{font-size:.9rem;color:var(--muted);margin:0}
+  @media (max-width:820px){.notes{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.notes{grid-template-columns:1fr}}
+
+  /* comparison */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);background:var(--surface);margin-top:22px}
+  table{border-collapse:collapse;width:100%;min-width:740px;font-size:.94rem}
+  thead th{background:var(--surface-2);text-align:left;padding:16px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+  td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:var(--surface-2)}
+  td.name{font-family:var(--serif);font-weight:600;font-size:1.05rem}
+  .win td{background:var(--brass-tint)}
+  .win td.name{color:var(--brass-text)}
+  .win td:first-child{box-shadow:inset 3px 0 0 var(--brass)}
+  .price{font-weight:800;font-variant-numeric:tabular-nums}
+  .rev{color:var(--muted);font-size:.82rem}
+  .tget{display:inline-block;background:var(--ink);color:var(--surface);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:9px;text-decoration:none;white-space:nowrap;transition:background .2s}
+  .tget:hover{background:var(--aqua-deep);color:#fff}
+
+  /* picks (editorial cards) */
+  .picks{display:flex;flex-direction:column;gap:26px;margin-top:26px}
+  .pick{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:start;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px}
+  .pick .rank{font-family:var(--serif);font-size:2.6rem;color:var(--brass-text);line-height:.9;font-weight:600}
+  .pick .rank small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:8px}
+  .pick h3{font-family:var(--serif);font-weight:600;font-size:1.44rem}
+  .pick .who{color:var(--aqua-deep);font-weight:700;font-size:.9rem;margin:.25rem 0 .5rem}
+  .pick .rl2{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-bottom:.7rem;flex-wrap:wrap}
+  .pick .rl2 b{color:var(--ink)}
+  .pick p.body{margin:.2rem 0 0;color:var(--ink-soft)}
+  .quote{border-left:2px solid var(--brass);padding-left:14px;margin:.9rem 0 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:1.02rem}
+  .aside{display:flex;flex-direction:column;align-items:flex-end;gap:12px;text-align:right;min-width:150px}
+  .aside .pr{font-family:var(--serif);font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+  .aside .tag{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .buy{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:#fff;font-weight:700;padding:11px 20px;border-radius:10px;text-decoration:none;transition:background .2s,transform .15s;font-size:.92rem}
+  .buy:hover{background:var(--aqua-deep);transform:translateY(-1px)}
+  @media (max-width:820px){.pick{grid-template-columns:64px 1fr}.aside{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:16px}}
+
+  /* method / faq */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  @media (max-width:760px){.cols{grid-template-columns:1fr}}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+  .panel .eyebrow{color:var(--aqua-deep)}
+  .panel h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:.5rem 0 .5rem}
+  .panel p{color:var(--muted);margin:0}
+  .faq details{border-top:1px solid var(--line);padding:16px 0}
+  .faq details:first-of-type{border-top:0}
+  .faq summary{cursor:pointer;font-family:var(--serif);font-size:1.12rem;list-style:none;display:flex;justify-content:space-between;gap:14px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brass-text);font-family:var(--sans);font-weight:700}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:.8rem 0 0;color:var(--muted)}
+
+  footer.site{margin-top:20px;background:var(--dark);color:var(--on-dark-mute)}
+  footer .wrap{padding:40px 26px}
+  footer .fbrand{font-family:var(--serif);color:var(--on-dark);font-size:1.2rem}
+  footer p{font-size:.84rem;margin:.6rem 0 0;max-width:80ch}
+  footer a{color:var(--brass-lite)}
+  /* imagery */
+  .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
+  .hero .himg{border-radius:20px;border:1px solid rgba(143,199,232,.4);box-shadow:0 30px 60px -30px rgba(0,0,0,.55);width:100%;height:auto;display:block}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+  .fpimg{background:#fff;border-radius:14px;padding:14px;box-shadow:0 12px 28px -14px rgba(0,0,0,.5);width:min(230px,70%);margin-bottom:16px}
+  .fpimg img{width:100%;height:auto;display:block}
+  .aside .pimg{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center}
+  .aside .pimg img{max-width:100%;max-height:100%;display:block}
+  @media (max-width:820px){.aside .pimg{width:96px;height:96px;padding:6px}}
+  td.name{display:flex;align-items:center;gap:12px}
+  .thumb{width:46px;height:46px;flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:9px;padding:4px}
+  .thumb img{width:100%;height:100%;object-fit:contain;display:block}
+  /* running-cost strip (the consumable) */
+  .costs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:24px}
+  @media (max-width:820px){.costs{grid-template-columns:1fr}}
+  .cost{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .cost .cimg{width:88px;height:88px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;display:flex;align-items:center;justify-content:center}
+  .cost .cimg img{max-width:100%;max-height:100%;display:block}
+  .cost h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .cost .cprice{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--brass-text);font-variant-numeric:tabular-nums}
+  .cost p{font-size:.92rem;color:var(--muted);margin:0}
+  .cost a.buy{align-self:flex-start;margin-top:4px}
+  :focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:5px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover,.buy:hover{transform:none}}
+</style>
+<style>
+  /* ---------- article layout (appended) ---------- */
+  .crumb{font-size:.82rem;color:var(--muted);padding:22px 0 0}
+  .crumb a{color:var(--aqua-deep);text-decoration:none}
+  .crumb a:hover{text-decoration:underline}
+  .article-head{padding:18px 0 8px;max-width:820px}
+  .article-head h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,1.3rem+3vw,3.4rem);letter-spacing:-.02em}
+  .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);margin-top:14px}
+  .byline b{color:var(--ink)}
+  .disc{font-size:.8rem;color:var(--muted);border-left:2px solid var(--brass);padding-left:12px;margin:16px 0 0;max-width:68ch}
+  .hero-img{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin:24px 0 8px}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose a{color:var(--aqua-deep);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--aqua-deep) 40%,transparent);text-underline-offset:3px}
+  .prose a:hover{text-decoration-color:var(--aqua-deep)}
+  .prose ul,.prose ol{margin:0 0 1rem;padding-left:1.2rem;color:var(--ink-soft)}
+  .prose li{margin:.35rem 0}
+  .prose .h2{margin-top:.2rem}
+  .keep{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  @media (max-width:760px){.keep{grid-template-columns:1fr}}
+  .keep a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px;text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .2s}
+  .keep a:hover{transform:translateY(-2px);border-color:var(--aqua)}
+  .keep .kt{font-family:var(--serif);font-weight:600;font-size:1.05rem;color:var(--ink)}
+  .keep .kd{font-size:.84rem;color:var(--muted);margin-top:6px}
+</style>
+<style id="a11y">:root{--brass-text:#2A5A79;--star:#B07E00}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brass-text:#A9DAF3;--star:#E8B84B}}:root[data-theme="dark"]{--brass-text:#A9DAF3;--star:#E8B84B}nav.site a{color:var(--ink-soft)}.stars{color:var(--star)}thead th{color:var(--ink-soft)}.rev{color:var(--ink-soft)}.kick{color:var(--brass-text)}.win td.name{color:var(--brass-text)}a.btn,a.buy,.btn,.buy{background:#0A5F97 !important;color:#fff !important;text-decoration:none !important}a.btn:hover,a.buy:hover,.btn:hover,.buy:hover{background:#084A78 !important}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.btn,:root:not([data-theme="light"]) a.buy,:root:not([data-theme="light"]) .btn,:root:not([data-theme="light"]) .buy{background:#3FB3F0 !important;color:#04202F !important}:root:not([data-theme="light"]) .btn:hover,:root:not([data-theme="light"]) .buy:hover{background:#6FCBF7}}:root[data-theme="dark"] a.btn,:root[data-theme="dark"] a.buy,:root[data-theme="dark"] .btn,:root[data-theme="dark"] .buy{background:#3FB3F0 !important;color:#04202F !important}</style>
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "y3991alayc");
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6YK89EJMR"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());gtag('config', 'G-Z6YK89EJMR');</script>
+</head>
+<body>
+<header class="site"><div class="wrap bar">
+  <a class="brand" href="/" aria-label="Best Reverse Osmosis Systems">
+    <svg class="logomark" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><radialGradient id="lm" cx="34%" cy="26%" r="86%"><stop offset="0" stop-color="#3FB3F0"/><stop offset=".7" stop-color="#0A5F97"/><stop offset="1" stop-color="#06192B"/></radialGradient></defs>
+      <circle cx="20" cy="20" r="19" fill="url(#lm)"/>
+      <circle cx="20" cy="20" r="18.4" fill="none" stroke="#8FC7E8" stroke-width="1.1" stroke-opacity=".92"/>
+      <circle cx="20" cy="20" r="15.3" fill="none" stroke="#E8F2F9" stroke-width=".6" stroke-opacity=".22"/>
+      <path d="M20 8.2c4.5 4.9 7 8.4 7 11.7a7 7 0 0 1-14 0c0-3.3 2.5-6.8 7-11.7Z" fill="#F7FBFE"/>
+      <path d="M13.6 19.6h12.8" stroke="#0A5F97" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2.1 1.9"/>
+      <path d="M12 27.4c2.4 1.7 5 2.5 8 2.5s5.6-.8 8-2.5" fill="none" stroke="#8FC7E8" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".85"/>
+    </svg>
+    <span class="bn">Best&thinsp;RO&thinsp;Systems</span>
+  </a>
+  <nav class="site" aria-label="Primary">
+    <a href="#why">Why it's wrong</a><a href="#range">The TDS target</a><a href="#minerals">What minerals do</a><a href="#hotdispense">Hot dispense</a><a href="#picks">The picks</a><a href="#faq">FAQ</a>
+  <a href="/guides">All guides</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="crumb"><a href="/">Home</a> › <a href="/guides">Guides</a> › <span>RO water for coffee and espresso</span></div>
+  <div class="article-head">
+    <span class="eyebrow" style="color:var(--aqua-deep)">Water quality</span>
+    <h1 class="serif">RO water for coffee and espresso: why near-zero TDS hurts extraction</h1>
+    <div class="byline"><span>By <b>Ilane Tall</b></span><span>Updated <b>November 21, 2026</b></span><span>12 min read</span><span>Research-based</span></div>
+    <p class="disc">We're reader-supported: buying through our links may earn us a commission at no extra cost to you. This is general brewing information, not a substitute for your espresso machine manufacturer's own water guidance. We compare published specifications, brewing-industry standards and prices — we don't run a testing lab.</p>
+  </div>
+
+  <img class="hero-img" src="/images/hero-reverse-osmosis-water-for-coffee-and-espresso.webp" alt="A shot of espresso being pulled beside a glass of reverse osmosis water, illustrating the gap between near-zero TDS and the mineral content espresso extraction needs" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+
+  <section id="why">
+    <div class="prose">
+      <p>Reverse osmosis water earns its reputation one way: it strips out almost everything dissolved in your tap supply — chlorine, heavy metals, nitrates, hardness minerals, whatever your municipality or well happens to be carrying that week. For a glass of drinking water, that is close to an unambiguous win. For a shot of espresso, it can be the opposite of what you want, and the reason catches a lot of people who just switched off bottled water by surprise.</p>
+      <p>Extraction is not just hot water passing through ground coffee. Dissolved minerals in the water — mainly calcium and magnesium ions — act as a chemical partner, binding to acids and bitter compounds and pulling them out of the grounds into the cup. Water with almost nothing dissolved in it has nothing to bind with. The coffee still gets wet, but less of what makes it taste like coffee actually makes it into the water. The result is a shot that pulls technically fine on paper — correct dose, correct time, correct yield — and still tastes thin, sour, or strangely hollow, with the finish disappearing faster than it should.</p>
+      <p>This is exactly the problem that pushed the specialty coffee industry to publish formal water standards in the first place. Before those standards existed, a cafe could dial in a espresso recipe perfectly on Monday and watch it fall apart on Thursday purely because the municipal supply changed upstream — no fault of the grinder, the machine, or the barista. The fix the industry landed on was not "use purer water." It was the opposite: engineer water to hit a specific mineral floor, because plain purity and good extraction are different targets that happen to point in opposite directions once you cross below a certain concentration. That is also why a lot of people who switch <a href="/how-to-switch-from-bottled-water-to-reverse-osmosis-cost-payback">from bottled water to a reverse-osmosis system</a> for everyday drinking are caught off guard the first time they run that same water through an espresso machine.</p>
+    </div>
+  </section>
+
+  <section id="range">
+    <div class="prose">
+      <h2 class="h2">The TDS range brewing standards actually target — and where plain permeate lands</h2>
+      <p>The water-quality standard most of the specialty coffee industry references sets a target total dissolved solids (TDS) figure of around 150 parts per million, with an acceptable range of roughly 75 to 250 ppm. Alongside TDS it sets a target for general hardness — the calcium and magnesium doing the actual extraction work — of about 3 grains per gallon, with a working range of roughly 1 to 5 grains, plus a target carbonate alkalinity near 40 ppm to keep the water from swinging the brew's acidity too far in either direction, and a near-neutral pH. None of that is a claim about any product on this page; it is the published framework the industry uses to judge any water, from any source.</p>
+      <p>Now place plain RO permeate next to that range. A reverse-osmosis membrane does not sort minerals by whether coffee needs them — it rejects nearly everything dissolved in the feed water, routinely pushing permeate down into the single digits of parts per million straight off the membrane, regardless of what the tap water measured going in. That is the entire point of the technology for a drinking-water buyer, and it is also why plain, unmodified RO permeate lands nowhere near a 75-to-250 ppm brewing target — it sits far below the floor, not just below the midpoint.</p>
+      <p>That gap is the whole story. It is also why some espresso machine manufacturers explicitly warn against feeding a machine straight distilled or straight RO water with no mineral content added back: beyond the taste problem, water with nothing dissolved in it is also more aggressive toward certain internal metals, since it has no mineral buffer sitting in solution. Two separate reasons, same root cause, same fix — which is not "less filtration," it's "add a calibrated amount of the right minerals back after the membrane." For context on how differently that same near-zero number is treated elsewhere, a reef tank wants exactly the opposite outcome from coffee — see our guide on <a href="/reverse-osmosis-for-aquariums-and-reef-tanks">reverse osmosis for aquariums and reef tanks</a>, where plain permeate with nothing added back is the correct answer, not a problem to fix.</p>
+    </div>
+  </section>
+
+  <section id="minerals">
+    <div class="prose">
+      <h2 class="h2">What a built-in mineral or alkaline stage adds back — and whether it's the right minerals for coffee</h2>
+      <p>This is where the three systems in this guide come in. All three carry a mineral or alkaline stage after the membrane — it's in each product's own name — and the purpose of that stage, as sold, is to reintroduce calcium and magnesium compounds and, on the alkaline versions, nudge pH and carbonate alkalinity back up from the near-zero baseline the membrane leaves behind. That is a real, useful thing for a mineral or alkaline cartridge to do, and it is the correct general direction for coffee: some mineral content beats none.</p>
+      <p>The catch is what that stage is actually calibrated against. A remineralization or alkaline cartridge built into a drinking-water system is engineered for the taste and feel of a glass of water on its own — a rounded mouthfeel, often with pH pushed noticeably alkaline, because that is what drinking-water marketing rewards. The specialty coffee target is narrower and different: a specific hardness and alkalinity window built around extraction chemistry, not a pH chosen for how a sip tastes alone. A mineral stage can land inside that brewing window, undershoot it, or overshoot into territory where extra buffering mutes acidity and flattens a shot a different way than too little mineral does — and a drinking-water listing has no reason to publish the output number a coffee drinker would need to know which outcome they're getting. None of the three products here comes with a published post-mineral-stage TDS figure, so the honest advice is to check the current listing, and failing that, test your own output rather than assume a stage built for drinking taste also lands inside a 75-to-250 ppm brewing window. A related variable if you're weighing tankless options is stage count — see <a href="/800-gpd-tankless-stage-count-compared">what the extra cartridges in a tankless system actually do</a> for how that maps to what's filtered, as distinct from what's added back.</p>
+    </div>
+  </section>
+
+  <section id="hotdispense">
+    <div class="prose">
+      <h2 class="h2">Hot-dispense systems and espresso machines: temperature and mineral content are separate questions</h2>
+      <p>A hot-dispense countertop unit solves a convenience problem, not a chemistry one. Adding a heating tank and a hot tap ahead of the faucet changes the temperature of the water coming out — nothing more. It does not touch TDS, hardness, or alkalinity, because those are set earlier in the filtration path, by whether and how a mineral or alkaline stage sits downstream of the membrane. A system can dispense scalding-hot water that is still essentially mineral-free, or room-temperature water with a full mineral stage behind it — the two features are independent, and a product that has one says nothing about whether it has the other unless the mineral stage is named separately, as it is on each product listed here.</p>
+      <p>For an actual espresso machine, hot dispense from the filtration system barely matters, because the machine heats its own boiler regardless of what temperature the water arrives at. What an espresso machine's reservoir or plumbed-in line actually needs is correct mineral content, at whatever temperature is convenient to draw it — the machine will do its own heating from there. Hot dispense earns its keep for pour-over, instant americanos, and rinsing gear, not for feeding an espresso machine's water intake. This is general brewing information, not a substitute for checking your own machine manufacturer's water specification, which may set its own hardness or TDS limits independent of anything discussed here.</p>
+    </div>
+  </section>
+
+  <section id="dosing">
+    <div class="prose">
+      <h2 class="h2">Why adjusting a remineralization stage isn't the same as a dedicated mineral dosing kit</h2>
+      <p>The specialty coffee world also sells a second, more precise tool for this exact problem: small mineral concentrates or dosing packets, mixed by the drop or teaspoon into distilled or RO water to hit a specific, repeatable recipe — a stated calcium-to-magnesium ratio, a stated TDS number, a stated alkalinity. That is a fundamentally different mechanism from an inline mineral or alkaline cartridge, and the difference matters more than it looks.</p>
+      <p>An inline cartridge is passive contact media — crushed mineral stone or a calcite blend that water flows past on its way to the faucet. How much mineral content ends up in the water depends on flow rate and contact time, and it drifts as the media ages across the cartridge's service life: fresh out of the box is not the same output as a cartridge nearing its replacement interval. There's no dial, no readout, and no way to adjust the dose on a given day — only a wholesale cartridge swap, down the road, for a different one. A dosing kit is the opposite: measured, repeatable, and adjustable in real time by how much you add, which is precisely what lets a home barista target a specific recipe instead of a reasonable approximation.</p>
+      <p>Neither approach is wrong; they solve different problems. A built-in mineral or alkaline RO stage gives every tap in the house — drinking glass, kettle, ice maker, coffee reservoir — a baseline that is better than zero, with no daily effort. A dosing kit gives one batch of water, prepared for one purpose, a number you actually chose. If your goal is a specific, repeatable espresso recipe rather than "better than nothing for the whole house," the dosing kit is doing a job the cartridge was never built to do.</p>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="kicker"><span class="eyebrow">The picks</span></div>
+    <h2 class="h2">The picks, and when a drop-in dosing kit beats a whole new system</h2>
+    <div class="prose">
+      <p>If the entire goal is fixing one espresso machine's water, a mineral dosing kit — a few dollars per batch, mixed into water you already have — is almost always the cheaper, faster answer than buying an appliance that costs well over a hundred dollars. Where a dedicated mineral or alkaline RO system earns its price is when you also want the other reasons people buy one: a continuous supply of better-tasting drinking water, ice, and kettle water for the whole household, with the coffee improvement as one benefit among several rather than the only one. The three systems below all build a mineral stage into that broader job, at three different scales.</p>
+    </div>
+    <div class="picks">
+
+      <article class="pick">
+        <div class="rank">01<small>Entry point</small></div>
+        <div>
+          <h3>Waterdrop M6SL Mineral RO Countertop</h3>
+          <div class="who">A dedicated mineral stage, no install, no plumbing</div>
+          <div class="rl2"><b>75 GPD</b> · countertop · room-temp dispense · mineral stage built in</div>
+          <p class="body">The M6SL sits on the counter and plumbs into nothing — fill it, or feed it from a small adapter, and it dispenses room-temperature RO water with a mineral stage already in the path, rather than sending plain permeate straight to the glass. That makes it a reasonable way to get <a href="/countertop-reverse-osmosis-glass-vs-plastic-pitcher-compared">countertop reverse osmosis</a> with some mineral content back into a coffee routine built around a pour-over, drip machine, or a manually filled espresso reservoir, without committing to an under-sink install. Its mineral dose is built for drinking taste, not a stated brewing recipe — if you're chasing a specific TDS number for espresso, check the current listing for any published figure, and verify with your own meter rather than assume.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0GRZF389R.webp" alt="Waterdrop M6SL mineral reverse osmosis countertop water filter" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$141.93</div><span class="tag">Countertop · 75 GPD</span><a class="buy" href="https://www.amazon.com/dp/B0GRZF389R?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">02<small>Whole-house volume</small></div>
+        <div>
+          <h3>Waterdrop T4-A Alkaline Mineral Tankless RO</h3>
+          <div class="who">For plumbing mineral-adjusted water continuously to a machine's line</div>
+          <div class="rl2"><b>450 GPD</b> · tankless · alkaline mineral stage · dual flow</div>
+          <p class="body">The T4-A is a plumbed-in, tankless system with an alkaline mineral stage, built for households that want volume rather than a countertop unit refilled by hand — useful if an espresso machine or plumbed-in reservoir draws continuously rather than getting topped up by the cup. It's also described as a dual-flow design; Waterdrop doesn't spell out on this listing exactly what the two flows switch between, so check the current listing before assuming it matches a specific setup you have in mind. Being tankless also means no water sitting in a storage bladder between uses, which is worth knowing if you're also weighing <a href="/quietest-reverse-osmosis-systems-noise-levels-compared">tankless versus non-electric systems</a> on noise. Same caveat as above on the mineral dose: built for drinking taste, not a stated brewing TDS figure — test your own output if a specific recipe matters to you.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0F5V9G355.webp" alt="Waterdrop T4-A alkaline mineral tankless reverse osmosis system with dual flow" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$229.99</div><span class="tag">Tankless · 450 GPD</span><a class="buy" href="https://www.amazon.com/dp/B0F5V9G355?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+      <article class="pick">
+        <div class="rank">03<small>Hot and mineral, one box</small></div>
+        <div>
+          <h3>Waterdrop M6CG Hot &amp; Cold RO Countertop</h3>
+          <div class="who">Mineral added and heated dispense from the same unit</div>
+          <div class="rl2"><b>Countertop</b> · hot &amp; cold dispense · mineral added · output not listed — check current listing</div>
+          <p class="body">The M6CG combines the two separate questions this guide has been pulling apart — temperature and mineral content — into one countertop box: it dispenses both hot and cold water, and Waterdrop's own name for it specifies the mineral stage is included, not an afterthought. That's genuinely convenient for a home bar that wants hot water on demand for pour-over or rinsing alongside mineral-adjusted RO for an espresso machine's reservoir, without running two separate appliances. Waterdrop's listing for this one does not give a daily output figure we could verify, so don't assume a particular GPD rating — check the current listing if throughput for your household matters. As with the other two, the mineral dose targets drinking taste; it is not sold against a specific brewing TDS number.</p>
+        </div>
+        <div class="aside"><div class="pimg"><img src="/images/amazon-B0GS4RMTQQ.webp" alt="Waterdrop M6CG hot and cold reverse osmosis countertop system with mineral added" width="800" height="800" loading="lazy" decoding="async"></div><div class="pr">$459.00</div><span class="tag">Hot &amp; cold · mineral added</span><a class="buy" href="https://www.amazon.com/dp/B0GS4RMTQQ?tag=bestreverseosmosis-20" rel="nofollow sponsored noopener" target="_blank">Check price →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="cols">
+      <div class="panel">
+        <span class="eyebrow">How we picked</span>
+        <h3 class="serif">Three systems, one shared mineral question</h3>
+        <p>We looked for RO systems that name a mineral or alkaline stage explicitly in their own listing, across the form factors people ask about for a coffee setup — a plain countertop unit, a high-volume tankless system, and a hot-and-cold unit. Systems with no stated remineralization were left out, since near-zero TDS is the problem this guide explains, not a product to rank against it.</p>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">How we compared</span>
+        <h3 class="serif">Specs and standards, not a lab</h3>
+        <p>We're honest about this: <strong style="color:var(--ink)">we don't physically test these systems for extraction quality and we don't run a testing lab.</strong> We compare each system's published specs against the specialty coffee industry's published water-quality framework, and flag plainly where a manufacturer doesn't publish a figure — like post-mineral-stage TDS — rather than estimate one. Amazon no longer exposes star ratings through its product API, so you won't find invented scores anywhere on this page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker"><span class="eyebrow">FAQ</span></div>
+    <h2 class="h2">Common questions</h2>
+    <div class="panel faq" style="margin-top:22px">
+      <details open><summary>Does reverse osmosis water make espresso taste flat?</summary><p>It can, and near-zero TDS is the usual reason. Espresso extraction relies on dissolved calcium and magnesium binding with acids and bitter compounds during the brew; plain RO permeate strips almost all of that out, leaving a shot that can taste thin, sour, or hollow even when the dose, grind and time are all correctly dialed in. The fix is adding a calibrated amount of mineral content back after the membrane, not using less filtration.</p></details>
+      <details><summary>What TDS should water be for espresso?</summary><p>The specialty coffee industry's published water-quality standard targets roughly 150 parts per million total dissolved solids, with an acceptable range of about 75 to 250 ppm, alongside a general hardness target near 3 grains per gallon and carbonate alkalinity around 40 ppm. Plain RO permeate typically lands in the single digits of ppm straight off the membrane — far below that range, not just below its midpoint.</p></details>
+      <details><summary>Does a built-in mineral or alkaline RO stage fix espresso water?</summary><p>Partially, and it depends on the stage. These stages are engineered for the taste and feel of drinking water on its own, not necessarily for the specialty coffee industry's narrower hardness-and-alkalinity window. They move water in the right direction — away from zero — but none of the systems here publishes a post-mineral-stage TDS figure, so whether a given unit lands inside the 75-to-250 ppm brewing range isn't something we can confirm from the listing. Check the current listing for a published number, or test your own output with a TDS meter.</p></details>
+      <details><summary>Should I buy a mineral dosing kit instead of a whole new RO system?</summary><p>If the only goal is fixing one espresso machine's water, a dosing kit — mixed by the drop into water you already have, for a few dollars a batch — is usually the cheaper and more precise route, since it gives a repeatable, adjustable recipe rather than a fixed cartridge dose. A dedicated mineral or alkaline RO system makes more sense when you also want the other benefits of owning one, like better-tasting drinking water and ice for the whole household, with the coffee improvement as one part of that rather than the only reason to buy.</p></details>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:10px">
+    <div class="kicker"><span class="eyebrow">Keep reading</span></div>
+    <h2 class="h2">Next, if you're still choosing</h2>
+    <div class="keep">
+      <a href="/bulk-replacement-filter-packs-worth-it"><span class="kt">Buying RO filters in bulk</span><span class="kd">Whether a 2-year, 19-cartridge pack actually saves money once a mineral stage is in the mix.</span></a>
+      <a href="/reverse-osmosis-systems-with-the-longest-filter-change-intervals"><span class="kt">The longest filter change intervals</span><span class="kd">Four ways brands stretch past the standard 6-month RO cartridge cycle.</span></a>
+      <a href="/delta-faucet-enters-reverse-osmosis-market"><span class="kt">Delta's $799 Clarifi</span><span class="kd">What a plumbing brand charges for reverse osmosis versus the systems compared here.</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="fbrand">Best Reverse Osmosis Systems</div>
+  <p>Independent, research-based comparisons of under-sink reverse osmosis systems, countertop purifiers and replacement filters.</p>
+  <p style="margin:.5rem 0 0"><a href="/about">About</a> · <a href="/guides">All guides</a> · <a href="/contact">Contact</a> · <a href="/privacy">Privacy</a></p>
+  <p>Reader-supported: we may earn a commission when you buy through our links, at no additional cost to you. Comparisons are based on published specifications, third-party certifications and current prices; we do not physically test products. Prices change frequently — confirm the current price on Amazon before buying. As an Amazon Associate, we earn from qualifying purchases. © 2026 Best Reverse Osmosis Systems.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"RO Water for Coffee and Espresso: Why Near-Zero TDS Hurts Extraction","description":"Pure RO permeate is prized for drinking but can flatten a shot of espresso - brewing standards call for a mineral floor that stripped-down water doesn't have.","image":"https://best-reverse-osmosis-systems.com/images/hero-reverse-osmosis-water-for-coffee-and-espresso.webp","author":{"@type":"Person","name":"Ilane Tall"},"publisher":{"@type":"Organization","name":"Best Reverse Osmosis Systems","url":"https://best-reverse-osmosis-systems.com/"},"datePublished":"2026-11-21","dateModified":"2026-11-21","mainEntityOfPage":{"@type":"WebPage","@id":"https://best-reverse-osmosis-systems.com/reverse-osmosis-water-for-coffee-and-espresso"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Does reverse osmosis water make espresso taste flat?","acceptedAnswer":{"@type":"Answer","text":"It can, and near-zero TDS is the usual reason. Espresso extraction relies on dissolved calcium and magnesium binding with acids and bitter compounds during the brew; plain RO permeate strips almost all of that out, leaving a shot that can taste thin, sour, or hollow even when the dose, grind and time are all correctly dialed in. The fix is adding a calibrated amount of mineral content back after the membrane, not using less filtration."}},
+ {"@type":"Question","name":"What TDS should water be for espresso?","acceptedAnswer":{"@type":"Answer","text":"The specialty coffee industry's published water-quality standard targets roughly 150 parts per million total dissolved solids, with an acceptable range of about 75 to 250 ppm, alongside a general hardness target near 3 grains per gallon and carbonate alkalinity around 40 ppm. Plain RO permeate typically lands in the single digits of ppm straight off the membrane - far below that range, not just below its midpoint."}},
+ {"@type":"Question","name":"Does a built-in mineral or alkaline RO stage fix espresso water?","acceptedAnswer":{"@type":"Answer","text":"Partially, and it depends on the stage. These stages are engineered for the taste and feel of drinking water on its own, not necessarily for the specialty coffee industry's narrower hardness-and-alkalinity window. They move water in the right direction, away from zero, but none of the systems in this guide publishes a post-mineral-stage TDS figure, so whether a given unit lands inside the 75 to 250 ppm brewing range is not something that can be confirmed from the listing alone."}},
+ {"@type":"Question","name":"Should I buy a mineral dosing kit instead of a whole new RO system?","acceptedAnswer":{"@type":"Answer","text":"If the only goal is fixing one espresso machine's water, a dosing kit mixed by the drop into water you already have, for a few dollars a batch, is usually the cheaper and more precise route, since it gives a repeatable, adjustable recipe rather than a fixed cartridge dose. A dedicated mineral or alkaline RO system makes more sense when you also want the other benefits of owning one, like better-tasting drinking water and ice for the whole household, with the coffee improvement as one part of that rather than the only reason to buy."}}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"RO systems with a mineral stage for coffee and espresso","itemListElement":[
+ {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Waterdrop M6SL Mineral Reverse Osmosis Water Filter Countertop, Room-Temp","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"141.93","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0GRZF389R?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Waterdrop T4-A Alkaline Mineral Tankless Reverse Osmosis System, Dual Flow","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"229.99","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0F5V9G355?tag=bestreverseosmosis-20"}}},
+ {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Waterdrop M6CG Hot & Cold Reverse Osmosis System Countertop, Mineral Added","brand":{"@type":"Brand","name":"Waterdrop"},"offers":{"@type":"Offer","price":"459.00","priceCurrency":"USD","url":"https://www.amazon.com/dp/B0GS4RMTQQ?tag=bestreverseosmosis-20"}}}
+]}
+</script>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

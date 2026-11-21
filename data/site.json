@@ -919,6 +919,16 @@
       "minutes": 14,
       "date": "2026-11-20",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-water-for-coffee-and-espresso",
+      "title": "RO Water for Coffee and Espresso: Why Near-Zero TDS Hurts Extraction",
+      "description": "Pure RO permeate is prized for drinking but can flatten a shot of espresso — brewing standards call for a mineral floor that stripped-down water doesn't have. What a built-in mineral stage changes, and what it doesn't fix. General brewing information, not a substitute for a machine manufacturer's water guidance.",
+      "category": "Water quality",
+      "hero": "hero-reverse-osmosis-water-for-coffee-and-espresso",
+      "minutes": 14,
+      "date": "2026-11-21",
+      "featured": true
     }
   ]
 }
