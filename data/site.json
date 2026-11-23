@@ -939,6 +939,16 @@
       "minutes": 14,
       "date": "2026-11-22",
       "featured": true
+    },
+    {
+      "slug": "does-reverse-osmosis-remove-vocs-and-pesticides",
+      "title": "Does Reverse Osmosis Remove VOCs and Pesticides? What the Membrane Does and What Carbon Does",
+      "description": "Volatile organic compounds and pesticide residues don't behave like dissolved solids, and the RO membrane isn't the stage doing most of the work against them. What carbon contributes, and what a spent cartridge lets through.",
+      "category": "Water quality",
+      "hero": "hero-does-reverse-osmosis-remove-vocs-and-pesticides",
+      "minutes": 13,
+      "date": "2026-11-23",
+      "featured": true
     }
   ]
 }
