@@ -949,6 +949,16 @@
       "minutes": 13,
       "date": "2026-11-23",
       "featured": true
+    },
+    {
+      "slug": "reverse-osmosis-systems-with-app-control",
+      "title": "VIOMI's $760 Touchscreen RO System: What App Control Actually Adds Over Its Own $180 Base Model",
+      "description": "VIOMI sells the same tankless category at three price points under one brand name. Checking the touchscreen flagship against its own plainer siblings isolates what the app and the screen are actually worth.",
+      "category": "Honest take",
+      "hero": "hero-reverse-osmosis-systems-with-app-control",
+      "minutes": 15,
+      "date": "2026-11-24",
+      "featured": true
     }
   ]
 }
